@@ -4,7 +4,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 remote_theme: "mmistakes/so-simple-theme@3.2.0"
-skin: "/assets/css/skins/default.css"
+skin: "/assets/css/skins/light.css"
 locale: en-US
 title: "An Aspiring Writer's Haven"
 description: "Follow along as I write my heart out and explore the unknown depths of my imagination."
