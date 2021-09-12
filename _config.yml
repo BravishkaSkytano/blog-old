@@ -84,7 +84,7 @@ defaults:
       layout: post
       share: true
       comments: true
-  # Recipe defaults
+  # Poetry defaults
   - scope:
       path: "_poetry"
       type: poetry
@@ -131,7 +131,3 @@ footer_links:
     title: Feed
     url: atom.xml
     icon: fas fa-rss-square
-  -
-    title: GitHub
-    url: https://github.com/Aspiring-Writer/blog
-    icon: fas fa-github
