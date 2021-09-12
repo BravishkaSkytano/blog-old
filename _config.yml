@@ -70,7 +70,7 @@ plugins:
 
 # Collections
 collections:
-  books:
+  poetry:
     output: true
     permalink: /:collection/:path/
 
@@ -86,8 +86,8 @@ defaults:
       comments: true
   # Recipe defaults
   - scope:
-      path: "_books"
-      type: books
+      path: "_poetry"
+      type: poetry
     values:
       layout: post
       comments: true
