@@ -1,5 +1,5 @@
 ---
-title: "CoSaF: Chapter I"
+title: "Chapter I"
 ---
 
 The slave watched as the town slowly burned. The remaining inhabitants screamed as their homes crumbled on top of them and their neighbors burned alive on the streets. Guilt tugged on her as the screams began to lessen, and the fire began to be sated.
