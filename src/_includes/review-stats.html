@@ -1,0 +1,54 @@
+<!-- Review Stats -->
+<section class="float-none w-full pl-6 pt-10 pb-4 md:w-3/5 md:float-right">
+  <div class="flex items-center justify-center">
+    <div class="relative bg-red-300 rounded-md px-4 shadow-md hover:shadow-lg transition flex flex-col items-center">
+      <div class="leading-relaxed">
+        {% if review.movie %}
+        <table class="table-auto">
+          <tbody>
+            <tr>
+              <td>{% heroicon "outline", "film" %}</td>
+              <td>{{ review.title }}</td>
+            </tr>
+            <tr>
+              <td>{% heroicon "outline", "user-group" %}</td>
+              <td>
+                <span class="font-semibold">Director:</span> {{ review.director }}<br>
+                <span class="font-semibold">Producer:</span> {{ review.producer }}<br>
+                <span class="font-semibold">Actors:</span> {{ review.actors }}
+              </td>
+            </tr>
+            {% else %}
+            <tr>
+              <td>{% heroicon "outline", "book-open" %}</td>
+              <td>{{ review.title }}</td>
+            </tr>
+            <tr>
+              <td>{% heroicon "outline", "user" %}</td>
+              <td>{{ review.author }}}</td>
+            </tr>
+            {% endif %}
+            <tr>
+              <td>{% heroicon "outline", "calendar" %}</td>
+              <td>Released on {{ review.released }}</td>
+            </tr>
+            {% if review.series %}
+            <tr>
+              <td>{% heroicon "outline", "collection" %}</td>
+              <td>{{ review.series }}</td>
+            </tr>
+            {% endif %}
+            <tr>
+              <td>{% heroicon "outline", "clock" %}</td>
+              <td>{{ review.start }} - {{ review.end }}</td>
+            </tr>
+            <tr>
+              <td>{% heroicon "outline", "star" %}</td>
+              <td>{{ review.rating }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

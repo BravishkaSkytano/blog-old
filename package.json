@@ -1,0 +1,35 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Follow along as I write my heart out and explore the unknown depths of my imagination.",
+  "main": ".eleventy.js",
+  "scripts": {
+    "clean": "rmdir /Q /S _site",
+    "build": "NODE_ENV=production npx eleventy && npm run build:css --minify",
+    "build:css": "postcss src/tailwind.css -o _site/blog/assets/tailwind.css",
+    "start": "npx eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aspiring-Writer/blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aspiring-Writer/blog/issues"
+  },
+  "homepage": "https://github.com/Aspiring-Writer/blog#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
+    "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^10.3.6",
+    "eleventy-plugin-embed-everything": "^1.13.3",
+    "eleventy-plugin-heroicons": "^0.2.0",
+    "eleventy-plugin-reader-bar": "^0.2.0",
+    "moment": "^2.29.1",
+    "postcss-cli": "^9.0.1",
+    "tailwindcss": "^2.2.16"
+  }
+}

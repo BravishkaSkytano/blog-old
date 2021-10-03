@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/blog/assets/tailwind.css">
+  </head>
+  <body class="container mx-auto px-4 bg-red-200">
+    <div class="reader-bar-start">
+      {% include "nav.html" %}
+      <div class="prose prose-sm lg:prose-lg xl:prose-xl mx-auto">
+        {% block content %}{% endblock %}
+      </div>
+      {% include "footer.html" %}
+    </div>
+    {% readerBar "4px", "red" %}
+  </body>
+</html>

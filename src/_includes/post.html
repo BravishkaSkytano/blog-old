@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% block content %}
+<article>
+  <h1>{{ title }}</h1>
+  <div class="bg-red-300 text-center font-semibold rounded-md shadow-md hover:shadow-md transition">
+    <time datetime="{{ date | dateIso }}" class="italic">{{ post.date | dateReadable }}</time> ~ <span>{{ content | emojiReadTime }}</span>
+    <br>
+    <a href="{{ site.baseurl }}{{ seriesSlug }}/" class="capitalize italic">{{ series }}</a> ~ <a href="">{{ tags }}</a>
+  </div>
+  
+  {% if review %}
+    {% include "review-stats.html" %}
+  {% endif %}
+
+  <p>{{ summary }}</p>
+
+  {{ content | safe }}
+
+  {% include "author.html" %}
+</article>
+{% endblock %}
