@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="/blog/assets/tailwind.css">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{% if title %}{{ title }} ~ {{ site.title }}{% else %}{{ site.title }} ~ {{ site.summary }}{% endif %}</title>
+    <meta name="description" content="{{ summary }}" />
+    <link rel="stylesheet" href="/assets/tailwind.css" />
   </head>
   <body class="container mx-auto px-4 bg-red-200">
     <div class="reader-bar-start">
@@ -16,6 +17,6 @@
       </div>
       {% include "footer.html" %}
     </div>
-    {% readerBar "4px", "red" %}
+    {% if "/posts/" in page.url %}{% readerBar "4px", "red" %}{% endif %}
   </body>
 </html>

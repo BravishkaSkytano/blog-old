@@ -4,12 +4,16 @@
     class="relative w-full h-auto bg-red-300 rounded-md pt-24 pb-8 px-4 shadow-md hover:shadow-lg transition flex flex-col items-center">
     <div class="absolute rounded-full bg-gray-800 w-28 h-28 p-2 z-10 -top-8 shadow-lg hover:shadow-xl transition">
       <div class="rounded-full w-full h-full overflow-auto">
-        <img src="{% if author %}{{ author.avatar }}{% else %}{{ site.avatar }}{% endif %}">
+        <img src="{{ author.avatar }}">
       </div>
     </div>
-    <label class="font-bold text-lg">
+    <div class="font-bold text-lg">
       {{ author.name }}
-    </label>
+    </div>
+    <div class="flex justify-between text-xs leading-normal mt-0 mb-2 font-semibold uppercase">
+      {% heroicon "solid", "location-marker" %}
+      <span class="px-1">{{ author.location }}</span>
+    </div>
     <p class="text-center mt-2 leading-relaxed">
       {{ author.bio }}
     </p>

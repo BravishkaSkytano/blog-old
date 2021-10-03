@@ -3,8 +3,8 @@
 h1, h2, h3 {
   @apply text-center;
 }
-h1 {
-  @apply py-10 italic;
+h2, h3 {
+  @apply sticky top-0 bg-red-300 p-2 rounded-lg;
 }
 
 @tailwind components;
@@ -16,10 +16,10 @@ h1 {
   @apply bg-red-300 hover:bg-red-400 text-gray-800;
 }
 .group-btn-start {
-  @apply rounded-l;
+  @apply rounded-l-md;
 }
 .group-btn-end {
-  @apply rounded-r;
+  @apply rounded-r-md;
 }
 
 @tailwind utilities;

@@ -4,9 +4,10 @@
   "description": "Follow along as I write my heart out and explore the unknown depths of my imagination.",
   "main": ".eleventy.js",
   "scripts": {
-    "clean": "rmdir /Q /S _site",
-    "build": "NODE_ENV=production npx eleventy && npm run build:css --minify",
-    "build:css": "postcss src/tailwind.css -o _site/blog/assets/tailwind.css",
+    "clean:win": "rmdir /Q /S _site",
+    "clean:linux": "rm -r _site",
+    "build": "NODE_ENV=production npx eleventy && postcss src/tailwind.css -o _site/assets/tailwind.css --minify",
+    "build:css": "postcss src/tailwind.css -o _site/assets/tailwind.css",
     "start": "npx eleventy --serve"
   },
   "repository": {

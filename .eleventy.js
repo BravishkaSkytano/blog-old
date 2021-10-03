@@ -18,11 +18,11 @@ module.exports = config => {
     use: ['spotify', 'vimeo', 'youtube', 'soundcloud']
   });
   config.addPlugin(heroIcons, {
-    className: 'h-10 w-10',
+    className: 'h-10 w-10 md:h-5 md:w-5',
     errorOnMissing: true
   });
 
-  config.addPassthroughCopy("src/blog/assets");
+  config.addPassthroughCopy("src/assets");
 
   config.addFilter('dateIso', date => {
     return moment(date).toISOString();
@@ -30,6 +30,10 @@ module.exports = config => {
  
   config.addFilter('dateReadable', date => {
     return moment(date).utc().format('LL'); // E.g. May 31, 2019
+  });
+
+  config.addCollection('blog', collection => {
+    return [...collection.getFilteredByGlob('./src/posts/**/*.md')].reverse();
   });
 
   return {

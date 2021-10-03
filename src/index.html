@@ -1,0 +1,37 @@
+---
+layout: "home.html"
+pagination:
+  data: collections.blog
+  size: 3
+permalink: "{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html"
+paginationAnchor: '#post-list'
+---
+
+{% for item in pagination.items %}
+<div class="text-center italic space-y-4">
+  <h2 class="italic font-semibold">
+    <a href="{{ item.url }}">{{ item.data.title }}</a>
+  </h2>
+  <time datetime="{{ page.date | dateIso }}">{{ page.date | dateReadable }}</time> 
+  {% if item.data.series %}~ <span class="uppercase">{{ item.data.series }}</span>{% endif %} 
+  ~ Written by {{ item.data.author.name }}
+  <p class="leading-text">{{ item.data.summary }}</p>
+</div>
+{% endfor %}
+
+{% if pagination.href.next or pagination.href.previous %}
+<nav class="flex justify-center text-center pt-10">
+  <div class="inline-flex" aria-label="Pagination links">
+    {% if pagination.href.previous %}
+    <a href="{{ pagination.href.previous }}{{ paginationAnchor }}" class="btn group-btn group-btn-start" data-direction="backwards">
+      <span>Newer Posts</span>
+    </a>
+    {% endif %}
+    {% if pagination.href.next %}
+    <a href="{{ pagination.href.next }}{{ paginationAnchor }}" class="btn group-btn group-btn-end" data-direction="forwards">
+      <span>Older Posts</span>
+    </a>
+    {% endif %}
+  </div>
+</nav>
+{% endif %}

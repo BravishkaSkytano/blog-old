@@ -1,7 +1,9 @@
 {% extends "base.html" %} {% block content %}
 <article>
-  <h1>{{ title }}</h1>
+  <div class="pt-16 pb-14">
+    <h1>{{ site.title }}</h1>
+    <h4 class="text-center italic">{{ site.summary }}</h4>
+  </div>
   {{ content | safe }}
 </article>
 {% endblock %}
-{% readerBar "0px" %}
