@@ -3,6 +3,7 @@ const readerBar = require('eleventy-plugin-reader-bar')
 const emojiReadTime = require("@11tyrocks/eleventy-plugin-emoji-readtime");
 const embedEverything = require("eleventy-plugin-embed-everything");
 const heroIcons = require('eleventy-plugin-heroicons');
+const _ = require("lodash")
 
 moment.locale('en')
 
@@ -36,6 +37,14 @@ module.exports = config => {
     return [...collection.getFilteredByGlob('./src/posts/**/*.md')].reverse();
   });
 
+  config.addCollection("postsByYear", (collection) => {
+    return _.chain(collection.getAllSorted())
+      .groupBy((post) => post.date.getFullYear())
+      .toPairs()
+      .reverse()
+      .value();
+  });
+  
   return {
     markdownTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',

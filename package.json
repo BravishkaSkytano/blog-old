@@ -29,6 +29,7 @@
     "eleventy-plugin-embed-everything": "^1.13.3",
     "eleventy-plugin-heroicons": "^0.2.0",
     "eleventy-plugin-reader-bar": "^0.2.0",
+    "lodash": "^4.17.21",
     "moment": "^2.29.1",
     "postcss-cli": "^9.0.1",
     "tailwindcss": "^2.2.16"

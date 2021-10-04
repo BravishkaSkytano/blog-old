@@ -1,10 +1,11 @@
 {% extends "base.html" %} {% block content %}
-<article>
+<article class="post">
   <h1>{{ title }}</h1>
   <div class="bg-red-300 text-center font-semibold rounded-md shadow-md hover:shadow-md transition">
     <time datetime="{{ date | dateIso }}" class="italic">{{ post.date | dateReadable }}</time> ~ <span>{{ content | emojiReadTime }}</span>
     <br>
-    <a href="{{ site.baseurl }}{{ seriesSlug }}/" class="capitalize italic">{{ series }}</a> ~ <a href="">{{ tags }}</a>
+    <a href="{{ site.baseurl }}{{ seriesSlug }}/" class="capitalize italic">{{ series }}</a> ~ 
+    {% for tag in tags %}<a href="/tag/{{ tag | slug }}/">#{{ tag }} </a>{% endfor %}
   </div>
   
   {% if review %}
@@ -16,5 +17,30 @@
   {{ content | safe }}
 
   {% include "author.html" %}
+
+  {% for item in collection.blog %}
+  {% if pagination.href.next or pagination.href.previous %}
+  <nav class="flex justify-center text-center pt-10">
+    <div class="inline-flex" aria-label="Pagination links">
+      {% if page.url != pagination.href.first %}
+      <a href="{{ pagination.href.first }}" class="btn group-btn group-btn-start">First</a>
+      {% endif %}
+      {% if pagination.href.previous %}
+      <a href="{{ pagination.href.previous }}" class="btn group-btn" data-direction="backwards">
+        <span>Previous</span>
+      </a>
+      {% endif %}
+      {% if pagination.href.next %}
+      <a href="{{ pagination.href.next }}" class="btn group-btn" data-direction="forwards">
+        <span>Next</span>
+      </a>
+      {% endif %}
+      {% if page.url != pagination.href.last %}
+      <a href="{{ pagination.href.last }}" class="btn group-btn group-btn-end">Last</a>
+      {% endif %}
+    </div>
+  </nav>
+  {% endif %}
+  {% endfor %}
 </article>
 {% endblock %}

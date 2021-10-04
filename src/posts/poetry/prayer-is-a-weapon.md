@@ -1,6 +1,6 @@
 ---
 title: "Prayer is a weapon..."
-categories: [poetry]
+date: 2020-05-03
 tags: [prayer, spiritual-weapons]
 ---
 

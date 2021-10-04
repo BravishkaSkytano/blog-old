@@ -4,7 +4,10 @@ h1, h2, h3 {
   @apply text-center;
 }
 h2, h3 {
-  @apply sticky top-0 bg-red-300 p-2 rounded-lg;
+  @apply bg-red-300 p-2 rounded-lg;
+}
+.post h2, .post h3 {
+  @apply sticky top-0;
 }
 
 @tailwind components;

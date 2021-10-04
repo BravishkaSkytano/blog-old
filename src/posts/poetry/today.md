@@ -1,6 +1,6 @@
 ---
 title: "Today"
-categories: [poetry]
+date: 2020-05-02
 ---
 
 Sometimes I wonder what's different 'bout today\
