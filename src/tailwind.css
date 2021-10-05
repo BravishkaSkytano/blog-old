@@ -24,5 +24,7 @@ h2, h3 {
 .group-btn-end {
   @apply rounded-r-md;
 }
-
+.icon {
+  @apply h-8 w-8;
+}
 @tailwind utilities;

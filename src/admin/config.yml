@@ -1,0 +1,36 @@
+backend:
+  name: git-gateway
+  branch: 11ty+tailwind 
+
+media_folder: "_site/assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post.html" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "string" }
+      - { label: "Date", name: "date", widget: "date", default: "Created" }
+      - { label: "Post Body", name: "body", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "list", allow_add: "true" }
+      - { label: "Series", name: "series", widget: "select", options: ["Devotionals", "Poetry", "Tutorial", "Review"], allow_add: "true" }
+      - label: "Review Stats"
+        name: "review"
+        widget: "list"
+        fields:
+          - { label: "Movie", name: "movie", widget: "boolean" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Author", name: "author", widget: "string", required: false }
+          - { label: "Director", name: "director", widget: "string", required: false }
+          - { label: "Producer", name: "producer", widget: "string", required: false }
+          - { label: "Actors", name: "actors", widget: "string", required: false }
+          - { label: "Release Date", name: "released", widget: "datetime", date_format: "MM DD, YYYY", }
+          - { label: "Start Date", name: "start", widget: "datetime" }
+          - { label: "End Date", name: "end", widget: "datetime", date_format: "MM DD, YYYY", required: false }
+          - { label: "Rating", name: "rating", widget: "number", min: 1, max: 5, step: 0.2 }
+        required: false
