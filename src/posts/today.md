@@ -1,6 +1,9 @@
 ---
 title: "Today"
 date: 2020-05-02
+series: "Poetry"
+summary:
+  "My first poem. It's very simple, and short."
 ---
 
 Sometimes I wonder what's different 'bout today\

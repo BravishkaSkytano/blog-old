@@ -1,7 +1,9 @@
 ---
 title: "Prayer is a weapon..."
 date: 2020-05-03
-tags: [prayer, spiritual-weapons]
+series: "Poetry"
+summary: "A poem about the power of prayer"
+tags: ['prayer', 'spiritual weapons']
 ---
 
 Prayer is a weapon.\

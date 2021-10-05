@@ -1,7 +1,10 @@
 ---
 title: 'Genesis: Organizing, Filling, Marking'
 date: 2020-11-15
-tags: [journey through the bible, genesis, theology]
+series: 'Devotionals'
+summary:
+  "With help from Garry J. Moes, I learned somethingabout Jesus and the Trinity through the Book of Genesis. Curious? It was a little bit of a surprise to me, here's what I mean."
+tags: ['journey through the bible', 'genesis', 'theology']
 ---
 
 This school year, I have the privilege of taking a special Bible course from my school. It’s the Journey Through the Bible curriculum and I shall be doing book 1. Two years ago, I read through the second book in the series and I loved it. That book took me through the “wisdom and prophetic” books of the Bible, i.e. Psalms – Malachi. The Journey Through the Bible curriculum takes you through each book in the Bible and breaks down important chapters to show you things you probably didn’t know before. The curriculum is essentially a theology course for high school students.
