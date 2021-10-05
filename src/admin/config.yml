@@ -2,6 +2,7 @@ backend:
   name: git-gateway
   branch: 11ty+tailwind 
 
+publish_mode: editorial_workflow
 media_folder: "_site/assets/images"
 public_folder: "/assets/images"
 
@@ -17,7 +18,7 @@ collections:
       - { label: "Summary", name: "summary", widget: "string" }
       - { label: "Date", name: "date", widget: "date", default: "Created" }
       - { label: "Post Body", name: "body", widget: "markdown" }
-      - { label: "Tags", name: "tags", widget: "list", allow_add: "true" }
+      - { label: "Tags", name: "tags", widget: "list", allow_add: true }
       - { label: "Series", name: "series", widget: "select", options: ["Devotionals", "Poetry", "Tutorial", "Review"], allow_add: "true" }
       - label: "Review Stats"
         name: "review"

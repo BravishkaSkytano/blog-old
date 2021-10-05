@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="/assets/tailwind.css" />
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
-  <body class="container mx-auto px-4 bg-red-200">
+  <body class="bg-red-200 px-4 py-10 max-w-3xl mx-auto sm:px-6 sm:py-12 lg:max-w-4xl lg:py-16 lg:px-8 xl:max-w-6xl">
     <div class="reader-bar-start">
       {% include "nav.html" %}
-      <div class="prose prose-sm lg:prose-lg xl:prose-xl mx-auto">
+      <div class="prose prose-sm lg:prose-lg xl:prose-xl px-4 mx-auto">
         {% block content %}{% endblock %}
       </div>
       {% include "footer.html" %}

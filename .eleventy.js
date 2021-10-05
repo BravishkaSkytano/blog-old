@@ -10,7 +10,7 @@ moment.locale('en')
 module.exports = config => {
 
   config.addPassthroughCopy("src/assets");
-  config.addPassthroughCopy("src/admins");
+  config.addPassthroughCopy("src/admin");
 
   config.addPlugin(readerBar);
 

@@ -1,9 +1,13 @@
-# Welcome to my personal blog!
+# An Aspiring Writer's Haven
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/12a37b42-86e2-4eef-bdeb-df1ccbc42d2b/deploy-status)](https://app.netlify.com/sites/aspiring-writer/deploys)
+
 Follow along as I write my heart out and explore the unknown depths of my imagination.
 
 Read my poems, take a sneak peak at my books (they're a work-in-progress), check out a few tutorials, and borrow my cheatsheets (coming soon).
 
-# A Little About Me...
+## A Little About Me
+
 I am a young, Christian writer who is still trying to complete college. I love to read and write fiction stories in my spare time. Some Christian aspects will show up in my writing so do not be surprised. Most of my inspiration is God-given, I'm not sure how else to explain it. I have been writing since I was in my mid-teens (not so long ago), however, I have just recently become more dedicated to writing and publishing my work. I am very social and very fond of feedback, so please do leave comments on any of my posts.
 
 I began writing when I was thirteen years old. It was nothing fancy, just little things here and there. Then I began to try and write fiction like the many books I fell in love with. I wasn’t a bad writer, but I wasn’t very good either. I remember when I wrote [my first poem](/poems/today.html), it was simple and cute. My cousin had shared with me some of her poetry and that’s when I discovered that not all poetry rhymed. She introduced me to free-form poetry and I decided to try it out the next day. In three days I had written two poems that I was very proud of and others praised me for. It was a great feeling and it gave me the confidence that I was creative and I could write when I was passionate about something. After that, I started trying to write fiction as well as poetry and it worked out quite nicely. There were hiccups and times where I felt like a total failure who couldn’t write one good book without abandoning the project out of frustration. I just hadn’t found my real passion yet and I was tired of trying to figure out how to portray characters' lives on paper when I couldn’t even figure out my own. My mother told me I should start writing a diary and I couldn’t even do that. It was frustrating.
