@@ -1,19 +1,33 @@
 {% extends "base.html" %} {% block content %}
 <article class="post">
+  <!--Post Metadata-->
   <h1>{{ title }}</h1>
-  <div class="bg-red-300 text-center font-semibold rounded-md shadow-md hover:shadow-md transition">
+  <div class="bg-red-300 p-4 text-center font-semibold rounded-md shadow-md hover:shadow-md transition">
     <time datetime="{{ date | dateIso }}" class="italic">{{ post.date | dateReadable }}</time> ~ <span>{{ content | emojiReadTime }}</span>
     <br>
-    {% if series %}<a href="{{ site.baseurl }}{{ series | slug }}/" class="capitalize italic">{{ series }}</a> ~ {% endif %}
-    {% for tag in tags %}<a href="/tag/{{ tag | slug }}/">#{{ tag }} </a>{% endfor %}
+    {% if series %}<a href="/series/{{ series | slugify }}/" class="capitalize italic">{{ series }}</a> ~ {% endif %}
+    {% for tag in tags %}<a href="/tags/#{{ tag | slugify }}/">#{{ tag }}</a> {% endfor %}
+    <!--Summary-->
+    <p class="italic font-medium text-center">{{ summary }}</p>
   </div>
-  
+  <hr>
+
   {% if review %}
     {% include "review-stats.html" %}
   {% endif %}
 
-  <p>{{ summary }}</p>
+  {% if toc == true %}
+  <!--TOC-->
+  <section class="toc w-full pb-3 md:w-2/5 md:pr-5 md:float-left">
+    <div class="bg-red-300 rounded-md px-4 shadow-md hover:shadow-lg transition">
+      <div class="leading-relaxed font-semibold pb-3">
+        {{ content | toc | safe }}
+      </div>
+    </div>
+  </section>
+  {% endif %}
 
+  <!--Post-->
   {{ content | safe }}
 
   <hr>

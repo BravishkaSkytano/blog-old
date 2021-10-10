@@ -7,16 +7,16 @@ h2, h3 {
   @apply bg-red-300 p-2 rounded-lg;
 }
 .post h2, .post h3 {
-  @apply sticky top-0;
+  @apply sticky top-0 clear-both;
+}
+.toc p {
+  @apply text-center pt-4;
 }
 
 @tailwind components;
 
 .btn {
-  @apply font-bold py-2 px-2 md:px-4;
-}
-.group-btn {
-  @apply bg-red-300 hover:bg-red-400 text-gray-800;
+  @apply font-bold py-2 px-2 md:px-4 bg-red-300 hover:bg-red-400 text-gray-800;
 }
 .group-btn-start {
   @apply rounded-l-md;
@@ -27,4 +27,5 @@ h2, h3 {
 .icon {
   @apply h-6 w-6 md:h-8 md:w-8;
 }
+
 @tailwind utilities;
