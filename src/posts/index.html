@@ -7,11 +7,13 @@ permalink: '/posts/index.html'
 
 {% for year, yearPosts in collections.postsByYear %}
   <h3>{{ year }}</h3>
-  <ul>
-    {% for post in yearPosts | reverse %}
-    <li>
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </li>
-    {% endfor %}
-  </ul>
+  <div class="contrast-color rounded-lg p-4">
+    <ul>
+      {% for post in yearPosts | reverse %}
+      <li>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 {% endfor %}

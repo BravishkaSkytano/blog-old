@@ -8,7 +8,8 @@
     "clean:linux": "rm -r _site",
     "build": "NODE_ENV=production npx eleventy && postcss src/tailwind.css -o _site/assets/tailwind.css --minify",
     "build:css": "postcss src/tailwind.css -o _site/assets/tailwind.css",
-    "start": "npx eleventy --serve"
+    "start": "npx eleventy --serve",
+    "start-full": "npm run build:css && npm start"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,6 @@
     "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
     "@sindresorhus/slugify": "^1.1.2",
     "@tailwindcss/typography": "^0.4.1",
-    "alpinejs": "^3.4.2",
     "autoprefixer": "^10.3.6",
     "eleventy-plugin-embed-everything": "^1.13.3",
     "eleventy-plugin-heroicons": "^0.2.0",

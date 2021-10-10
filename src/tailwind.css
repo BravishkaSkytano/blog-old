@@ -1,10 +1,13 @@
 @tailwind base;
 
+.contrast-color {
+  @apply bg-green-400 dark:bg-green-700;
+}
 h1, h2, h3 {
   @apply text-center;
 }
 h2, h3 {
-  @apply bg-red-300 p-2 rounded-lg;
+  @apply contrast-color p-2 rounded-lg;
 }
 .post h2, .post h3 {
   @apply sticky top-0 clear-both;
@@ -16,7 +19,7 @@ h2, h3 {
 @tailwind components;
 
 .btn {
-  @apply font-bold py-2 px-2 md:px-4 bg-red-300 hover:bg-red-400 text-gray-800;
+  @apply font-bold py-2 px-2 md:px-4 contrast-color hover:bg-green-500 dark:hover:bg-green-800 text-gray-800 dark:text-gray-300;
 }
 .group-btn-start {
   @apply rounded-l-md;

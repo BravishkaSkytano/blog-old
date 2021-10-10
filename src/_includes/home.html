@@ -2,7 +2,7 @@
 <article>
   <div class="pt-16 pb-14">
     <h1>{% if title %}{{ title }}{% else %}{{ site.title }}{% endif %}</h1>
-    {% if summary %}<h4 class="text-center italic">{{ summary }}</h4>{% endif %}
+    {% if summary %}<p class="text-center italic">{{ summary }}</p>{% endif %}
   </div>
   {{ content | safe }}
 </article>

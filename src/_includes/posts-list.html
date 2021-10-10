@@ -1,0 +1,11 @@
+<div class="text-center italic space-y-4">
+  <h2 class="italic font-semibold">
+    <a href="{{ item.url }}">{{ item.data.title }}</a>
+  </h2>
+  <p>
+    <time datetime="{{ page.date | dateIso }}">{{ page.date | dateReadable }}</time> 
+    {% if item.data.series %}~ <span class="uppercase">{{ item.data.series }}</span>{% endif %} 
+    ~ Written by {{ item.data.author.name }}
+  </p>
+  <p class="leading-text">{{ item.data.summary }}</p>
+</div>

@@ -8,13 +8,5 @@ pagination:
 ---
 
 {% for item in pagination.items %}{% if item.data.series == 'Devotionals' %}
-<div class="text-center italic space-y-4">
-  <h2 class="italic font-semibold">
-    <a href="{{ item.url }}">{{ item.data.title }}</a>
-  </h2>
-  <time datetime="{{ page.date | dateIso }}">{{ page.date | dateReadable }}</time> 
-  {% if item.data.series %}~ <span class="uppercase">{{ item.data.series }}</span>{% endif %} 
-  ~ Written by {{ item.data.author.name }}
-  <p class="leading-text">{{ item.data.summary }}</p>
-</div>
+{% include 'posts-list.html' %}
 {% endif %}{% endfor %}
