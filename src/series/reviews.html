@@ -1,12 +1,12 @@
 ---
 eleventyExcludeFromCollections: true
 layout: 'home.html'
-title: 'Devotionals'
+title: 'Reviews'
 pagination:
   data: collections.blog
   size: 100
 ---
 
-{% for item in pagination.items %}{% if item.data.series == 'Devotionals' %}
+{% for item in pagination.items %}{% if item.data.series == 'Reviews' %}
 {% include 'posts-list.html' %}
 {% endif %}{% endfor %}

@@ -9,9 +9,6 @@ h1, h2, h3 {
 h2, h3 {
   @apply contrast-color p-2 rounded-lg;
 }
-.post h2, .post h3 {
-  @apply sticky top-0 clear-both;
-}
 .toc p {
   @apply text-center pt-4;
 }

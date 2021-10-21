@@ -1,21 +1,26 @@
 {% extends "base.html" %} {% block content %}
-<article class="post">
+<article>
   <!--Post Metadata-->
   <h1>{{ title }}</h1>
   <div class="contrast-color p-4 text-center font-semibold rounded-md shadow-md hover:shadow-md transition">
     <!--Date-->
     <p>
-      <time datetime="{{ date | dateIso }}" class="italic">{{ post.date | dateReadable }}</time> ~ <span>{{ content | emojiReadTime }}</span>
+      <time datetime="{{ date | dateIso }}" class="italic">Created: {{ post.date | dateReadable }}</time> ~ <time datetime="{{ date | dateIso }}" class="italic">Last Modified: {{ post.last-modified | dateReadable }}</time>
     </p>
     <!--Series & Tags-->
     <p>
-      {% if series %}<a href="/series/{{ series | slugify }}/" class="capitalize italic">{{ series }}</a> ~ {% endif %}
+      {% if series %}<a href="/series/{{ series | slugify }}/" class="italic">{{ series }}</a> ~ {% endif %}
       {% for tag in tags %}<a href="/tags/#{{ tag | slugify }}/">#{{ tag }}</a> {% endfor %}
     </p>
-    <!--Summary-->
-    <p class="italic font-medium text-center">{{ summary }}</p>
+    <!--Reading Time-->
+    <p>{{ content | emojiReadTime }}</p>
   </div>
   <hr>
+
+  <!--Summary-->
+  <p class="italic font-medium text-center">
+    {{ summary }}
+  </p>
 
   {% if review %}
     {% include "review-stats.html" %}
