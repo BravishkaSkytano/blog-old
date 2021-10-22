@@ -2,8 +2,8 @@
 layout: post.html
 title: How To Stay On Top of School and Work
 date: Created
+last-modified: 2021-10-22T14:55:29.392Z
 toc: true
-series: Tutorial
 summary: Juggling school AND a job can be super, super stressful. For me, school
   is enough to make me lose my mind because I am not an organized person to
   begin with. Adding a job, even though it's very flexible, is definitely going
@@ -11,6 +11,7 @@ summary: Juggling school AND a job can be super, super stressful. For me, school
   find what works for me.
 tags:
   - Bullet-Journaling
+series: Study Strategies
 ---
 To start off, I thought it would be good to split this long post into a few sections. Now, this post will probably be updated as I move through the year(s) so look out for those callouts.
 
