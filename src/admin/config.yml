@@ -8,15 +8,15 @@ public_folder: "/assets/images"
 
 collections:
   - name: "blog"
-    label: "Posts"
+    label: "Post"
     folder: "src/posts"
     create: true
     slug: "{{slug}}"
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post.html" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Created Date", name: "date", widget: "date", default: "Created" }
-      - { label: "Modified Date", name: "last-modified", widget: "date", default: "Last Modified" }
+      - { label: "Created Date", name: "date", widget: "date", default: "Created", required: false }
+      - { label: "Modified Date", name: "last-modified", widget: "date", default: "Last Modified", required: false }
       - { label: "TOC", name: "toc", widget: "boolean", required: false }
       - { label: "Summary", name: "summary", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", allow_add: true }
