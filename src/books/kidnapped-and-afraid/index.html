@@ -1,0 +1,20 @@
+---
+eleventyExcludeFromCollections: true
+layout: 'home.html'
+title: 'Kidnapped and Afraid'
+pagination:
+  data: collections.books
+  size: 100
+---
+<div class="flex justify-center w-4/5 mx-auto">
+  <img src="/assets/covers/kaa.jpg">
+</div>
+<div class="contrast-color rounded-lg p-2">
+  <ul>
+  {% for item in pagination.items %}{% if item.data.book == 'Kidnapped and Afraid' %}
+    <li>
+      <a href="{{ item.url }}">{{ item.data.title }}</a>
+    </li>
+  {% endif %}{% endfor %}
+  </ul>
+</div>

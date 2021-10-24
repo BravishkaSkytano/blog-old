@@ -1,28 +1,18 @@
 {% extends "base.html" %} {% block content %}
 <article>
-  <!--Post Metadata-->
-  <h1>{{ title }}</h1>
+  <!--Chapter Metadata-->
+  <h1>
+    <span class="italic">{{ book }}</span>
+    <br><br>
+    {{ title }}
+  </h1>
   <div class="contrast-color p-4 text-center font-semibold rounded-md shadow-md hover:shadow-md transition">
     <!--Date & Reading Time-->
     <p>
-      <time datetime="{{ date | dateIso }}">{{ post.date | dateReadable }}</time> ~ {{ content | emojiReadTime }}
-    </p>
-    <!--Series & Tags-->
-    <p>
-      {% if series %}<a href="/series/{{ series | slugify }}/" class="italic">{{ series }}</a> ~ {% endif %}
-      {% for tag in tags %}<a href="/tags/#{{ tag | slugify }}/">#{{ tag }}</a> {% endfor %}
+      Last Updated: <time datetime="{{ date | dateIso }}">{{ post.date | dateReadable }}</time> ~ {{ content | emojiReadTime }}
     </p>
   </div>
   <hr>
-
-  <!--Summary-->
-  <p class="italic font-medium text-center">
-    {{ summary }}
-  </p>
-
-  {% if review %}
-    {% include "review-stats.html" %}
-  {% endif %}
 
   {% if toc == true %}
   <!--TOC-->
@@ -40,9 +30,11 @@
 
   <hr>
 
+  <div class="flex justify-center">
+    <a href="/books/{{ book | slugify }}" class="btn rounded-full">Back</a>
+  </div>
+
   {% readerBar "4px", "#047857", "#34D399" %}
 
-  {% include "author.html" %}
-  
 </article>
 {% endblock %}

@@ -87,6 +87,10 @@ module.exports = config => {
     return [...tagsSet].sort((a, b) => b.localeCompare(a))
   })
 
+  config.addCollection('books', collection => {
+    return [...collection.getFilteredByGlob('./src/books/**/*.md')];
+  });
+
   return {
     markdownTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',
