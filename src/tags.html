@@ -15,7 +15,7 @@ pagination:
 </div>
 
 {% for tag in collections.tagsList | reverse %}
-<h2 id="{{ tag | slugify }}" class="sticky top-0">#{{ tag }}</h2>
+<h2 id="{{ tag | slugify }}">#{{ tag }}</h2>
 {% for item in collections[tag] %}
 <div class="text-center italic space-y-4">
   <h3 class="italic font-semibold">

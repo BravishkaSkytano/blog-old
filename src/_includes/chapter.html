@@ -6,7 +6,7 @@
     <br><br>
     {{ title }}
   </h1>
-  <div class="contrast-color p-4 text-center font-semibold rounded-md shadow-md hover:shadow-md transition">
+  <div class="contrast-color">
     <!--Date & Reading Time-->
     <p>
       Last Updated: <time datetime="{{ date | dateIso }}">{{ post.date | dateReadable }}</time> ~ {{ content | emojiReadTime }}
@@ -16,9 +16,9 @@
 
   {% if toc == true %}
   <!--TOC-->
-  <section class="toc w-full pb-3 md:w-2/5 md:pr-5 md:float-left">
-    <div class="contrast-color rounded-md px-4 shadow-md hover:shadow-lg transition">
-      <div class="leading-relaxed font-semibold pb-3">
+  <section class="card-float-left">
+    <div class="contrast-color">
+      <div class="leading-relaxed pb-3">
         {{ content | toc | safe }}
       </div>
     </div>
@@ -30,9 +30,7 @@
 
   <hr>
 
-  <div class="flex justify-center">
-    <a href="/books/{{ book | slugify }}" class="btn rounded-full">Back</a>
-  </div>
+  {% include 'chapter-list.html' %}
 
   {% readerBar "4px", "#047857", "#34D399" %}
 

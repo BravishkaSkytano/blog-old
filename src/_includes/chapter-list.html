@@ -1,0 +1,38 @@
+<div class="contrast-color">
+  <p class="font-bold text-lg">Chapters</p>
+  <div class="md:grid md:grid-cols-3 md:gap-4 2xl:grid-cols-4">
+  {% for item in collections.books %}
+
+    {% if 'kidnapped-and-afraid' in page.url %}{% if item.data.book == 'Kidnapped and Afraid' %}
+    <div>
+      <a href="{{ item.url }}">{{ item.data.title }}</a>
+    </div>
+    {% endif %}{% endif %}
+
+    {% if 'test-my-fire' in page.url %}{% if item.data.book == 'Test My Fire' %}
+    <div>
+      <a href="{{ item.url }}">{{ item.data.title }}</a>
+    </div>
+    {% endif %}{% endif %}
+
+    {% if 'dear-diary' in page.url %}{% if item.data.book == 'Dear Diary' %}
+    <div>
+      <a href="{{ item.url }}">{{ item.data.title }}</a>
+    </div>
+    {% endif %}{% endif %}
+
+    {% if 'past-nightmares-present-ghosts-future-peace' in page.url %}{% if item.data.book == 'Past Nightmares. Present Ghosts. Future Peace.' %}
+    <div>
+      <a href="{{ item.url }}">{{ item.data.title }}</a>
+    </div>
+    {% endif %}{% endif %}
+
+    {% if 'court-of-shadows-and-ruin' in page.url %}{% if item.data.book == 'Court of Shadows and Ruin' %}
+    <div>
+      <a href="{{ item.url }}">{{ item.data.title }}</a>
+    </div>
+    {% endif %}{% endif %}
+
+  {% endfor %}
+  </div>
+</div>

@@ -4,6 +4,7 @@
     <h1>{% if title %}{{ title }}{% else %}{{ site.title }}{% endif %}</h1>
     {% if summary %}<p class="text-center italic">{{ summary }}</p>{% endif %}
   </div>
+  <hr>
   {{ content | safe }}
 </article>
 {% endblock %}

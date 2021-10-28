@@ -1,0 +1,15 @@
+---
+layout: 'home.html'
+---
+
+<div class="flex justify-center w-3/5 mx-auto">
+  <img src="/assets/images/{{image}}">
+</div>
+
+<p class="text-center font-semibold">
+  {{ start }} &mdash; {% if end %}{{ end }}{% else %}still going...{% endif %}
+</p>
+
+{{ content | safe }}
+
+{% include 'chapter-list.html' %}

@@ -2,7 +2,7 @@
 <article>
   <!--Post Metadata-->
   <h1>{{ title }}</h1>
-  <div class="contrast-color p-4 text-center font-semibold rounded-md shadow-md hover:shadow-md transition">
+  <div class="contrast-color card">
     <!--Date & Reading Time-->
     <p>
       <time datetime="{{ date | dateIso }}">{{ post.date | dateReadable }}</time> ~ {{ content | emojiReadTime }}
@@ -16,9 +16,10 @@
   <hr>
 
   <!--Summary-->
-  <p class="italic font-medium text-center">
+  <p class="italic font-medium">
     {{ summary }}
   </p>
+  <hr>
 
   {% if review %}
     {% include "review-stats.html" %}
@@ -26,8 +27,8 @@
 
   {% if toc == true %}
   <!--TOC-->
-  <section class="toc w-full pb-3 md:w-2/5 md:pr-5 md:float-left">
-    <div class="contrast-color rounded-md px-4 shadow-md hover:shadow-lg transition">
+  <section class="card-float-left">
+    <div class="contrast-color">
       <div class="leading-relaxed font-semibold pb-3">
         {{ content | toc | safe }}
       </div>
