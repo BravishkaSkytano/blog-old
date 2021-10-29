@@ -3,29 +3,29 @@ title: I
 book: Court of Shadows and Ruin
 date: Last Modified
 ---
-The slave watched as the town slowly burned. The remaining inhabitants screamed as their homes crumbled on top of them and their neighbors burned alive on the streets. Guilt tugged on her as the screams began to lessen, and the fire began to be sated.
+The slave watched the town slowly burn. The remaining inhabitants screamed as their homes crumbled on top of them and their neighbors burned alive on the streets. Guilt tugged on her as the screams began to lessen, and the fire began to be sated.
 
-“*So many lives destroyed for nothing,”* She turned to the general beside her, “*is this truly what you wanted?”*
+*'So many lives destroyed for nothing,”* She turned to the general beside her, '*is this truly what you wanted?'*
 
 He chuckled, “A few lives for a greater cause. You should be very familiar with the way war works, Nixarza.”
 
-“*It causes much unnecessary bloodshed because two or more parties can't get along with each other. Yes, I am much aware of the dealings of war, Válgr.”*
+*'It causes much unnecessary bloodshed because two or more parties can't get along with each other. Yes, I am much aware of the dealings of war, Válgr.'*
 
 Válgr smiled, “Feeling guilt? Are you not the World Destroyer? Conqueror of Realms? Guilt is beneath you.”
 
-Nixarza grunted, “*Guilt is never beneath anyone, others just chose to ignore it.”*
+Nixarza grunted, '*Guilt is never beneath anyone, others just chose to ignore it.'*
 
-“That is what a true warrior must do to become the best.”
+“That is what a true warrior must do to become the best."
 
-“*Or to become heartless.”*
+*'Or to become heartless.'*
 
 “Heartless?” Válgr laughed, “Is that what you consider me, the mightiest jotunn that has ever lived?”
 
-Nixarza glanced up at the 9-foot being, “*Don't flatter yourself Válgr, that is the beginning of a mighty man's downfall.”*
+Nixarza glanced up at the 9-foot being, '*Don't flatter yourself Válgr, that is the beginning of a mighty man's downfall.'*
 
 “I am not a man.”
 
-She waved her hand, “*Semantics, you all have the same faults.”*
+She waved her hand, '*Semantics, you all have the same faults.'*
 
 Válgr laughed again and Nixarza rolled her eyes. She watched as the ashes of the town floated in the air and with barely a flick of her hand, she sent a soft breeze to guide the ashes further down the valley.
 
