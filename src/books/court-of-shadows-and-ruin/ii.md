@@ -51,9 +51,9 @@ Válgr chuckled, "Wouldn't you rather do it yourself?"
 
 Nixarza broke his grip on her wrist and glared at him before smiling wickedly. *'The fae can be quite cruel when they choose to, their methods of dealing out punishment are quite... inventive. They could torture you for hours on end. And just when you think Death is approaching, they would just heal you and start over.'*
 
-He paled slightly and growled, "I do not fear those elves!"
+He paled slightly and growled, "I do not fear those elves! The jotunn are stronger than some small beings, we have lived longer and know much more."
 
-*'Don't you? Everyone fears them in one way or another. Who wouldn't fear the Realm Masters who control all?'*
+*'Do you? Everyone fears them in one way or another. Who wouldn't fear the Realm Masters who control all? Who* know *all. Age does not trump knowledge nor experience.'*
 
 "Is that your plan, then? To let the fae free you from your bondage? You have more reasons to fear them than I, after all, you know their dungeons quite well, don't you?"
 
@@ -61,13 +61,13 @@ Nixarza only smiled, *'I would love to watch as they carved out your flesh. Tell
 
 "Get out!" Válgr yelled, "Threaten me again, and I will carve out your flesh myself!"
 
-Nixarza felt the ring compelling her to leave, but she just laughed, *'You couldn't Válgr and you know it. Isn't that why you hate me so much? You can* never *control me like you control all others; I am an Ancient, don't forget it. My revenge will be sweet.'*
+Nixarza felt the ring compelling her to leave, but she just laughed, *'You couldn't Válgr and you know it. Isn't that why you hate me so much? You can* never *control me like you control all others; I am an Ancient, older than even you, don't forget it. My revenge will be sweet.'*
 
 He glared at her as she left his tent.
 
 Nixarza kept her smile planted on her face as she strode through the camp. She had disobeyed a direct order from the ring, there would be consequences for that. When the pain hit her, she didn't want to be anywhere near the army. With one last glance, Nixarza opened her wings and leapt into the air.
 
-She flew two miles before the first wave of pain hit. Nixarza screamed as her magic turn on her. Her wings failed her. There was no way to soften her fall as she plummeted to the ground.
+She flew two miles before the first wave of pain hit. Nixarza screamed as her magic turn on her. Her wings failed her. There was no way to soften her fall as she plummeted to the ground. There was no peace in the darkness that overtook her senses, no peace at all.
 
 - - -
 
