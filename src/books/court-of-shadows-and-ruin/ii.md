@@ -61,6 +61,14 @@ Nixarza only smiled, *'I would love to watch as they carved out your flesh. Tell
 
 "Get out!" Válgr yelled, "Threaten me again, and I will carve out your flesh myself!"
 
-Nixarza laughed, *'You couldn't Válgr and you know it. Isn't that why you hate me so much? You can* never *control me like you control all others; I am an Ancient, don't forget it. My revenge will be sweet.'*
+Nixarza felt the ring compelling her to leave, but she just laughed, *'You couldn't Válgr and you know it. Isn't that why you hate me so much? You can* never *control me like you control all others; I am an Ancient, don't forget it. My revenge will be sweet.'*
 
-She walked out of his tent and smiled to herself. It would be easy
+He glared at her as she left his tent.
+
+Nixarza kept her smile planted on her face as she strode through the camp. She had disobeyed a direct order from the ring, there would be consequences for that. When the pain hit her, she didn't want to be anywhere near the army. With one last glance, Nixarza opened her wings and leapt into the air.
+
+She flew two miles before the first wave of pain hit. Nixarza screamed as her magic turn on her. Her wings failed her. There was no way to soften her fall as she plummeted to the ground.
+
+- - -
+
+Válgr smiled to himself and glanced at his hand. The ring burned, and he could feel the pain it was inflicting. *Yes,* he thought, *remind that witch who her master is.*
