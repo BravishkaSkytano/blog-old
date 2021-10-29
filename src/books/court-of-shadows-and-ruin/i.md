@@ -5,7 +5,7 @@ date: Last Modified
 ---
 The slave watched the town slowly burn. The remaining inhabitants screamed as their homes crumbled on top of them and their neighbors burned alive on the streets. Guilt tugged on her as the screams began to lessen, and the fire began to be sated.
 
-*'So many lives destroyed for nothing,”* She turned to the general beside her, '*is this truly what you wanted?'*
+*'So many lives destroyed for nothing,'* She turned to the general beside her, '*is this truly what you wanted?'*
 
 He chuckled, “A few lives for a greater cause. You should be very familiar with the way war works, Nixarza.”
 
