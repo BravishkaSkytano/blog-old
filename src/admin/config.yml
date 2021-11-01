@@ -84,7 +84,7 @@ collections:
       - {label: "Next", name: "next", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "court-of-shadows-and-ruin"
-    label: "CoSaF Chapters"
+    label: "CoSaR Chapters"
     folder: "src/books/court-of-shadows-and-ruin"
     create: true
     slug: "{{slug}}"
