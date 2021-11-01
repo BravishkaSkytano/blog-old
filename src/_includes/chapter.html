@@ -1,38 +1,28 @@
 {% extends "base.html" %} {% block content %}
-<article>
-  <!--Chapter Metadata-->
-  <h1>
-    <span class="italic">{{ book }}</span>
-    <br><br>
-    {{ title }}
-  </h1>
-  <div class="contrast-color">
-    <!--Date & Reading Time-->
-    <p>
-      Last Updated: <time datetime="{{ date | dateIso }}">{{ post.date | dateReadable }}</time> ~ {{ content | emojiReadTime }}
-    </p>
-  </div>
-  <hr>
-
-  {% if toc == true %}
-  <!--TOC-->
-  <section class="card-float-left">
-    <div class="contrast-color">
-      <div class="leading-relaxed pb-3">
-        {{ content | toc | safe }}
-      </div>
+<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+  <p class="mb-2 text-xs font-semibold tracking-wide text-gray-600 uppercase sm:text-center">
+    <time datetime="{{ date | dateIso }}">{{ post.date | dateReadable }}</time> ~ {{ content | emojiReadTime }}
+  </p>
+  <div class="mx-auto max-w-xl mb-5 md:mx-auto sm:text-center lg:max-w-2xl">
+    <div class="mb-4">
+      <h1 class="inline-block max-w-lg font-sans text-3xl font-extrabold leading-none tracking-tight text-black transition-colors duration-200 hover:text-deep-purple-accent-700 sm:text-4xl">
+        {{ title }}
+      </h1>
     </div>
-  </section>
-  {% endif %}
+  </div>
+</div>
 
-  <!--Post-->
-  {{ content | safe }}
+<div class="max-w-3xl mx-auto sm:px-6 sm:py-12 lg:max-w-4xl lg:py-16 lg:px-8 xl:max-w-6xl">
+  <div class="prose dark:prose-dark prose-sm lg:prose-lg xl:prose-xl px-4 mx-auto">
 
-  <hr>
+    {{ content | safe }}
 
-  {% include 'chapter-list.html' %}
-
-  {% readerBar "4px", "#047857", "#34D399" %}
-
-</article>
+    {% readerBar "4px", "#047857", "#34D399" %}
+    
+    <nav class="flex justify-center">
+      <a {% if prev %}href="{{ prev }}"{% endif %} class="btn group-btn-start rounded-tl-md">Previous</a>
+      <a {% if next %}href="{{ next }}"{% endif %} class="btn group-btn-end rounded-tr-md">Next</a>
+    </nav>
+  </div>
+</div>
 {% endblock %}

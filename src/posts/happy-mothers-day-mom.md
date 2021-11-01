@@ -1,9 +1,12 @@
 ---
 title: "Happy Mother's Day, Mom"
 date: 2020-05-05
-series: "Poetry"
 summary: "A poem to honor mothers on their special day"
-tags: ['holidays', 'Mothers Day']
+category: 'Poetry'
+tags:
+  - poetry
+  - holidays
+  - Mothers Day
 ---
 
 You know that feeling you get when you've became one year older?\

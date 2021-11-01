@@ -1,14 +1,15 @@
 ---
 title: Learning To Wait and Be Patient
 date: 2020-11-27
-series: 'Devotionals'
-tags:
-  - patience
-  - angels
-  - prayer
 summary:
   "Why is patience important? what does the Bible say about it? and a little bit about my experience with practicing patience.
   We don’t like long lines. We hate traffic. We just hate waiting for things. I remember there was one statistic that said most people would leave a website if it took over 5 seconds to load. Let’s face it, we’re spoiled rotten in this country."
+category: 'Devotional'
+tags:
+  - devotional
+  - patience
+  - angels
+  - prayer
 ---
 
 Patience is a character trait that most people struggle to improve, especially in this country where we’re all spoiled and used to getting things instantly. We all want fast devices that do what we want within seconds. We need access to Google to answer all of our questions immediately. We don’t like long lines. We hate traffic. We just hate waiting for things. I remember there was one statistic that said most people would leave a website if it took over 5 seconds to load. Let’s face it, we’re spoiled rotten in this country.

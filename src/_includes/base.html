@@ -6,20 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <title>
-      {% if title %}{{ title }} ~ {% if book %}{{ book }} ~ {% endif %}{{ site.title }}{% else %}{{ site.title }}{% endif %}
+      {% if title %}{{ title }} ~ {% endif %}{% if category %}{{ category }} ~ {% endif %}{{ site.title }}
     </title>
     <meta name="description" content="{{ summary }}" />
     <link rel="stylesheet" href="/assets/tailwind.css" />
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
-  <body class="bg-green-200 dark:bg-green-900 px-4 py-10 max-w-3xl mx-auto sm:px-6 sm:py-12 lg:max-w-4xl lg:py-16 lg:px-8 xl:max-w-6xl">
-    <div class="reader-bar-start">
+  <body class="bg-green-200 dark:bg-green-900 flex flex-col min-h-screen">
       {% include "nav.html" %}
-      <div class="prose dark:prose-dark prose-sm lg:prose-lg xl:prose-xl px-4 mx-auto">
-        {% block content %}{% endblock %}
-      </div>
-      {% include "footer.html" %}
+    <div class="reader-bar-start flex-grow">
+      {% block content %}{% endblock %}
     </div>
+    {% include "footer.html" %}
     
     <script>
       if (window.netlifyIdentity) {

@@ -1,30 +1,38 @@
 ---
 eleventyExcludeFromCollections: true
 layout: 'home.html'
-title: 'Tag Archive'
 pagination:
   data: collections
-  size: 100
-  filter: ['all', 'blog', 'books']
+  size: 1
+  alias: tag
+  filter: ['all', 'postsByYear', 'KaA', 'TMF', 'DD', 'PNPGFP', 'CoSaR',]
+permalink: /tags/{{ tag | slugify }}/
 ---
+<h2 class="card text-3xl mx-auto w-1/2 mb-10">Tagged “{{ tag }}”</h2>
 
-<div class="text-center">
-{% for tag in collections.tagsList | reverse %}
-  <a href="/tags/#{{ tag | slugify }}" class="btn rounded-lg">#{{ tag }}</a>
-{% endfor %}
+{% set taglist = collections[ tag ] %}
+<div class="mx-auto w-10/12 grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+{% for post in taglist | reverse %}
+  <div>
+    <div class="contrast-color mx-auto w-1/3 text-gray-800 dark:text-gray-300 p-1 px-2 text-xs font-bold text-center rounded-t">{{ post.data.series }}</div>
+    <div class="shadow-lg rounded-lg border-gray-800 contrast-color relative">
+      {% if post.data.image %}<img class="w-full rounded-t-lg" src="/assets/images/{{ post.data.image }}" alt="post img" />{% endif %}
+      <!--<div class="text-xs flex justify-center p-1 font-semibold text-gray-500 bg-gray-300">
+        <span class="mr-1 p-1 px-2 font-bold">105 views</span>
+        <span class="mr-1 p-1 px-2 font-bold border-l border-gray-400">105 Likes</span>
+        <span class="mr-1 p-1 px-2 font-bold border-l border-gray-400">105 Dislikes</span>
+      </div>-->
+      <div class="p-4 text-gray-800 dark:text-gray-300">
+        <a href="{{ post.url }}" class="font-bold text-center block hover:underline">{{ post.data.title }}</a>
+        <span class="p-1 pb-2 text-xs font-bold text-center block">{{ post.data.author.name }} ~ <time datetime="{{ date | dateIso }}">{{ post.date | dateReadable }}</time></span>
+        <hr>
+        <span class="text-sm block py-2 mb-2">{{ post.data.summary }}</span>
+        <hr>
+        <div class="text-center pt-2">{% for tag in post.data.tags %}
+          <a href="/tags/{{ tag | slugify }}/" class="hover:underline font-bold p-1">#{{ tag }}</a>
+        {% endfor %}</div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
 </div>
-
-{% for tag in collections.tagsList | reverse %}
-<h2 id="{{ tag | slugify }}">#{{ tag }}</h2>
-{% for item in collections[tag] %}
-<div class="text-center italic space-y-4">
-  <h3 class="italic font-semibold">
-    <a href="{{ item.url }}">{{ item.data.title }}</a>
-  </h3>
-  <time datetime="{{ page.date | dateIso }}">{{ page.date | dateReadable }}</time> 
-  {% if item.data.series %}~ <span class="uppercase">{{ item.data.series }}</span>{% endif %} 
-  ~ Written by {{ item.data.author.name }}
-  <p class="leading-text">{{ item.data.summary }}</p>
-</div>
-{% endfor %}
-{% endfor %}

@@ -1,54 +1,52 @@
 <!-- Review Stats -->
-<section class="card-float-left">
-  <div class="contrast-color">
-    <div class="leading-relaxed">
-      <p>Review Stats</p>
-      <img src="{{ review.image }}" alt="media image" class="cover">
-      <table class="table-fixed">
-        <tbody>
-          {% if review.movie == true %}
-          <tr>
-            <td class="w-1/4">{% heroicon "outline", "film" %}</td>
-            <td class="w-3/4">{{ review.title }}</td>
-          </tr>
-          <tr>
-            <td>{% heroicon "outline", "user-group" %}</td>
-            <td>
-              <span class="font-bold">Director:</span> {{ review.director }}<br>
-              <span class="font-bold">Producer:</span> {{ review.producer }}<br>
-              <span class="font-bold">Actors:</span> {{ review.actors }}
-            </td>
-          </tr>
-          {% else %}
-          <tr>
-            <td class="1/4">{% heroicon "outline", "book-open" %}</td>
-            <td class="3/4">{{ review.title }}</td>
-          </tr>
-          <tr>
-            <td>{% heroicon "outline", "user" %}</td>
-            <td>{{ review.author }}</td>
-          </tr>
-          {% endif %}
-          <tr>
-            <td>{% heroicon "outline", "calendar" %}</td>
-            <td>Released on {{ review.released }}</td>
-          </tr>
-          {% if review.series %}
-          <tr>
-            <td>{% heroicon "outline", "collection" %}</td>
-            <td>{{ review.series }}</td>
-          </tr>
-          {% endif %}
-          <tr>
-            <td>{% heroicon "outline", "clock" %}</td>
-            <td>{{ review.start }} - {% if review.end %}{{ review.end }}{% else %}present{% endif %}</td>
-          </tr>
-          <tr>
-            <td>{% heroicon "outline", "star" %}</td>
-            <td>{{ review.rating }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<section class="card card-float-left">
+  <div class="leading-relaxed">
+    <p>Review Stats</p>
+    <img src="{{ review.image }}" alt="media image" class="cover">
+    <table class="table-fixed">
+      <tbody>
+        {% if review.movie == true %}
+        <tr>
+          <td class="w-1/4">{% heroicon "outline", "film" %}</td>
+          <td class="w-3/4">{{ review.title }}</td>
+        </tr>
+        <tr>
+          <td>{% heroicon "outline", "user-group" %}</td>
+          <td>
+            <span class="font-bold">Director:</span> {{ review.director }}<br>
+            <span class="font-bold">Producer:</span> {{ review.producer }}<br>
+            <span class="font-bold">Actors:</span> {{ review.actors }}
+          </td>
+        </tr>
+        {% else %}
+        <tr>
+          <td class="1/4">{% heroicon "outline", "book-open" %}</td>
+          <td class="3/4">{{ review.title }}</td>
+        </tr>
+        <tr>
+          <td>{% heroicon "outline", "user" %}</td>
+          <td>{{ review.author }}</td>
+        </tr>
+        {% endif %}
+        <tr>
+          <td>{% heroicon "outline", "calendar" %}</td>
+          <td>Released on {{ review.released }}</td>
+        </tr>
+        {% if review.series %}
+        <tr>
+          <td>{% heroicon "outline", "collection" %}</td>
+          <td>{{ review.series }}</td>
+        </tr>
+        {% endif %}
+        <tr>
+          <td>{% heroicon "outline", "clock" %}</td>
+          <td>{{ review.start }} - {% if review.end %}{{ review.end }}{% else %}present{% endif %}</td>
+        </tr>
+        <tr>
+          <td>{% heroicon "outline", "star" %}</td>
+          <td>{{ review.rating }}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>

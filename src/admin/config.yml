@@ -17,12 +17,8 @@ collections:
       - {label: "Date", name: "date", widget: "date", default: "Created", required: false}
       - {label: "TOC", name: "toc", widget: "boolean", required: false}
       - {label: "Summary", name: "summary", widget: "string"}
+      - {label: "Category", name: "category", widget: "select", required: false, options: ["Devotional", "Poetry", "Tutorial", "Study Strategies", "Review"]}
       - {label: "Tags", name: "tags", widget: "list", allow_add: true}
-      - label: "Series"
-        name: "series"
-        widget: "select"
-        required: false
-        options: ["Devotionals", "Poetry", "Tutorials", "Study Strategies", "Reviews"]
       - label: "Review Stats"
         name: "review"
         widget: "list"
@@ -46,8 +42,10 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Book", name: "book", widget: "hidden", default: "Kidnapped and Afraid"}
+      - {label: "Category", name: "category", widget: "hidden", default: "Kidnapped and Afraid"}
       - {label: "Date", name: "date", widget: "date", default: "Last Modified", required: false}
+      - {label: "Prev", name: "prev", widget: "string", required: false}
+      - {label: "Next", name: "next", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "test-my-fire"
     label: "TMF Chapters"
@@ -56,8 +54,10 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Book", name: "book", widget: "hidden", default: "Test My Fire"}
+      - {label: "Category", name: "category", widget: "hidden", default: "Test My Fire"}
       - {label: "Date", name: "date", widget: "date", default: "Last Modified", required: false}
+      - {label: "Prev", name: "prev", widget: "string", required: false}
+      - {label: "Next", name: "next", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "dear-diary"
     label: "DD Chapters"
@@ -66,8 +66,10 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Book", name: "book", widget: "hidden", default: "Dear Diary"}
+      - {label: "Category", name: "category", widget: "hidden", default: "Dear Diary"}
       - {label: "Date", name: "date", widget: "date", default: "Last Modified", required: false}
+      - {label: "Prev", name: "prev", widget: "string", required: false}
+      - {label: "Next", name: "next", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "past-nightmares-present-ghosts-future-fears"
     label: "PNPGFF Chapters"
@@ -76,8 +78,10 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Book", name: "book", widget: "hidden", default: "Past Nightmares. Present Ghosts. Future Peace"}
+      - {label: "Category", name: "category", widget: "hidden", default: "Past Nightmares. Present Ghosts. Future Peace"}
       - {label: "Date", name: "date", widget: "date", default: "Last Modified", required: false}
+      - {label: "Prev", name: "prev", widget: "string", required: false}
+      - {label: "Next", name: "next", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "court-of-shadows-and-ruin"
     label: "CoSaF Chapters"
@@ -86,6 +90,8 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Book", name: "book", widget: "hidden", default: "Court of Shadows and Ruin"}
+      - {label: "Category", name: "category", widget: "hidden", default: "Court of Shadows and Ruin"}
       - {label: "Date", name: "date", widget: "date", default: "Last Modified", required: false}
+      - {label: "Prev", name: "prev", widget: "string", required: false}
+      - {label: "Next", name: "next", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}

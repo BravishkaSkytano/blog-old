@@ -1,38 +1,14 @@
-<div class="contrast-color">
-  <p class="font-bold text-lg">Chapters</p>
-  <div class="md:grid md:grid-cols-3 md:gap-4 2xl:grid-cols-4">
-  {% for item in collections.books %}
-
-    {% if 'kidnapped-and-afraid' in page.url %}{% if item.data.book == 'Kidnapped and Afraid' %}
-    <div>
-      <a href="{{ item.url }}">{{ item.data.title }}</a>
+<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+  <div class="grid max-w-sm gap-5 mb-8 lg:grid-cols-3 sm:mx-auto lg:max-w-full">
+    {% for item in pagination.items %}
+    <div class="px-10 py-20 text-center lg:px-5 lg:py-10 xl:py-20">
+      <p class="mb-2 text-xs font-semibold tracking-wide text-gray-600 uppercase">
+        <time datetime="{{ date | dateIso }}">{{ item.date | dateReadable }}</time>
+      </p>
+      <a href="{{ item.url }}" class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400">
+        {{ item.data.title }}
+      </a>
     </div>
-    {% endif %}{% endif %}
-
-    {% if 'test-my-fire' in page.url %}{% if item.data.book == 'Test My Fire' %}
-    <div>
-      <a href="{{ item.url }}">{{ item.data.title }}</a>
-    </div>
-    {% endif %}{% endif %}
-
-    {% if 'dear-diary' in page.url %}{% if item.data.book == 'Dear Diary' %}
-    <div>
-      <a href="{{ item.url }}">{{ item.data.title }}</a>
-    </div>
-    {% endif %}{% endif %}
-
-    {% if 'past-nightmares-present-ghosts-future-peace' in page.url %}{% if item.data.book == 'Past Nightmares. Present Ghosts. Future Peace.' %}
-    <div>
-      <a href="{{ item.url }}">{{ item.data.title }}</a>
-    </div>
-    {% endif %}{% endif %}
-
-    {% if 'court-of-shadows-and-ruin' in page.url %}{% if item.data.book == 'Court of Shadows and Ruin' %}
-    <div>
-      <a href="{{ item.url }}">{{ item.data.title }}</a>
-    </div>
-    {% endif %}{% endif %}
-
-  {% endfor %}
+    {% endfor %}
   </div>
 </div>

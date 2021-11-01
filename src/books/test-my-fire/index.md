@@ -2,9 +2,12 @@
 eleventyExcludeFromCollections: true
 layout: 'book.html'
 title: 'Test My Fire'
-book: 'Test My Fire'
+category: 'Test My Fire'
 image: 'TMF.jpg'
 start: 2018
+pagination:
+  data: collections.TMF
+  size: 10
 ---
 
 (Her)

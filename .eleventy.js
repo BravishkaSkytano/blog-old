@@ -65,7 +65,7 @@ module.exports = config => {
   config.addFilter("slugify", slugify);
 
   config.addCollection('blog', collection => {
-    return [...collection.getFilteredByGlob('./src/posts/**/*.md')].reverse();
+    return [...collection.getFilteredByGlob('./src/posts/*.md')].reverse();
   });
 
   config.addCollection("postsByYear", (collection) => {
@@ -75,20 +75,25 @@ module.exports = config => {
       .reverse()
       .value();
   });
-  
-  config.addCollection('tagsList', (collectionApi) => {
-    const tagsSet = new Set()
-    collectionApi.getAll().forEach((item) => {
-      if (!item.data.tags) return
-      item.data.tags
-        .filter((tag) => !['all', 'blog'].includes(tag))
-        .forEach((tag) => tagsSet.add(tag))
-    })
-    return [...tagsSet].sort((a, b) => b.localeCompare(a))
-  })
 
-  config.addCollection('books', collection => {
-    return [...collection.getFilteredByGlob('./src/books/**/*.md')];
+  config.addCollection('KaA', collection => {
+    return [...collection.getFilteredByGlob('./src/books/kidnapped-and-afraid/*.md')];
+  });
+
+  config.addCollection('TMF', collection => {
+    return [...collection.getFilteredByGlob('./src/books/test-my-fire/*.md')];
+  });
+
+  config.addCollection('DD', collection => {
+    return [...collection.getFilteredByGlob('./src/books/dear-diary/*.md')];
+  });
+
+  config.addCollection('PNPGFP', collection => {
+    return [...collection.getFilteredByGlob('./src/books/past-nightmares-present-ghosts-future-peace/*.md')];
+  });
+
+  config.addCollection('CoSaR', collection => {
+    return [...collection.getFilteredByGlob('./src/books/court-of-shadows-and-ruin/*.md')];
   });
 
   return {

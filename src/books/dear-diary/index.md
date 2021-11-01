@@ -2,8 +2,12 @@
 eleventyExcludeFromCollections: true
 layout: 'book.html'
 title: 'Dear Diary...'
-book: 'Dear Diary...'
+category: 'Dear Diary...'
 start: 2019
+image: 
+pagination:
+  data: collections.DD
+  size: 10
 ---
 All Sasha wanted to do was finish school, get a job she loved, get married, and start a family. Unfortunately, getting past school seems impossible. Between staying on track with her studies and keeping up with her other activities, graduation couldn’t be farther away. But then the Stone’s show up.
 

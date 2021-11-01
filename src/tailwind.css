@@ -1,13 +1,7 @@
 @tailwind base;
 
 .contrast-color {
-  @apply bg-green-400 dark:bg-green-700 p-4 font-semibold rounded-md shadow-md hover:shadow-lg transition;
-}
-h1 {
-  @apply text-center;
-}
-h2, h3 {
-  @apply contrast-color p-2;
+  @apply bg-green-400 dark:bg-green-700;
 }
 .cover {
   @apply w-full rounded-md md:w-4/5 md:mx-auto;
@@ -16,16 +10,19 @@ h2, h3 {
 @tailwind components;
 
 .btn {
-  @apply bg-green-400 dark:bg-green-700 hover:bg-green-500 dark:hover:bg-green-800 font-bold py-2 px-2 md:px-4 text-gray-800 dark:text-gray-300;
+  @apply contrast-color hover:bg-green-500 dark:hover:bg-green-800 font-bold py-2 px-2 md:px-4 text-gray-800 dark:text-gray-300;
 }
 .group-btn-start {
-  @apply rounded-l-md;
+  @apply rounded-bl-md;
 }
 .group-btn-end {
-  @apply rounded-r-md;
+  @apply rounded-br-md;
 }
 .icon {
   @apply h-6 w-6 md:h-8 md:w-8;
+}
+.card {
+  @apply contrast-color p-4 font-semibold rounded-md shadow-md hover:shadow-lg transition;
 }
 .card-float-left {
   @apply w-full pb-3 md:w-2/5 md:pr-5 md:float-left;

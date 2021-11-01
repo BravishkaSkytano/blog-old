@@ -1,49 +1,54 @@
 {% extends "base.html" %} {% block content %}
-<article>
-  <!--Post Metadata-->
-  <h1>{{ title }}</h1>
-  <div class="contrast-color card">
-    <!--Date & Reading Time-->
-    <p>
-      <time datetime="{{ date | dateIso }}">{{ post.date | dateReadable }}</time> ~ {{ content | emojiReadTime }}
-    </p>
-    <!--Series & Tags-->
-    <p>
-      {% if series %}<a href="/series/{{ series | slugify }}/" class="italic">{{ series }}</a> ~ {% endif %}
-      {% for tag in tags %}<a href="/tags/#{{ tag | slugify }}/">#{{ tag }}</a> {% endfor %}
+<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+  <p class="mb-2 text-xs font-semibold tracking-wide text-gray-600 uppercase sm:text-center">
+    <time datetime="{{ date | dateIso }}">{{ post.date | dateReadable }}</time> ~ {{ content | emojiReadTime }}
+  </p>
+  <div class="mx-auto max-w-xl mb-5 md:mx-auto sm:text-center lg:max-w-2xl">
+    <div class="mb-4">
+      <h1 class="inline-block max-w-lg font-sans text-3xl font-extrabold leading-none tracking-tight text-black transition-colors duration-200 hover:text-deep-purple-accent-700 sm:text-4xl">
+        {{ title }}
+      </h1>
+    </div>
+    <p class="text-base text-gray-700 md:text-lg">
+      {{ summary }}
     </p>
   </div>
-  <hr>
+  <div class="mb-10 sm:text-center">
+    <a href="/" aria-label="Author" class="inline-block mb-1">
+      <img alt="avatar" src="{{ author.avatar }}" class="object-cover w-16 h-16 rounded-full shadow-sm" />
+    </a>
+    <div>
+      <a href="/" aria-label="Author" class="font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700">{{ author.name }}</a>
+      <p class="text-sm font-medium leading-4 text-gray-600">Author</p>
+    </div>
+  </div>
+</div>
 
-  <!--Summary-->
-  <p class="italic font-medium">
-    {{ summary }}
-  </p>
-  <hr>
+<div class="max-w-3xl mx-auto sm:px-6 sm:py-12 lg:max-w-4xl lg:py-16 lg:px-8 xl:max-w-6xl">
+  <div class="prose dark:prose-dark prose-sm lg:prose-lg xl:prose-xl px-4 mx-auto">
 
-  {% if review %}
-    {% include "review-stats.html" %}
-  {% endif %}
+    {% if review %}
+      {% include "review-stats.html" %}
+    {% endif %}
 
-  {% if toc == true %}
-  <!--TOC-->
-  <section class="card-float-left">
-    <div class="contrast-color">
+    {% if toc == true %}
+    <!--TOC-->
+    <section class="card card-float-left">
       <div class="leading-relaxed font-semibold pb-3">
         {{ content | toc | safe }}
       </div>
-    </div>
-  </section>
-  {% endif %}
+    </section>
+    {% endif %}
 
-  <!--Post-->
-  {{ content | safe }}
+    <!--Post-->
+    {{ content | safe }}
 
-  <hr>
+    <hr>
 
-  {% readerBar "4px", "#047857", "#34D399" %}
+    {% readerBar "4px", "#047857", "#34D399" %}
 
-  {% include "author.html" %}
-  
-</article>
+    {% include "author.html" %}
+    
+  </div>
+</div>
 {% endblock %}

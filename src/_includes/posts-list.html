@@ -1,12 +1,36 @@
-<div class="text-center italic">
-  <h2 class="italic font-semibold">
-    <a href="{{ item.url }}">{{ item.data.title }}</a>
-  </h2>
-  <p>
-    <time datetime="{{ page.date | dateIso }}">{{ page.date | dateReadable }}</time> 
-    {% if item.data.series %}~ <span class="uppercase">{{ item.data.series }}</span>{% endif %} 
-    ~ Written by {{ item.data.author.name }}
-  </p>
-  <p class="leading-text">{{ item.data.summary }}</p>
+<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+  <div class="mb-10 border-t border-b divide-y">
+    {% for item in pagination.items %}
+    <div class="grid py-8 sm:grid-cols-4">
+      <div class="mb-4 sm:mb-0">
+        <div class="space-y-1 text-xs font-semibold tracking-wide uppercase">
+          <a href="/" class="transition-colors duration-200 text-purple-400 hover:text-purple-800" aria-label="Category">{{ item.data.category }}</a>
+          <p class="text-gray-600">
+            <time datetime="{{ date | dateIso }}">{{ item.date | dateReadable }}</time>
+          </p>
+        </div>
+      </div>
+      <div class="sm:col-span-3 lg:col-span-2">
+        <div class="mb-3">
+          <a href="{{ item.url }}" aria-label="Article" class="inline-block text-black transition-colors duration-200 hover:text-deep-purple-accent-700">
+            <p class="text-3xl font-extrabold leading-none sm:text-4xl xl:text-4xl">
+              {{ item.data.title }}
+            </p>
+          </a>
+        </div>
+        <p class="text-gray-700">
+          {{ item.data.summary }}
+        </p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="text-center">
+    <a href="/posts/" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
+      See all articles
+      <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
+        <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
+      </svg>
+    </a>
+  </div>
 </div>
-<hr>
