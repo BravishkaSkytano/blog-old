@@ -2,8 +2,9 @@
 title: III
 book: Court of Shadows and Ruin
 date: Last Modified
+prev: ../ii
 ---
-The general studied the army approaching Carlhaven's borders. His own army waited down below for the first defensive wave. The sun was slowly disappearing from The Horizon oh, and it was predicted that the advancing forces would reach the outer border was when the Sun finally disappeared. The captain scowled, this battle wouldn't last far into the night, a complete waste of time; but if the lessors wished to test the might of the fae, Rothilion Ennan will be happy to oblige.
+The general studied the army approaching Carlhaven's borders. His own army waited down below for the first defensive wave. The sun was slowly disappearing from the horizon, and it was predicted that the advancing forces would reach the outer border when the sun finally disappeared. The captain scowled, this battle wouldn't last far into the night, a complete waste of time; but if the lessors wished to test the might of the fae, Rothilion Ennan will be happy to oblige.
 
 "General?"
 
@@ -11,7 +12,7 @@ Rothilion turned to the soldier, "What?"
 
 The soldier handed him a letter, "The Circle has sent word."
 
-Rothilion scanned through the letter, "What?! When was this delivered?!"
+Rothilion scanned through the letter, "When was this delivered?"
 
 "Just now, sir, I rushed it to you immediately."
 
@@ -19,7 +20,7 @@ Rothilion scanned through the letter, "What?! When was this delivered?!"
 
 "Sir?"
 
-"Those lessors have an ancient weapon, one so old that Vulas Farwynn himself is coming to assist us."
+"Those lessors have an ancient weapon, one so old that Vulas Farwynn's son is coming to assist us."
 
 "This angers you, sir?"
 
@@ -61,7 +62,7 @@ Nixarza broke his grip, *'Do not forget, I am an Ancient.'*
 
 "And yet," he smirked, "you are *my* slave."
 
-*'Not for long, troll. Mark my words, you won't live to see another battle.'*
+*'Not for long, troll. Mark my words, you won't live to see many more battles.'*
 
 Válgr laughed, "Who's going to kill me?"
 
@@ -91,4 +92,10 @@ Faelyn turned to his second, "An Ancient fights with the enemy, a being said to 
 
 "What else do you know?"
 
-"
+"It is a matter for the Circle and the Circle only, even I know very little. But, I have overheard that she could be part fae, perhaps High-born, and communicates telepathically. Her appearance also resembles a bird of some sort."
+
+Folluin nodded, "If that is all we know, We are in for a true battle."
+
+A cry went up among the ranks, Carlhaven's walls had been breached, and the ley lines were to be activated immediately."
+
+"Yes," Faelyn agreed, "a true battle indeed."
