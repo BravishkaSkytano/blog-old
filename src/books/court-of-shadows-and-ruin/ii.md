@@ -41,9 +41,9 @@ Nixarza stiffened, *'I am not taking down the walls.'*
 
 He growled, "You will do what I tell you too, slave."
 
-Quick as a snake, she slashed out at his face, *'I am not your slave!'*
+*'I am not your slave!'*
 
-Válgr caught Nixarza's wrist and held up his left hand, "My ring says otherwise."
+Válgr held up his left hand, "My ring says otherwise."
 
 The silver ring seemed to laugh at her as she glared at it. Forged millennia ago, that ring was older than this world, and it seemed like Fate was challenging her by allowing a being such as Válgr to possess it.
 
@@ -51,9 +51,9 @@ The silver ring seemed to laugh at her as she glared at it. Forged millennia ago
 
 Válgr chuckled, "Wouldn't you rather do it yourself?"
 
-Nixarza broke his grip on her wrist and glared at him before smiling wickedly. *'The fae can be quite cruel when they choose to, their methods of dealing out punishment are quite... inventive. They could torture you for hours on end. And just when you think Death is approaching, they would just heal you and start over.'*
+Nixarza glared at him before smiling wickedly. *'The fae can be quite cruel when they choose to, their methods of dealing out punishment are quite... inventive. They could torture you for hours on end. And just when you think Death is approaching, they would just heal you and start over.'*
 
-He paled slightly and growled, "I do not fear those elves! The jotunn are stronger than some small beings, we have lived longer and know much more."
+He paled slightly and growled, "I do not fear those elves! The jotunns are stronger than some small beings, we have lived longer and know much more."
 
 *'Do you? Everyone fears them in one way or another. Who wouldn't fear the Realm Masters who control all? Who* know *all. Age does not trump knowledge nor experience.'*
 
