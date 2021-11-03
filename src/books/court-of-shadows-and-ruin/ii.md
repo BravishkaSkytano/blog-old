@@ -2,6 +2,8 @@
 title: II
 book: Court of Shadows and Ruin
 date: Last Modified
+prev: ../i
+next: ../ii
 ---
 It was two days of marching and pillaging before the army was near their final target—Carlhaven, a well-populated city full of many species and cultures. Attacking this city would make a bold statement and bring this world trembling to its knees.
 
