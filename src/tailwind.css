@@ -6,6 +6,9 @@
 .cover {
   @apply w-full rounded-md md:w-4/5 md:mx-auto;
 }
+.text-transition {
+  @apply transition-colors duration-200 text-gray-600 hover:text-gray-800;
+}
 
 @tailwind components;
 
