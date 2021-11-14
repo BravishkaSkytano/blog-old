@@ -1,12 +1,12 @@
 ---
 layout: 'book.html'
 title: 'Past Nightmares. Present Ghosts. Future Peace.'
-category: 'Past Nightmares. Present Ghosts. Future Peace.'
 image: 
-start: 2020
+date: 2020-01-12
+start: January 2020
 pagination:
   data: collections.PNPGFP
-  size: 10
+  size: 12
 ---
 Homicide Detective Jared Clemmings has been working with the Boise Police Department for six years at the top of his class. He grew up on the streets and has connections in nearly every corner. There's no other job he'd rather have and no other place he'd rather live.
 

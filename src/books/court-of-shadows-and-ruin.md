@@ -1,11 +1,10 @@
 ---
-eleventyExcludeFromCollections: true
 layout: 'book.html'
 title: 'Court of Shadows and Ruin'
-category: 'Court of Shadows and Ruin'
 image: 
-start: 2020
+date: 2021-01-16
+start: January 2021
 pagination:
   data: collections.CoSaR
-  size: 10
+  size: 12
 ---

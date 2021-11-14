@@ -1,14 +1,14 @@
 ---
 layout: 'home.html'
 ---
-<div class="max-w-3xl mx-auto sm:px-6 sm:py-12 lg:max-w-4xl lg:py-16 lg:px-8 xl:max-w-6xl">
-  <div class="prose dark:prose-dark prose-sm lg:prose-lg xl:prose-xl px-4 mx-auto">
+<div class="contrast-colors rounded max-w-2xl mx-auto sm:px-6 sm:py-12 lg:max-w-3xl lg:py-16 lg:px-8 xl:max-w-4xl">
+  <div class="prose dark:prose-dark prose-sm lg:prose-lg xl:prose-xl px-4 mx-auto contrast-color">
     <div class="flex justify-center">
       <img src="/assets/images/{{image}}">
     </div>
 
     <p class="text-center font-semibold">
-      {{ start }} &mdash; {% if end %}{{ end }}{% else %}still going...{% endif %}
+      {{ start }} &mdash; {{ end if end else 'not finished yet' }}
     </p>
 
     {{ content | safe }}

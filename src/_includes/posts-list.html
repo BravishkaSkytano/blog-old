@@ -3,14 +3,14 @@
     {% for item in pagination.items %}
     <div class="grid py-8 sm:grid-cols-4">
       <div class="mb-4 sm:mb-0">
-        <div class="space-y-1 text-xs font-semibold tracking-wide uppercase">
+        <div class="contrast-colors p-2 rounded space-y-1 text-xs font-semibold tracking-wide uppercase">
           <a href="/tags/{{ item.data.category | slugify }}" class="text-transition" aria-label="Category">{{ item.data.category }}</a>
-          <p class="text-gray-600">
+          <p>
             <time datetime="{{ date | dateIso }}">{{ item.date | dateReadable }}</time>
           </p>
         </div>
       </div>
-      <div class="sm:col-span-3 lg:col-span-2">
+      <div class="contrast-colors p-2 rounded sm:col-span-3 lg:col-span-2">
         <div class="mb-3">
           <a href="{{ item.url }}" aria-label="Article" class="inline-block text-transition">
             <p class="text-3xl font-extrabold leading-none sm:text-4xl xl:text-4xl">
@@ -18,7 +18,7 @@
             </p>
           </a>
         </div>
-        <p class="text-gray-700">
+        <p>
           {{ item.data.summary }}
         </p>
       </div>
@@ -26,8 +26,8 @@
     {% endfor %}
   </div>
   <div class="text-center">
-    <a href="/posts/" class="inline-flex items-center font-semibold text-transition">
-      See all articles
+    <a href="/posts/" class="inline-flex items-center btn rounded">
+      <span class="text-transition">See all articles</span>
       <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
         <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
       </svg>

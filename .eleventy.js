@@ -1,3 +1,4 @@
+const htmlmin = require('html-minifier')
 const slugify = require('@sindresorhus/slugify');
 const moment = require('moment');
 const readerBar = require('eleventy-plugin-reader-bar');
@@ -35,7 +36,6 @@ module.exports = config => {
   );
 
   config.addPassthroughCopy("src/assets");
-  config.addPassthroughCopy("src/admin");
   
   config.addPlugin(readerBar);
 
@@ -64,8 +64,10 @@ module.exports = config => {
 
   config.addFilter("slugify", slugify);
 
-  config.addCollection('blog', collection => {
-    return [...collection.getFilteredByGlob('./src/posts/*.md')].reverse();
+  config.addCollection("blog", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/posts/*.md").sort(function(a, b) {
+      return b.date - a.date;
+    });
   });
 
   config.addCollection("postsByYear", (collection) => {
@@ -76,25 +78,59 @@ module.exports = config => {
       .value();
   });
 
-  config.addCollection('KaA', collection => {
-    return [...collection.getFilteredByGlob('./src/books/kidnapped-and-afraid/*.md')];
+  config.addCollection('books', function(collectionApi) {
+    return collectionApi.getFilteredByGlob('./src/books/*.md').sort(function(a, b) {
+      return b.date - a.date;
+    });
   });
 
-  config.addCollection('TMF', collection => {
-    return [...collection.getFilteredByGlob('./src/books/test-my-fire/*.md')];
+  config.addCollection('KaA', function(collectionApi) {
+    return collectionApi.getFilteredByGlob('./src/books/kidnapped-and-afraid/*.md').sort(function(a, b) {
+      return a.inputPath.localeCompare(b.inputPath);
+    });
   });
 
-  config.addCollection('DD', collection => {
-    return [...collection.getFilteredByGlob('./src/books/dear-diary/*.md')];
+  config.addCollection('TMF', function(collectionApi) {
+    return collectionApi.getFilteredByGlob('./src/books/test-my-fire/*.md').sort(function(a, b) {
+      return a.inputPath.localeCompare(b.inputPath);
+    })
   });
 
-  config.addCollection('PNPGFP', collection => {
-    return [...collection.getFilteredByGlob('./src/books/past-nightmares-present-ghosts-future-peace/*.md')];
+  config.addCollection('DD', function(collectionApi) {
+    return collectionApi.getFilteredByGlob('./src/books/dear-diary/*.md').sort(function(a, b) {
+      return a.inputPath.localeCompare(b.inputPath);
+    })
   });
 
-  config.addCollection('CoSaR', collection => {
-    return [...collection.getFilteredByGlob('./src/books/court-of-shadows-and-ruin/*.md')];
+  config.addCollection('PNPGFP', function(collectionApi) {
+    return collectionApi.getFilteredByGlob('./src/books/past-nightmares-present-ghosts-future-peace/*.md').sort(function(a, b) {
+      return a.inputPath.localeCompare(b.inputPath);
+    })
   });
+
+  config.addCollection('CoSaR', function(collectionApi) {
+    return collectionApi.getFilteredByGlob('./src/books/court-of-shadows-and-ruin/*.md').sort((a, b) => {
+      return a.inputPath.localeCompare(b.inputPath);
+    })
+  });
+
+  config.addTransform('htmlmin', function (content, outputPath) {
+    if (
+      process.env.ELEVENTY_PRODUCTION &&
+      outputPath &&
+      outputPath.endsWith('.html')
+    ) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true,
+        preserveLineBreaks: true,
+      });
+      return minified
+    }
+
+    return content
+  })
 
   return {
     markdownTemplateEngine: 'njk',

@@ -1,4 +1,4 @@
-contrast-color<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,10 +10,9 @@ contrast-color<!DOCTYPE html>
     </title>
     <meta name="description" content="{{ summary }}" />
     <link rel="stylesheet" href="/assets/tailwind.css" />
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
-  <body class="contrast-color flex flex-col min-h-screen">
-      {% include "nav.html" %}
+  <body class="main-colors flex flex-col min-h-screen">
+    {% include "nav.html" %}
     <div class="reader-bar-start flex-grow">
       {% block content %}{% endblock %}
     </div>

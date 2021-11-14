@@ -1,13 +1,12 @@
 ---
-eleventyExcludeFromCollections: true
 layout: 'book.html'
 title: 'Test My Fire'
-category: 'Test My Fire'
 image: 'TMF.jpg'
-start: 2018
+date: 2018-11-26
+start: 'November 2018'
 pagination:
   data: collections.TMF
-  size: 10
+  size: 12
 ---
 
 (Her)
