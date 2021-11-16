@@ -24,10 +24,10 @@
 
 <nav class="m-4 flex justify-center">
   <div class="btn group-btn-start rounded-tl-md">
-    <a {% if prev %}href="{{ prev }}"{% endif %} class="text-transition">Previous</a>
+    <a href="{{ prev }}" class="text-transition">Previous</a>
   </div>
   <div class="btn group-btn-end rounded-tr-md">
-    <a {% if next %}href="{{ next }}"{% endif %} class="text-transition">Next</a>
+    <a {% if next %}href="{{ next }}" class="text-transition"{% else %}class="opacity-25"{% endif %}>Next</a>
   </div>
 </nav>
 

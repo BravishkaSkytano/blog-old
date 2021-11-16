@@ -9,8 +9,11 @@
         {{ title }}
       </h1>
     </div>
-    <p class="text-base md:text-lg">
-      {{ summary }}
+    {% if excerpt %}<p>
+      {{ excerpt }}
+    </p>{% endif %}
+    <p class="text-base md:text-lg semibold">
+      {% for tag in tags %}<a href="/tags/{{ tag | slugify }}" class="text-transition" aria-label="Tag">#{{ tag }} </a>{% endfor %}
     </p>
   </div>
   <div class="mb-10 sm:text-center">
@@ -44,7 +47,7 @@
     {{ content | safe }}
 
     {% readerBar "4px", "#047857", "#34D399" %}
-    
+
   </div>
 </div>
 {% endblock %}

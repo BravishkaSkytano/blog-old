@@ -4,8 +4,12 @@ const moment = require('moment');
 const readerBar = require('eleventy-plugin-reader-bar');
 const emojiReadTime = require("@11tyrocks/eleventy-plugin-emoji-readtime");
 const embedEverything = require("eleventy-plugin-embed-everything");
+const excerpt = require("./src/excerpt");
 const heroIcons = require('eleventy-plugin-heroicons');
 const _ = require("lodash");
+const getSimilarTags = function(tagsA, tagsB) {
+  return tagsA.filter(Set.prototype.has, new Set(tagsB)).length;
+}
 
 moment.locale('en')
 
@@ -46,13 +50,15 @@ module.exports = config => {
   });
 
   config.addPlugin(embedEverything, {
-    use: ['spotify', 'vimeo', 'youtube', 'soundcloud']
+    use: ['spotify', 'soundcloud', 'twitch']
   });
 
   config.addPlugin(heroIcons, {
     className: 'icon',
     errorOnMissing: true
   });
+
+  config.addShortcode("excerpt", excerpt);
 
   config.addFilter('dateIso', date => {
     return moment(date).toISOString();
@@ -63,6 +69,28 @@ module.exports = config => {
   });
 
   config.addFilter("slugify", slugify);
+
+  config.addFilter("excerpt", (post) => {
+    const content = post.replace(/(<([^>]+)>)/gi, "");
+    return content.substr(0, content.lastIndexOf(" ", 350)) + "...";
+  });
+
+  config.addFilter("taglist", function(collection) {
+    const tags = [];
+    collection.forEach(post => {
+        tags.push(...post.data.tags);
+    });
+    const sorted = [...new Set(tags)].sort((a, b) => a.localeCompare(b));
+    return sorted;
+  });
+
+  config.addLiquidFilter("similarPosts", function(collection, path, tags){
+    return collection.filter((post) => {
+      return getSimilarTags(post.data.tags, tags) >= 1 && post.data.page.inputPath !== path;
+    }).sort((a,b) => {
+      return getSimilarTags(b.data.tags, tags) - getSimilarTags(a.data.tags, tags);
+    });
+  });
 
   config.addCollection("blog", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/posts/*.md").sort(function(a, b) {

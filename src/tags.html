@@ -1,0 +1,44 @@
+---
+layout: home.html
+title: Tag Archive
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter: ['all', 'blog', 'books', 'CoSaR', 'DD', 'KaA', 'PNPGFP', 'postsByYear', 'TMF']
+permalink: /tags/{{ tag | slugify }}/
+---
+<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+  <div class="text-center">
+    <div class="inline-flex items-center contrast-colors p-4 mb-10 rounded">
+      <span class="text-transition text-3xl font-bold">Tagged “{{ tag }}”</span>
+    </div>
+  </div>
+  {% set taglist = collections[ tag ] %}
+  <div class="mb-10 border-t border-b divide-y">
+    {% for post in taglist | reverse %}
+    <div class="grid py-8 sm:grid-cols-4">
+      <div class="contrast-colors p-2 rounded sm:col-start-2 sm:col-span-2 text-center">
+        <div class="mb-3">
+          <a href="{{ post.url }}" aria-label="Article" class="inline-block text-transition">
+            <p class="text-3xl font-extrabold leading-none sm:text-4xl xl:text-4xl">
+              {{ post.data.title }}
+            </p>
+          </a>
+        </div>
+        {% if post.data.summary %}<p>
+          {{ post.data.summary }}
+        </p>{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="text-center">
+    <a href="/tags/" class="inline-flex items-center btn rounded">
+      <span class="text-transition">See all tags</span>
+      <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
+        <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
+      </svg>
+    </a>
+  </div>
+</div>
