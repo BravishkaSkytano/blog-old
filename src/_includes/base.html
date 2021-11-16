@@ -8,8 +8,18 @@
     <title>
       {% if title %}{{ title }} ~ {% endif %}{% if category %}{{ category }} ~ {% endif %}{{ site.title }}
     </title>
-    <meta name="description" content="{{ summary }}" />
+    <meta name="description" content="{{ excerpt }}" />
     <link rel="stylesheet" href="/assets/tailwind.css" />
+    <script defer type="text/javascript" src="//cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
+<script type="text/javascript">
+  window.addEventListener('DOMContentLoaded', () => {
+    var bLazy = new Blazy({
+      selector: ".lp img",
+      offset: 300,
+      success: (element) => {element.style.backgroundColor = "white";}
+    });
+  })
+</script>
   </head>
   <body class="main-colors flex flex-col min-h-screen">
     {% include "nav.html" %}

@@ -24,6 +24,34 @@
   .icon {
     @apply h-6 w-6 md:h-8 md:w-8;
   }
+  .callout {
+    @apply flex flex-row my-5;
+  }
+  .callout svg {
+    @apply w-24 h-24;
+  }
+  .callout .cover-img {
+    @apply block flex-none relative;
+    min-height: 100px
+  }
+  .callout .cover-img img {
+    @apply absolute left-0 top-0 w-full h-full object-cover;
+  }
+  .callout .meta {
+    @apply block no-underline flex-1 p-2 px-1 overflow-hidden m-0;
+  }
+  .callout .meta .meta-title {
+    @apply block overflow-hidden;
+  }
+  .callout .meta .meta-desc {
+    @apply italic overflow-hidden mt-2;
+  }
+  .callout .meta .meta-author, .callout .meta .meta-dom {
+    @apply block mt-2;
+  }
+  .callout .meta .meta-author::before {
+    content: "by "
+  }
   .card {
     @apply contrast-colors p-4 font-semibold rounded-md shadow-md hover:shadow-lg transition;
   }
