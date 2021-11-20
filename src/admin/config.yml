@@ -14,7 +14,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "date", default: "Created", required: false}
+      - {label: "Date", name: "date", widget: "datetime"}
       - {label: "TOC", name: "toc", widget: "boolean", required: false}
       - {label: "Summary", name: "summary", widget: "string"}
       - {label: "Category", name: "category", widget: "select", required: false, options: ["Devotional", "Poetry", "Tutorial", "Study Strategies", "Review"]}
@@ -35,6 +35,24 @@ collections:
           - {label: "End Date", name: "end", widget: "datetime", date_format: "MM DD, YYYY", required: false}
           - {label: "Rating", name: "rating", widget: "number", min: 1, max: 5, step: 0.2}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "books"
+    label: "Books"
+    folder: "src/books"
+    create: true
+    slug: "{{slug}}
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "book.html"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", allow_multiple: false}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Date Started", name: "start", widget: "string"}
+      - {label: "Date Finished", name: "end", widget: "string", required: false}
+      - label: "Pagination"
+        name: "pagination"
+        widget: "list"
+        fields:
+          - {label: "Collection", name: "data", widget: "string"}
+          - {label: "Size", name: "size", widget: "number", min: 4, step: 4}
   - name: "kidnapped-and-afraid"
     label: "KaA Chapters"
     folder: "src/books/kidnapped-and-afraid"
@@ -43,7 +61,7 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Kidnapped and Afraid"}
-      - {label: "Date", name: "date", widget: "date", default: "Last Modified", required: false}
+      - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Order", name: "order", widget: "number", min: 0}
       - {label: "Prev", name: "prev", widget: "string", required: false}
       - {label: "Next", name: "next", widget: "string", required: false}
@@ -56,7 +74,7 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Test My Fire"}
-      - {label: "Date", name: "date", widget: "date", default: "Last Modified", required: false}
+      - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Order", name: "order", widget: "number", min: 0}
       - {label: "Prev", name: "prev", widget: "string", required: false}
       - {label: "Next", name: "next", widget: "string", required: false}
@@ -69,7 +87,7 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Dear Diary"}
-      - {label: "Date", name: "date", widget: "date", default: "Last Modified", required: false}
+      - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Order", name: "order", widget: "number", min: 0}
       - {label: "Prev", name: "prev", widget: "string", required: false}
       - {label: "Next", name: "next", widget: "string", required: false}
@@ -82,7 +100,7 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Past Nightmares. Present Ghosts. Future Peace"}
-      - {label: "Date", name: "date", widget: "date", default: "Last Modified", required: false}
+      - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Order", name: "order", widget: "number", min: 0}
       - {label: "Prev", name: "prev", widget: "string", required: false}
       - {label: "Next", name: "next", widget: "string", required: false}
@@ -95,7 +113,7 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Court of Shadows and Ruin"}
-      - {label: "Date", name: "date", widget: "date", default: "Last Modified", required: false}
+      - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Order", name: "order", widget: "number", min: 0}
       - {label: "Prev", name: "prev", widget: "string", required: false}
       - {label: "Next", name: "next", widget: "string", required: false}
