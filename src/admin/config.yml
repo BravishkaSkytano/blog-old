@@ -39,11 +39,12 @@ collections:
     label: "KaA Chapters"
     folder: "src/books/kidnapped-and-afraid"
     create: true
-    slug: "{{slug}}"
+    slug: "{{order}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Kidnapped and Afraid"}
       - {label: "Date", name: "date", widget: "date", default: "Last Modified", required: false}
+      - {label: "Order", name: "order", widget: "number", min: 0}
       - {label: "Prev", name: "prev", widget: "string", required: false}
       - {label: "Next", name: "next", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -51,11 +52,12 @@ collections:
     label: "TMF Chapters"
     folder: "src/books/test-my-fire"
     create: true
-    slug: "{{slug}}"
+    slug: "{{order}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Test My Fire"}
       - {label: "Date", name: "date", widget: "date", default: "Last Modified", required: false}
+      - {label: "Order", name: "order", widget: "number", min: 0}
       - {label: "Prev", name: "prev", widget: "string", required: false}
       - {label: "Next", name: "next", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -63,11 +65,12 @@ collections:
     label: "DD Chapters"
     folder: "src/books/dear-diary"
     create: true
-    slug: "{{slug}}"
+    slug: "{{order}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Dear Diary"}
       - {label: "Date", name: "date", widget: "date", default: "Last Modified", required: false}
+      - {label: "Order", name: "order", widget: "number", min: 0}
       - {label: "Prev", name: "prev", widget: "string", required: false}
       - {label: "Next", name: "next", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -75,11 +78,12 @@ collections:
     label: "PNPGFF Chapters"
     folder: "src/books/past-nightmares-present-ghosts-future-peace"
     create: true
-    slug: "{{slug}}"
+    slug: "{{order}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Past Nightmares. Present Ghosts. Future Peace"}
       - {label: "Date", name: "date", widget: "date", default: "Last Modified", required: false}
+      - {label: "Order", name: "order", widget: "number", min: 0}
       - {label: "Prev", name: "prev", widget: "string", required: false}
       - {label: "Next", name: "next", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -87,11 +91,12 @@ collections:
     label: "CoSaR Chapters"
     folder: "src/books/court-of-shadows-and-ruin"
     create: true
-    slug: "{{slug}}"
+    slug: "{{order}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Court of Shadows and Ruin"}
       - {label: "Date", name: "date", widget: "date", default: "Last Modified", required: false}
+      - {label: "Order", name: "order", widget: "number", min: 0}
       - {label: "Prev", name: "prev", widget: "string", required: false}
       - {label: "Next", name: "next", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
