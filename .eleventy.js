@@ -101,6 +101,7 @@ module.exports = config => {
       })
   );
 
+  config.addPassthroughCopy("src/admin");
   config.addPassthroughCopy("src/assets");
   
   config.addPlugin(readerBar);
