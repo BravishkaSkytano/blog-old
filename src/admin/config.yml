@@ -1,0 +1,97 @@
+backend:
+  name: git-gateway
+  branch: 11ty+tailwind 
+
+publish_mode: editorial_workflow
+media_folder: "_site/assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "blog"
+    label: "Posts"
+    folder: "src/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "date", default: "Created", required: false}
+      - {label: "TOC", name: "toc", widget: "boolean", required: false}
+      - {label: "Summary", name: "summary", widget: "string"}
+      - {label: "Category", name: "category", widget: "select", required: false, options: ["Devotional", "Poetry", "Tutorial", "Study Strategies", "Review"]}
+      - {label: "Tags", name: "tags", widget: "list", allow_add: true}
+      - label: "Review Stats"
+        name: "review"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Movie", name: "movie", widget: "boolean"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Author", name: "author", widget: "string", required: false}
+          - {label: "Director", name: "director", widget: "string", required: false}
+          - {label: "Producer", name: "producer", widget: "string", required: false}
+          - {label: "Actors", name: "actors", widget: "string", required: false}
+          - {label: "Release Date", name: "released", widget: "datetime", date_format: "MM DD, YYYY",}
+          - {label: "Start Date", name: "start", widget: "datetime"}
+          - {label: "End Date", name: "end", widget: "datetime", date_format: "MM DD, YYYY", required: false}
+          - {label: "Rating", name: "rating", widget: "number", min: 1, max: 5, step: 0.2}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "kidnapped-and-afraid"
+    label: "KaA Chapters"
+    folder: "src/books/kidnapped-and-afraid"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "hidden", default: "Kidnapped and Afraid"}
+      - {label: "Date", name: "date", widget: "date", default: "Last Modified", required: false}
+      - {label: "Prev", name: "prev", widget: "string", required: false}
+      - {label: "Next", name: "next", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "test-my-fire"
+    label: "TMF Chapters"
+    folder: "src/books/test-my-fire"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "hidden", default: "Test My Fire"}
+      - {label: "Date", name: "date", widget: "date", default: "Last Modified", required: false}
+      - {label: "Prev", name: "prev", widget: "string", required: false}
+      - {label: "Next", name: "next", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "dear-diary"
+    label: "DD Chapters"
+    folder: "src/books/dear-diary"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "hidden", default: "Dear Diary"}
+      - {label: "Date", name: "date", widget: "date", default: "Last Modified", required: false}
+      - {label: "Prev", name: "prev", widget: "string", required: false}
+      - {label: "Next", name: "next", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "past-nightmares-present-ghosts-future-fears"
+    label: "PNPGFF Chapters"
+    folder: "src/books/past-nightmares-present-ghosts-future-peace"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "hidden", default: "Past Nightmares. Present Ghosts. Future Peace"}
+      - {label: "Date", name: "date", widget: "date", default: "Last Modified", required: false}
+      - {label: "Prev", name: "prev", widget: "string", required: false}
+      - {label: "Next", name: "next", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "court-of-shadows-and-ruin"
+    label: "CoSaR Chapters"
+    folder: "src/books/court-of-shadows-and-ruin"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "hidden", default: "Court of Shadows and Ruin"}
+      - {label: "Date", name: "date", widget: "date", default: "Last Modified", required: false}
+      - {label: "Prev", name: "prev", widget: "string", required: false}
+      - {label: "Next", name: "next", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
