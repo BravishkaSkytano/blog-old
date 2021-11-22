@@ -35,24 +35,6 @@ collections:
           - {label: "End Date", name: "end", widget: "datetime", date_format: "MM DD, YYYY", required: false}
           - {label: "Rating", name: "rating", widget: "number", min: 1, max: 5, step: 0.2}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "books"
-    label: "Books"
-    folder: "src/books"
-    create: true
-    slug: "{{slug}}
-    fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "book.html"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Image", name: "image", widget: "image", allow_multiple: false}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Date Started", name: "start", widget: "string"}
-      - {label: "Date Finished", name: "end", widget: "string", required: false}
-      - label: "Pagination"
-        name: "pagination"
-        widget: "list"
-        fields:
-          - {label: "Collection", name: "data", widget: "string"}
-          - {label: "Size", name: "size", widget: "number", min: 4, step: 4}
   - name: "kidnapped-and-afraid"
     label: "KaA Chapters"
     folder: "src/books/kidnapped-and-afraid"
