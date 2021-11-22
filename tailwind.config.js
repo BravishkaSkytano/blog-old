@@ -3,16 +3,12 @@ module.exports = {
     './src/**/*.html',
     './src/**/*.js',
   ],
-  darkMode: 'media', // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            "ul > li::before": { backgroundColor: theme("colors.green.200") },
-            "ol > li::before": { color: theme("colors.green.200") },
-            hr: { borderColor: theme("colors.green.400") },
-            "tbody tr": { borderBottomColor: theme("colors.green.200") },
           },
         },
         dark: {

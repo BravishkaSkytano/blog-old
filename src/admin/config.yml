@@ -43,6 +43,7 @@ collections:
     fields:
       - {label: "Book", name: "category", widget: "select", multiple: true, options: ["Kidnapped and Afraid", "Test My Fire", "Dear Diary", "Past Nightmares. Present Ghosts. Future Peace.", "Court of Shadows and Ruin"]}
       - {label: "Name", name: "title", widget: "string"}
+      - {label: "Picture", name: "image", widget: "image", required: false}
       - {label: "Type", name: "type", widget: "select", options: ["Major", "Minor", "Supporting"]}
       - {label: "Role", name: "role", widget: "select", multiple: true, options: ["Protagonist", "Antagonist", "Deuteragonist", "Tertiary", "Confidante", "Love interest", "Foil"]}
       - {label: "Age", name: "age", widget: "number", required: false}
@@ -53,8 +54,8 @@ collections:
         widget: "list"
         fields:
           - {label: "Height", name: "height", widget: "number"}
-          - {label: "Eye color", name: "eye", widget: "list"}
           - {label: "Hair color", name: "hair", widget: "list"}
+          - {label: "Eye color", name: "eye", widget: "list"}
           - {label: "Build", name: "build", widget: "list"}
           - {label: "Distinguishing features", name: "features", widget: "string", hint: "Tattoos, scars, birthmarks, etc.", required: false}
           - {label: "Accessories", name: "accessories", widget: "string", required: false}
