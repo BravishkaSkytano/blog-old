@@ -11,7 +11,7 @@ excerpt: 'This is a collection of characters I have written for my books.'
       <p class="mb-2 text-xs font-semibold tracking-wide text-gray-600 uppercase">
         <a href="/books/{{ item.data.category | slugify }}">{{ item.data.category }}</a>
       </p>
-      <img src="{{ item.data.image }}" alt="{{ item.data.title }}'s profile" class="cover">
+      {% if item.data.image %}<img src="{{ item.data.image }}" alt="{{ item.data.title }}'s profile" class="cover">{% endif %}
       <a href="{{ item.url }}" class="inline-block max-w-xs mx-auto mt-3 text-2xl font-extrabold leading-7 text-transition">
         {{ item.data.title }}
       </a>

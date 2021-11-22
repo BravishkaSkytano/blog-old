@@ -16,7 +16,7 @@
   <div class="prose dark:prose-dark prose-sm lg:prose-lg xl:prose-xl px-4 mx-auto">
 
     <div class="leading-relaxed mb-4">
-      <img src="{{ image }}" alt="{{ title }}'s image" class="cover">
+      {% if image %}<img src="{{ image }}" alt="{{ title }}'s image" class="cover">{% endif %}
       <table class="table-fixed">
         <tbody>
           <tr>
