@@ -149,14 +149,6 @@ module.exports = config => {
     return sorted;
   });
 
-  config.addLiquidFilter("similarPosts", function(collection, path, tags){
-    return collection.filter((post) => {
-      return getSimilarTags(post.data.tags, tags) >= 1 && post.data.page.inputPath !== path;
-    }).sort((a,b) => {
-      return getSimilarTags(b.data.tags, tags) - getSimilarTags(a.data.tags, tags);
-    });
-  });
-
   config.addCollection("blog", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/posts/*.md").sort(function(a, b) {
       return b.date - a.date;
@@ -174,6 +166,12 @@ module.exports = config => {
   config.addCollection('books', function(collectionApi) {
     return collectionApi.getFilteredByGlob('./src/books/*.md').sort(function(a, b) {
       return b.date - a.date;
+    });
+  });
+
+  config.addCollection('characters', function(collectionApi) {
+    return collectionApi.getFilteredByGlob('./src/books/characters/*.md').sort(function(a, b) {
+      return a.inputPath.localeCompare(b.inputPath);
     });
   });
 
