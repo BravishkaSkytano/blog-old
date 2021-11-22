@@ -52,6 +52,7 @@ collections:
       - label: "Physical Appearance"
         name: "appearance"
         widget: "list"
+        summary: '{{fields.height}}, {{fields.hair}} hair, {{fields.eye}} eyes, {{fields.build}} build, {{fields.features}}'
         fields:
           - {label: "Height", name: "height", widget: "number"}
           - {label: "Hair color", name: "hair", widget: "list"}
@@ -65,8 +66,9 @@ collections:
       - {label: "Biggest flaw", name: "flaw", widget: "string", required: false}
       - {label: "Biggest strength", name: "strength", widget: "string", required: false}
       - {label: "Biggest fear", name: "fear", widget: "string", required: false}
-      - {label: "Goal", name: "goal", widget: "text", required: false}
-      - {label: "Motivation", name: "motivation", widget: "text", required: false}
+      - {label: "Goal", name: "goal", widget: "string", required: false}
+      - {label: "Motivation", name: "motivation", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "kidnapped-and-afraid"
     label: "KaA Chapters"
     folder: "src/books/kidnapped-and-afraid"
