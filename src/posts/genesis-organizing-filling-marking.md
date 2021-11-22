@@ -1,7 +1,7 @@
 ---
 title: 'Genesis: Organizing, Filling, Marking'
 date: 2020-11-15
-summary:
+excerpt:
   "With help from Garry J. Moes, I learned something about Jesus and the Trinity through the Book of Genesis. Curious? It was a little bit of a surprise to me, here's what I mean."
 category: 'Devotional'
 tags:

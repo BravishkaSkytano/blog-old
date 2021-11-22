@@ -1,7 +1,7 @@
 ---
 title: "Today"
 date: 2020-05-02
-summary:
+excerpt:
   "My first poem. It's very simple, and short."
 category: 'Poetry'
 tags:

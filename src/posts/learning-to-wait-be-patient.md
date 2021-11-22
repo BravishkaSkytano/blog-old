@@ -1,9 +1,8 @@
 ---
 title: Learning To Wait and Be Patient
 date: 2020-11-27
-summary:
-  "Why is patience important? what does the Bible say about it? and a little bit about my experience with practicing patience.
-  We don’t like long lines. We hate traffic. We just hate waiting for things. I remember there was one statistic that said most people would leave a website if it took over 5 seconds to load. Let’s face it, we’re spoiled rotten in this country."
+excerpt:
+  "Why is patience important? what does the Bible say about it? and a little bit about my experience with practicing patience. We don’t like long lines. We hate traffic. We just hate waiting for things. I remember there was one statistic that said most people would leave a website if it took over 5 seconds to load. Let’s face it, we’re spoiled rotten in this country and patience isn't something we learn very early."
 category: 'Devotional'
 tags:
   - devotional

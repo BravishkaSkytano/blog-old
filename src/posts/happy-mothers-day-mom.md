@@ -1,7 +1,7 @@
 ---
 title: "Happy Mother's Day, Mom"
 date: 2020-05-05
-summary: "A poem to honor mothers on their special day"
+excerpt: "A poem to honor mothers on their special day"
 category: 'Poetry'
 tags:
   - poetry
