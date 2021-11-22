@@ -8,7 +8,7 @@
     <title>
       {% if title %}{{ title }} ~ {% endif %}{% if category %}{{ category }} ~ {% endif %}{{ site.title }}
     </title>
-    <meta name="description" content="{{ excerpt }}" />
+    <meta name="description" content="{{ excerpt or site.description }}" />
     <link rel="stylesheet" href="/assets/tailwind.css" />
     <script defer type="text/javascript" src="//cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
 <script type="text/javascript">

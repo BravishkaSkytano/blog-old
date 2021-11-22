@@ -8,7 +8,7 @@ layout: 'home.html'
     </div>
 
     <p class="text-center font-semibold">
-      {{ start }} &mdash; {{ end if end else 'not finished yet' }}
+      {{ start }} &mdash; {{ end or 'not finished yet' }}
     </p>
 
     {{ content | safe }}
