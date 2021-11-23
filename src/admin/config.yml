@@ -50,7 +50,7 @@ collections:
       - {label: "Role", name: "role", widget: "select", multiple: true, options: ["Protagonist", "Antagonist", "Deuteragonist", "Tertiary", "Confidante", "Love interest", "Foil"]}
       - {label: "Age", name: "age", widget: "number", required: false}
       - {label: "Nationality", name: "nationality", widget: "list", required: false}
-      - {label: "Occupation", name: "occupation", widget: "list"}
+      - {label: "Occupation", name: "occupation", widget: "string"}
       - label: "Physical Appearance"
         name: "appearance"
         widget: "list"
