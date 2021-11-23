@@ -61,10 +61,10 @@ collections:
           - {label: "Eye color", name: "eye", widget: "select", options: ["brown", "hazel", "blue", "green", "gray", "amber"]}
           - {label: "Build", name: "build", widget: "select", options: ["lean and muscular", "tall and slend", "short and curvy"]}
           - {label: "Distinguishing features", name: "features", widget: "string", hint: "Tattoos, scars, birthmarks, etc.", required: false}
-          - {label: "Accessories", name: "accessories", widget: "string", required: false}
+          - {label: "Accessories", name: "accessories", widget: "string", hint: "Glasses, jewelry, etc." required: false}
           - {label: "Grooming", name: "grooming", widget: "select", options: ["Disheveled", "Untidy but clean", "Smart, very put together"], required: false}
           - {label: "Health", name: "health", widget: "string", default: "Fully healthy; no issues", required: false}
-      - {label: "Psychology", name: "psych", widget: "select", hint: "Optimist, introvert, street-smart, etc.", multiple: true, options: ["optimist," "pragmatist", "pessimist", "skeptic", "cynic", "introvert", "extrovert", "street-smart", "book-smart"]}
+      - {label: "Psychology", name: "psych", widget: "select", multiple: true, options: ["optimist", "pragmatist", "pessimist", "skeptic", "cynic", "introvert", "extrovert", "street-smart", "book-smart"]}
       - {label: "Biggest flaw", name: "flaw", widget: "string", required: false}
       - {label: "Biggest strength", name: "strength", widget: "string", required: false}
       - {label: "Biggest fear", name: "fear", widget: "string", required: false}
