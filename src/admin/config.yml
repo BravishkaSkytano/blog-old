@@ -65,6 +65,16 @@ collections:
           - {label: "Grooming", name: "grooming", widget: "select", options: ["Disheveled", "Untidy but clean", "Smart, very put together"], required: false}
           - {label: "Health", name: "health", widget: "string", default: "Fully healthy; no issues", required: false}
       - {label: "Psychology", name: "psych", widget: "select", multiple: true, options: ["optimist", "pragmatist", "pessimist", "skeptic", "cynic", "introvert", "extrovert", "street-smart", "book-smart"]}
+      - label: "Relationships"
+        name: "relationships"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Father", name: "father", widget: "relation", collection: "characters", search_fields: ["title", "occupation"], value_field: "title"}
+          - {label: "Mother", name: "mother", widget: "relation", collection: "characters", search_fields: ["title", "occupation"], value_field: "title"}
+          - {label: "Siblings", name: "siblings", widget: "relation", collection: "characters", search_fields: ["title", "occupation"], value_field: "title", multiple: true}
+          - {label: "Friends", name: "friends", widget: "relation", collection: "characters", search_fields: ["title", "occupation"], value_field: "title", multiple: true}
+          - {label: "Love Interest", name: "love", widget: "relation", collection: "characters", search_fields: ["title", "occupation"], value_field: "title"}
       - {label: "Biggest flaw", name: "flaw", widget: "string", required: false}
       - {label: "Biggest strength", name: "strength", widget: "string", required: false}
       - {label: "Biggest fear", name: "fear", widget: "string", required: false}
