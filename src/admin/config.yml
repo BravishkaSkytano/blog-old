@@ -12,6 +12,7 @@ collections:
     folder: "src/posts"
     create: true
     slug: "{{slug}}"
+    preview_path: "posts/{{category}}/{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime"}
@@ -40,6 +41,7 @@ collections:
     folder: "src/books/characters"
     create: true
     slug: "{{slug}}"
+    preview_path: "books/characters/{{slug}}"
     fields:
       - {label: "Book", name: "category", widget: "select", multiple: true, options: ["Kidnapped and Afraid", "Test My Fire", "Dear Diary", "Past Nightmares. Present Ghosts. Future Peace.", "Court of Shadows and Ruin"]}
       - {label: "Name", name: "title", widget: "string"}
@@ -74,6 +76,7 @@ collections:
     folder: "src/books/kidnapped-and-afraid"
     create: true
     slug: "{{order}}"
+    preview_path: "books/kidnapped-and-afraid/{{order}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Kidnapped and Afraid"}
@@ -87,6 +90,7 @@ collections:
     folder: "src/books/test-my-fire"
     create: true
     slug: "{{order}}"
+    preview_path: "books/test-my-fire/{{order}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Test My Fire"}
@@ -100,6 +104,7 @@ collections:
     folder: "src/books/dear-diary"
     create: true
     slug: "{{order}}"
+    preview_path: "books/dear-diary/{{order}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Dear Diary"}
@@ -113,6 +118,7 @@ collections:
     folder: "src/books/past-nightmares-present-ghosts-future-peace"
     create: true
     slug: "{{order}}"
+    preview_path: "books/past-nightmares-present-ghosts-future-peace/{{order}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Past Nightmares. Present Ghosts. Future Peace"}
@@ -126,6 +132,7 @@ collections:
     folder: "src/books/court-of-shadows-and-ruin"
     create: true
     slug: "{{order}}"
+    preview_path: "books/court-of-shadows-and-ruin/{{order}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Court of Shadows and Ruin"}
