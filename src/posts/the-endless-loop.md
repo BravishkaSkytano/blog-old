@@ -3,6 +3,7 @@ title: The Endless Loop
 date: 2021-10-01T04:00:00.000Z
 summary: Something I wrote when life really started to get... depressing.
 series: Poetry
+category: Poetry
 ---
 I wince as another rock hit my skin.
 
@@ -10,9 +11,9 @@ I feel like it left a mark
 
 So I check, but find none.
 
-They didn't used to hurt so much,
+They didn't use to hurt so much,
 
-they were smaller, too.
+They were smaller, too.
 
 At first, they were pebbles
 
