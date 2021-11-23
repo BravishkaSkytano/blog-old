@@ -70,6 +70,9 @@
 }
 
 @layer utilities {
+  .prose h2 {
+    @apply text-center;
+  }
   .text-transition {
     @apply transition-colors duration-200 text-transparent bg-clip-text bg-gradient-to-b from-green-300 via-blue-500 to-purple-600 hover:text-gray-900;
   }

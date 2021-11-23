@@ -14,10 +14,64 @@
 
 <div class="contrast-colors rounded max-w-2xl mx-auto sm:px-6 sm:py-12 lg:max-w-3xl lg:py-16 lg:px-8 xl:max-w-4xl">
   <div class="prose dark:prose-dark prose-sm lg:prose-lg xl:prose-xl px-4 mx-auto">
-
-    <div class="leading-relaxed mb-4">
       {% if image %}<img src="{{ image }}" alt="{{ title }}'s image" class="cover">{% endif %}
-      <table class="table-fixed">
+
+      <h2>Appearance</h2>
+      <table class="table-auto">
+        <tbody>{% for appearance in appearance %}
+          <tr>
+            <td class="font-bold">Height:</td>
+            <td>{{ appearance.height }}</td>
+          </tr>
+          <tr>
+            <td class="font-bold">Hair color:</td>
+            <td>{{ appearance.hair }}</td>
+          </tr>
+          <tr>
+            <td class="font-bold">Eye color:</td>
+            <td>{{ appearance.eye }}</td>
+          </tr>
+          <tr>
+            <td class="font-bold">Build:</td>
+            <td>{{ appearance.build }}</td>
+          </tr>
+          <tr>
+            <td class="font-bold">Features:</td>
+            <td>{{ appearance.features }}</td>
+          </tr>
+          <tr>
+            <td class="font-bold">Accessories:</td>
+            <td>{{ appearance.accessories }}</td>
+          </tr>
+          <tr>
+            <td class="font-bold">Grooming:</td>
+            <td>{{ appearance.grooming }}</td>
+          </tr>
+          <tr>
+            <td class="font-bold">Health:</td>
+            <td>{{ appearance.health }}</td>
+          </tr>
+        {% endfor %}</tbody>
+      </table>
+      <h2>Relationships</h2>
+      <table class="table-auto">
+        <tbody>{% for relationships in relationships %}
+          <tr>
+            <td class="font-bold">Father:</td>
+            <td>{{ relationships.father or 'unknown' }}</td>
+          </tr>
+          <tr>
+            <td class="font-bold">Mother:</td>
+            <td>{{ relationships.mother or 'unknown' }}</td>
+          </tr>
+          <tr>
+            <td class="font-bold">Siblings:</td>
+            <td>{% set comma = joiner() %}{% for siblings in relationships.siblings %}{{ comma() }} {{ siblings }}{% endfor %}</td>
+          </tr>
+        {% endfor %}</tbody>
+      </table>
+      <h2>Re-Story</h2>
+      <table class="table-auto">
         <tbody>
           <tr>
             <td class="font-bold">Character Type:</td>
@@ -25,7 +79,7 @@
           </tr>
           <tr>
             <td class="font-bold">Role:</td>
-            <td>{{ role }}</td>
+            <td>{% set comma = joiner() %}{% for role in role %}{{ comma() }} {{ role }}{% endfor %}</td>
           </tr>
           <tr>
             <td class="font-bold">Age:</td>
@@ -40,14 +94,8 @@
             <td>{{ occupation }}</td>
           </tr>
           <tr>
-            <td class="font-bold">Appearance</td>
-            <td>
-              {{ appearance.height }}, {{ appearance.hair }} hair, {{ appearance.eye }} eyes, {{ appearance.build }} build, {{ appearance.features }}, {{ appearance.accessories }}, {{ appearance.grooming }}, and {{ appearance.health }}
-            </td>
-          </tr>
-          <tr>
             <td class="font-bold">Psychology</td>
-            <td>{{ psych }}</td>
+            <td>{% set comma = joiner() %}{% for psych in psych %}{{ comma() }} {{ psych }}{% endfor %}</td>
           </tr>
           <tr>
             <td class="font-bold">Biggest Flaw</td>
@@ -71,8 +119,8 @@
           </tr>
         </tbody>
       </table>
-    </div>
 
+    <h2>Bio</h2>
     {{ content | safe }}
 
     {% readerBar "4px", "#047857", "#34D399" %}

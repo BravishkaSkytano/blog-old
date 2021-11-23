@@ -8,8 +8,8 @@
     "clean:linux": "rm -r _site",
     "build": "ELEVENTY_PRODUCTION=true eleventy & NODE_ENV=production postcss src/tailwind.css --o _site/assets/tailwind.css --minify",
     "build:css": "postcss src/tailwind.css -o _site/assets/tailwind.css",
-    "start": "npm run build:css && npx eleventy --serve",
-    "fullstart": "npx eleventy --serve & postcss src/tailwind.css --o _site/assets/tailwind.css --watch"
+    "start": "npx eleventy --serve & postcss src/tailwind.css --o _site/assets/tailwind.css --watch",
+    "eleventy": "npm run build:css && npx eleventy --serve"
   },
   "repository": {
     "type": "git",
