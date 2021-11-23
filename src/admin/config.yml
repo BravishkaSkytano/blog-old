@@ -76,7 +76,7 @@ collections:
     folder: "src/books/kidnapped-and-afraid"
     create: true
     slug: "{{order}}"
-    preview_path: "books/kidnapped-and-afraid/{{order}}"
+    preview_path: "books/kidnapped-and-afraid/{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Kidnapped and Afraid"}
@@ -90,7 +90,7 @@ collections:
     folder: "src/books/test-my-fire"
     create: true
     slug: "{{order}}"
-    preview_path: "books/test-my-fire/{{order}}"
+    preview_path: "books/test-my-fire/{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Test My Fire"}
@@ -104,7 +104,7 @@ collections:
     folder: "src/books/dear-diary"
     create: true
     slug: "{{order}}"
-    preview_path: "books/dear-diary/{{order}}"
+    preview_path: "books/dear-diary/{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Dear Diary"}
@@ -118,7 +118,7 @@ collections:
     folder: "src/books/past-nightmares-present-ghosts-future-peace"
     create: true
     slug: "{{order}}"
-    preview_path: "books/past-nightmares-present-ghosts-future-peace/{{order}}"
+    preview_path: "books/past-nightmares-present-ghosts-future-peace/{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Past Nightmares. Present Ghosts. Future Peace"}
@@ -132,7 +132,7 @@ collections:
     folder: "src/books/court-of-shadows-and-ruin"
     create: true
     slug: "{{order}}"
-    preview_path: "books/court-of-shadows-and-ruin/{{order}}"
+    preview_path: "books/court-of-shadows-and-ruin/{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Court of Shadows and Ruin"}
