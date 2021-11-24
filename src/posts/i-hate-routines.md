@@ -1,10 +1,14 @@
 ---
-layout: post.html
-title: I Hate Routines
-date: Created
-toc: false
-series: Poetry
 summary: A small poem about how I hate routines.
+toc: false
+layout: post.html
+date: Created
+series: Poetry
+title: I Hate Routines
+category: Poetry
+tags:
+  - rountines
+  - depression
 ---
 I hate routines,
 
