@@ -60,7 +60,7 @@ collections:
           - {label: "Hair color", name: "hair", widget: "select", multiple: true, options: ["Black", "Brown", "Blonde", "Red", "Pink", "Blue", "Purple", "Gray", "White", "Ombré"]}
           - {label: "Eye color", name: "eye", widget: "select", options: ["Brown", "Hazel", "Blue", "Green", "Gray", "Amber"]}
           - {label: "Build", name: "build", widget: "select", options: ["Lean and muscular", "Tall and slend", "Short and curvy"]}
-          - {label: "Distinguishing features", name: "features", widget: "string", hint: "Tattoos, scars, birthmarks, etc.", required: false}
+          - {label: "Distinguishing features", name: "features", widget: "text", hint: "Tattoos, scars, birthmarks, etc.", required: false}
           - {label: "Accessories", name: "accessories", widget: "string", hint: "Glasses, jewelry, etc.", required: false}
           - {label: "Grooming", name: "grooming", widget: "select", options: ["Disheveled", "Untidy but clean", "Smart, very put together"], required: false}
           - {label: "Health", name: "health", widget: "string", default: "Fully healthy; no issues", required: false}
