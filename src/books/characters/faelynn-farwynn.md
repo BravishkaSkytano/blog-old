@@ -14,15 +14,15 @@ appearance:
   - health: Fully healthy; no issues
     height: "5.6"
     hair:
-      - white
-    eye: green
-    build: lean and muscular
+      - Black
+      - Ombré
+    eye: Gray
+    build: Lean and muscular
     features: Swirl tattoos all over his arms and chest
-    accessories: A crown on his head signaling his royalty
+    accessories: A shadow crown
     grooming: Smart, very put together
 psych:
-  - pragmatist
-  - extrovert
-  - book-smart
+  - Pragmatist
+  - Book-smart
 ---
 All his life, Faelynn Farwynn has sought only thing--his father's approval. Being the son of one of the greatest High Lords in existence has placed a heavy burden on the young lord.
