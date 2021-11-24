@@ -1,5 +1,8 @@
 {% extends "base.html" %} {% block content %}
 <div class="contrast-colors rounded px-4 py-16 mx-auto sm:px-6 sm:py-12 lg:max-w-5xl lg:py-20 lg:px-8 xl:max-w-6xl mb-6">
+  <p class="mb-2 text-xs font-semibold tracking-wide text-gray-600 uppercase">
+    {{ category }}
+  </p>
   <p class="mb-2 text-xs font-semibold tracking-wide uppercase sm:text-center">
     Last Updated: <time datetime="{{ date | dateIso }}">{{ post.date | dateReadable }}</time> ~ {{ content | emojiReadTime }}
   </p>
