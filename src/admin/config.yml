@@ -19,7 +19,11 @@ collections:
       - {label: "TOC", name: "toc", widget: "boolean", required: false}
       - {label: "Excerpt", name: "excerpt", widget: "string", required: false}
       - {label: "Category", name: "category", widget: "select", required: false, options: ["Devotional", "Poetry", "Tutorial", "Study Strategies", "Review"]}
-      - {label: "Tags", name: "tags", widget: "list", allow_add: true}
+      - label: "Tags"
+        name: "tags"
+        widget: "select"
+        multiple: true
+        options: ["devotional", "poetry", "review", "tutorial", "studying", "study strategies", "theology", "holidays", "patience", "angels", "prayer", "weapons", "death", "sorrow", "loss", "depression", "comfort", "OT", "NT"]}
       - label: "Review Stats"
         name: "review"
         widget: "list"
