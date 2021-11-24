@@ -140,13 +140,19 @@ module.exports = config => {
     return content.substr(0, content.lastIndexOf(" ", 350)) + "...";
   });
 
-  config.addFilter("taglist", function(collection) {
-    const tags = [];
-    collection.forEach(post => {
-        tags.push(...post.data.tags);
+  function filterTagList(tags) {
+    return (tags || []).filter(tag => ['all', 'blog', 'books', 'CoSaR', 'DD', 'KaA', 'PNPGFP', 'postsByYear', 'TMF'].indexOf(tag) === -1);
+  }
+
+  config.addFilter("filterTagList", filterTagList)
+
+  config.addCollection("tagList", function(collection) {
+    let tagSet = new Set();
+    collection.getAll().forEach(item => {
+      (item.data.tags || []).forEach(tag => tagSet.add(tag));
     });
-    const sorted = [...new Set(tags)].sort((a, b) => a.localeCompare(b));
-    return sorted;
+
+    return filterTagList([...tagSet]);
   });
 
   config.addCollection("blog", function(collectionApi) {

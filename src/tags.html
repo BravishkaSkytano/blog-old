@@ -1,6 +1,7 @@
 ---
 layout: home.html
-title: Tag Archive
+eleventyComputed:
+  title: Tagged "{{ tag }}"
 pagination:
   data: collections
   size: 1
@@ -9,16 +10,19 @@ pagination:
 permalink: /tags/{{ tag | slugify }}/
 ---
 <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-  <div class="text-center">
-    <div class="inline-flex items-center contrast-colors p-4 mb-10 rounded">
-      <span class="text-transition text-3xl font-bold">Tagged “{{ tag }}”</span>
-    </div>
-  </div>
-  {% set taglist = collections[ tag ] %}
   <div class="mb-10 border-t border-b divide-y">
+    {% set taglist = collections[ tag ] %}
     {% for post in taglist | reverse %}
     <div class="grid py-8 sm:grid-cols-4">
-      <div class="contrast-colors p-2 rounded sm:col-start-2 sm:col-span-2 text-center">
+      <div class="mb-4 sm:mb-0">
+        <div class="contrast-colors bg-gradient-to-l p-2 rounded md:rounded-r-none space-y-1 text-xs font-semibold text-center md:text-left tracking-wide uppercase">
+          {% if post.data.category %}<a href="/tags/{{ post.data.category | slugify }}" class="text-transition" aria-label="Category">{{ post.data.category }}</a>{% endif %}
+          <p>
+            <time datetime="{{ date | dateIso }}">{{ post.date | dateReadable }}</time>
+          </p>
+        </div>
+      </div>
+      <div class="contrast-colors p-2 rounded md:rounded-t-none sm:col-span-2 text-center">
         <div class="mb-3">
           <a href="{{ post.url }}" aria-label="Article" class="inline-block text-transition">
             <p class="text-3xl font-extrabold leading-none sm:text-4xl xl:text-4xl">
@@ -26,9 +30,15 @@ permalink: /tags/{{ tag | slugify }}/
             </p>
           </a>
         </div>
-        {% if post.data.summary %}<p>
-          {{ post.data.summary }}
-        </p>{% endif %}
+        <p>
+          {{ post.data.excerpt }}
+        </p>
+        
+      </div>
+      <div class="mt-4 sm:mt-0">
+        <div class="contrast-colors bg-gradient-to-l p-2 rounded md:rounded-l-none space-y-1 text-sm font-semibold text-center md:text-right tracking-wide">
+          {% for tag in post.data.tags %}<a href="/tags/{{ tag | slugify }}" class="text-transition" aria-label="Tag">#{{ tag }} </a>{% endfor %}
+        </div>
       </div>
     </div>
     {% endfor %}
