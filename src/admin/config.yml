@@ -16,6 +16,7 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Updated", name: "updated", widget: "datetime", required: false}
       - {label: "TOC", name: "toc", widget: "boolean", required: false}
       - {label: "Excerpt", name: "excerpt", widget: "string", required: false}
       - label: "Category"
@@ -98,7 +99,7 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Kidnapped and Afraid"}
-      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Updated", name: "updated", widget: "datetime"}
       - {label: "Order", name: "order", widget: "number", min: 0}
       - {label: "Prev", name: "prev", widget: "string", required: false}
       - {label: "Next", name: "next", widget: "string", required: false}
@@ -112,7 +113,7 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Test My Fire"}
-      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Updated", name: "updated", widget: "datetime"}
       - {label: "Order", name: "order", widget: "number", min: 0}
       - {label: "Prev", name: "prev", widget: "string", required: false}
       - {label: "Next", name: "next", widget: "string", required: false}
@@ -126,7 +127,7 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Dear Diary"}
-      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Updated", name: "updated", widget: "datetime"}
       - {label: "Order", name: "order", widget: "number", min: 0}
       - {label: "Prev", name: "prev", widget: "string", required: false}
       - {label: "Next", name: "next", widget: "string", required: false}
@@ -140,7 +141,7 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Past Nightmares. Present Ghosts. Future Peace"}
-      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Updated", name: "updated", widget: "datetime"}
       - {label: "Order", name: "order", widget: "number", min: 0}
       - {label: "Prev", name: "prev", widget: "string", required: false}
       - {label: "Next", name: "next", widget: "string", required: false}
@@ -154,7 +155,7 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "Court of Shadows and Ruin"}
-      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Updated", name: "updated", widget: "datetime"}
       - {label: "Order", name: "order", widget: "number", min: 0}
       - {label: "Prev", name: "prev", widget: "string", required: false}
       - {label: "Next", name: "next", widget: "string", required: false}

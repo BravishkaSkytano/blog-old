@@ -7,8 +7,8 @@ permalink: /tags/
 <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
   <div class="grid max-w-sm gap-5 lg:grid-cols-5 sm:mx-auto lg:max-w-full">
     {% for tag in collections.tagList %}{% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-    <div class="contrast-colors rounded px-5 py-5 text-center">
-      <a href="{{ tagUrl | url }}" class="inline-block max-w-xs mx-auto text-2xl font-extrabold leading-7 text-transition">
+    <div class="my-auto contrast-colors rounded p-5 text-center">
+      <a href="{{ tagUrl | url }}" class="inline-block max-w-xs mx-auto text-2xl font-extrabold leading-7">
         {{ tag }}
       </a>
     </div>

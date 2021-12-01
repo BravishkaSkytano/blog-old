@@ -22,7 +22,7 @@
     @apply rounded-br-md;
   }
   .icon {
-    @apply h-6 w-6 md:h-8 md:w-8;
+    @apply h-4 w-4 md:h-6 md:w-6;
   }
   .callout {
     @apply flex flex-row my-5;
@@ -72,6 +72,9 @@
 @layer utilities {
   .prose h2 {
     @apply text-center;
+  }
+  a, .prose a {
+    @apply text-transition
   }
   .text-transition {
     @apply transition-colors duration-200 text-transparent bg-clip-text bg-gradient-to-b from-green-300 via-blue-500 to-purple-600 hover:text-gray-900;
