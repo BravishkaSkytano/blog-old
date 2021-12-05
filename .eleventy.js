@@ -2,6 +2,7 @@ const { DateTime } = require("luxon");
 const htmlmin = require('html-minifier')
 const slugify = require('@sindresorhus/slugify');
 const moment = require('moment');
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 const readerBar = require('eleventy-plugin-reader-bar');
 const emojiReadTime = require("@11tyrocks/eleventy-plugin-emoji-readtime");
 const embedEverything = require("eleventy-plugin-embed-everything");
@@ -104,6 +105,7 @@ module.exports = config => {
   config.addPassthroughCopy("src/admin");
   config.addPassthroughCopy("src/assets");
   
+  config.addPlugin(pluginRss);
   config.addPlugin(readerBar);
 
   config.addPlugin(emojiReadTime, {

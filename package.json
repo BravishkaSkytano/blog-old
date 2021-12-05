@@ -24,6 +24,7 @@
   "homepage": "https://github.com/Aspiring-Writer/blog#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-plugin-rss": "^1.1.2",
     "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
     "@sindresorhus/slugify": "^1.1.2",
     "@tailwindcss/typography": "^0.4.1",
