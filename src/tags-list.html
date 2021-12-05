@@ -9,7 +9,7 @@ permalink: /tags/
     {% for tag in collections.tagList %}{% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
     <div class="my-auto contrast-colors rounded p-5 text-center">
       <a href="{{ tagUrl | url }}" class="inline-block max-w-xs mx-auto text-2xl font-extrabold leading-7">
-        {{ tag }}
+        {{ tag }} <span class="text-base">({{ collections[tag].length }})</span>
       </a>
     </div>
     {% endfor %}

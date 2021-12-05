@@ -1,8 +1,6 @@
 ---
 title: The Power of Instructions
 date: 2020-11-20
-excerpt:
-  "I have this old Xbox game console, I think it was the first one that ever came out. It looked like a DVD player (or VHS player if you know what that is) and it had controllers connected to long cords that you plugged into it. I also had this awesome game called Need for Speed Underground 2. I loved this game. It was so much fun to play with my siblings and I acquired the “need for speed” that everyone talked about. The only problem I had with this game was its so-called campaign mode."
 category: 'Devotional'
 tags:
   - devotional

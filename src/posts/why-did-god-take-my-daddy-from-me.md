@@ -1,8 +1,6 @@
 ---
 title: "Why Did God Take My Daddy From Me?"
 date: 2020-05-04
-excerpt:
-  "A long poem I wrote for my aunt after her father's funeral. It examines the feelings of pain and loss one feels after the death of a loved one in a different light."
 category: 'Poetry'
 tags:
   - poetry

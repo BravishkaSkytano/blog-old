@@ -7,17 +7,19 @@
           <a href="/tags/{{ item.data.category | slugify }}" aria-label="Category">{{ item.data.category }}</a>
           <p>
             <time datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>
-            {% if item.data.updated %}<br>Updated: <time datetime="{{ item.data.updated | htmlDateString }}">{{ item.data.updated | readableDate }}</time>{% endif %}
           </p>
         </div>
-        <div class="mb-3">
+        <div class="pb-3">
           <a href="{{ item.url }}" aria-label="Article" class="inline-block">
-            <p class="text-3xl font-extrabold leading-none sm:text-4xl xl:text-4xl">
+            <p class="text-3xl font-extrabold leading-none sm:text-4xl">
               {{ item.data.title }}
             </p>
           </a>
         </div>
         {% excerpt item %}
+        <div class="pt-3">
+          <a href="{{ item.url }}" class="font-semibold tracking-wide sm:text-lg">Read More</a>
+        </div>
         <p class="pt-6 text-sm font-semibold tracking-wide">
           {% for tag in item.data.tags %}<a href="/tags/{{ tag | slugify }}" aria-label="Tag">#{{ tag }} </a>{% endfor %}
         </p>

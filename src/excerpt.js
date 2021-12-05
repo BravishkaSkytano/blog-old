@@ -1,19 +1,20 @@
-const seperator = {start: '<!-- excerpt start -->', end: '<!-- excerpt end -->'};
+const markdown = require('markdown-it');
 
+module.exports = function excerpt(item) {
+  const separator = '</p>';
+  const excerpt = item.data?.page?.excerpt;
 
-module.exports = function(article) {
-    let excerpt = article.data.excerpt ? `<p>${article.data.excerpt}</p>` : "";
-    const articleContent = article.templateContent;
+  // If it has an explicit excerpt (see setFrontMatterParsingOptions),
+  // use it.
+  if (excerpt) {
+    return markdown({ html: true }).render(excerpt);
+  }
 
-    let startPosition = articleContent.toLowerCase().indexOf(seperator.start);
-    let endPosition = articleContent.toLowerCase().indexOf(seperator.end);
-    if (startPosition !== -1 && endPosition !== -1) {
-        excerpt = articleContent.substring(startPosition + seperator.start.length, endPosition);
-    } else if (!article.data.excerpt) {
-        let startPosition = articleContent.toLowerCase().indexOf('<p>');
-        let endPosition = articleContent.toLowerCase().indexOf('</p>');
-        
-        excerpt = articleContent.substring(startPosition + 3, endPosition);
-    }
-    return excerpt
-} 
+  // If there's no explicit excerpt, use the first paragraph as the
+  // excerpt. This is already parsed to HTML, so no need to use
+  // markdown-it here
+  const location = item.templateContent?.indexOf(separator);
+  return location >= 0
+    ? item.templateContent.slice(0, location + separator.length)
+    : '';
+};

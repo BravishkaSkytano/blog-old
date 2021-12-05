@@ -16,9 +16,7 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Updated", name: "updated", widget: "datetime", required: false}
       - {label: "TOC", name: "toc", widget: "boolean", required: false}
-      - {label: "Excerpt", name: "excerpt", widget: "string", required: false}
       - label: "Category"
         name: "category"
         widget: "select"

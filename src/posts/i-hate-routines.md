@@ -1,15 +1,11 @@
 ---
-summary: A small poem about how I hate routines.
 toc: false
-layout: post.html
-date: 2021-09-13T04:00:00.000Z
-series: Poetry
+date: 2021-12-04T04:00:00.000Z
 title: I Hate Routines
-updated: 2021-12-05T15:22:09.361Z
 category: Poetry
 tags:
-  - depression
   - poetry
+  - depression
 ---
 I hate routines,\
 I hate the never-ending routines that plague my life.\

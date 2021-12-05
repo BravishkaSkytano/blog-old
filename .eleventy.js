@@ -130,7 +130,14 @@ module.exports = config => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
   });
 
-  config.addShortcode("excerpt", excerpt);
+  config.setFrontMatterParsingOptions({
+    excerpt: true,
+    excerpt_separator: '<!-- excerpt -->'
+  });
+
+  config.addShortcode('excerpt', (post) => {
+    return excerpt(post);
+  });
 
   config.addNunjucksAsyncFilter("linkPreview", linkPreview);
 
@@ -149,20 +156,7 @@ module.exports = config => {
     return content.substr(0, content.lastIndexOf(" ", 350)) + "...";
   });
 
-  function filterTagList(tags) {
-    return (tags || []).filter(tag => ['all', 'blog', 'books', 'CoSaR', 'DD', 'KaA', 'PNPGFP', 'postsByYear', 'TMF'].indexOf(tag) === -1);
-  }
-
-  config.addFilter("filterTagList", filterTagList)
-
-  config.addCollection("tagList", function(collection) {
-    let tagSet = new Set();
-    collection.getAll().forEach(item => {
-      (item.data.tags || []).forEach(tag => tagSet.add(tag));
-    });
-
-    return filterTagList([...tagSet]);
-  });
+  config.addCollection("tagList", require("./src/getTagList"));
 
   config.addCollection("blog", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/posts/*.md").sort(function(a, b) {

@@ -6,13 +6,13 @@ pagination:
   data: collections
   size: 1
   alias: tag
-  filter: ['all', 'blog', 'books', 'CoSaR', 'DD', 'KaA', 'PNPGFP', 'postsByYear', 'TMF']
+  filter: ['all', 'blog', 'books', 'CoSaR', 'DD', 'KaA', 'PNPGFP', 'TMF']
 permalink: /tags/{{ tag | slugify }}/
 ---
 <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
   <div class="mb-10 border-t border-b divide-y">
     {% set taglist = collections[ tag ] %}
-    {% for post in taglist | reverse %}
+    {%- for post in taglist | reverse -%}
     <div class="grid py-8 sm:grid-cols-4">
       <div class="contrast-colors p-3 rounded sm:col-start-2 sm:col-span-2 text-center">
         <div class="pb-6 text-sm font-semibold tracking-wide">
@@ -28,9 +28,7 @@ permalink: /tags/{{ tag | slugify }}/
             </p>
           </a>
         </div>
-        <p>
-          {{ post.data.excerpt }}
-        </p>
+        {% excerpt post %}
         <p class="pt-6 text-sm font-semibold tracking-wide">
           {% for tag in post.data.tags %}<a href="/tags/{{ tag | slugify }}" aria-label="Tag">#{{ tag }} </a>{% endfor %}
         </p>

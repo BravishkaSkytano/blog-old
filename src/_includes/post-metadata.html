@@ -1,7 +1,6 @@
 <div class="contrast-colors rounded px-4 py-16 mx-auto sm:px-6 sm:py-12 lg:max-w-5xl lg:py-16 lg:px-8 xl:max-w-6xl mb-6">
   <p class="mb-2 text-xs font-semibold tracking-wide uppercase text-center">
-    <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
-    {% if updated %}~ Updated: <time datetime="{{ updated | htmlDateString }}">{{ updated | readableDate }}</time>{% endif %}
+    Last Modified: <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
   </p>
   <div class="mx-auto max-w-xl mb-5 md:mx-auto text-center lg:max-w-2xl">
     <div class="mb-4">

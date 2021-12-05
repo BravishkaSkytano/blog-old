@@ -1,9 +1,7 @@
 ---
 title: The Endless Loop
 date: 2021-10-01T04:00:00.000Z
-summary: Something I wrote when life really started to get... depressing.
 series: Poetry
-excerpt: ""
 category: Poetry
 tags:
   - poetry

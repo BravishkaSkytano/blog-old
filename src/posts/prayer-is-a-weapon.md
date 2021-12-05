@@ -1,7 +1,6 @@
 ---
 title: "Prayer is a weapon..."
 date: 2020-05-03
-excerpt: "A poem about the power of prayer"
 category: 'Poetry'
 tags:
   - poetry
