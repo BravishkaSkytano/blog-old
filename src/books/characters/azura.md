@@ -1,6 +1,5 @@
 ---
-category:
-  - Court of Shadows and Ruin
+category: Court of Shadows and Ruin
 title: Azura
 type: Major
 role:

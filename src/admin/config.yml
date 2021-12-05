@@ -52,7 +52,7 @@ collections:
     slug: "{{slug}}"
     preview_path: "books/characters/{{slug}}"
     fields:
-      - {label: "Book", name: "category", widget: "select", multiple: true, options: ["Kidnapped and Afraid", "Test My Fire", "Dear Diary", "Past Nightmares. Present Ghosts. Future Peace.", "Court of Shadows and Ruin"]}
+      - {label: "Book", name: "category", widget: "select", options: ["Kidnapped and Afraid", "Test My Fire", "Dear Diary", "Past Nightmares. Present Ghosts. Future Peace.", "Court of Shadows and Ruin"]}
       - {label: "Name", name: "title", widget: "string"}
       - {label: "Picture", name: "image", widget: "image", required: false}
       - {label: "Type", name: "type", widget: "select", options: ["Major", "Minor", "Supporting"]}
