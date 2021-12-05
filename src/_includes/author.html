@@ -1,17 +1,19 @@
 <div class="max-w-2xl mx-auto py-8 px-2 sm:py-12 sm:px-6 lg:max-w-3xl lg:py-16 lg:px-8 xl:max-w-4xl">
   <div class="mb-10 border-t border-b divide-y">
-    <div class="grid py-8 sm:grid-cols-3">
-      <div class="contrast-colors p-3 rounded text-center">
-        <img src="{{ author.avatar }}" alt="author" class="rounded-full">
-        <p class="font-semibold tracking-wide">
-          {{ author.name }}
-        </p>
-        <p class="font-medium tracking-wide">
-          {{ author.location }}
-        </p>
+    <div class="grid py-8 sm:grid-cols-3 gap-2">
+      <div class="flex justify-center items-center">
+        <div class="contrast-colors p-5 rounded text-center">
+          <img src="{{ author.avatar }}" alt="author" class="rounded-full">
+          <p class="pt-2 font-semibold tracking-wide text-transition">
+            {{ author.name }}
+          </p>
+          <p class="font-medium tracking-wide">
+            {{ author.location }}
+          </p>
+        </div>
       </div>
-      <div class="contrast-colors p-3 rounded sm:col-span-2 text-center">
-        <p class="text-lg">
+      <div class="contrast-colors p-6 rounded sm:col-span-2 prose dark:prose-dark prose-sm xl:prose-lg">
+        <p>
           {{ author.bio }}
         </p>
       </div>

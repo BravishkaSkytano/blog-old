@@ -6,7 +6,8 @@
         <div class="pb-6 text-sm font-semibold tracking-wide">
           <a href="/tags/{{ item.data.category | slugify }}" aria-label="Category">{{ item.data.category }}</a>
           <p>
-            <time datetime="{{ date | dateIso }}">{{ item.date | dateReadable }}</time>
+            <time datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>
+            {% if item.data.updated %}<br>Updated: <time datetime="{{ item.data.updated | htmlDateString }}">{{ item.data.updated | readableDate }}</time>{% endif %}
           </p>
         </div>
         <div class="mb-3">

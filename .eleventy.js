@@ -1,3 +1,4 @@
+const { DateTime } = require("luxon");
 const htmlmin = require('html-minifier')
 const slugify = require('@sindresorhus/slugify');
 const moment = require('moment');
@@ -6,7 +7,6 @@ const emojiReadTime = require("@11tyrocks/eleventy-plugin-emoji-readtime");
 const embedEverything = require("eleventy-plugin-embed-everything");
 const excerpt = require("./src/excerpt");
 const heroIcons = require('eleventy-plugin-heroicons');
-const _ = require("lodash");
 const getSimilarTags = function(tagsA, tagsB) {
   return tagsA.filter(Set.prototype.has, new Set(tagsB)).length;
 }
@@ -121,6 +121,15 @@ module.exports = config => {
     errorOnMissing: true
   });
 
+  config.addFilter("readableDate", dateObj => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("LLLL dd, yyyy");
+  });
+
+  // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+  config.addFilter('htmlDateString', (dateObj) => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+  });
+
   config.addShortcode("excerpt", excerpt);
 
   config.addNunjucksAsyncFilter("linkPreview", linkPreview);
@@ -159,14 +168,6 @@ module.exports = config => {
     return collectionApi.getFilteredByGlob("src/posts/*.md").sort(function(a, b) {
       return b.date - a.date;
     });
-  });
-
-  config.addCollection("postsByYear", (collection) => {
-    return _.chain(collection.getAllSorted())
-      .groupBy((post) => post.date.getFullYear())
-      .toPairs()
-      .reverse()
-      .value();
   });
 
   config.addCollection('books', function(collectionApi) {

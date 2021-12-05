@@ -3,7 +3,8 @@
     {% for item in pagination.items %}
     <div class="contrast-colors rounded px-10 py-20 text-center lg:px-5 lg:py-10 xl:py-20">
       <p class="mb-2 text-xs font-semibold tracking-wide uppercase">
-        <time datetime="{{ date | dateIso }}">{{ item.date | dateReadable }}</time>
+        <time datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>
+        {% if item.data.updated %}<br>Updated: <time datetime="{{ item.data.updated | htmlDateString }}">{{ item.data.updated | readableDate }}</time>{% endif %}
       </p>
       <a href="{{ item.url }}" class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7">
         {{ item.data.title }}
