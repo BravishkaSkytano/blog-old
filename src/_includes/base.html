@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link href="/feed.xml" rel=”alternate” type=”application/rss+xml” />
     <title>
       {{ title }} ~ {% if category %}{{ category }} ~ {% endif %}An Aspiring Writer's Haven
     </title>
     <meta name="description" content="{{ excerpt or site.description }}" />
     <link rel="stylesheet" href="/assets/tailwind.css" />
     <script defer type="text/javascript" src="//cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
-<script type="text/javascript">
-  window.addEventListener('DOMContentLoaded', () => {
-    var bLazy = new Blazy({
-      selector: ".lp img",
-      offset: 300,
-      success: (element) => {element.style.backgroundColor = "white";}
-    });
-  })
-</script>
+    <script type="text/javascript">
+      window.addEventListener('DOMContentLoaded', () => {
+        var bLazy = new Blazy({
+          selector: ".lp img",
+          offset: 300,
+          success: (element) => {element.style.backgroundColor = "white";}
+        });
+      })
+    </script>
   </head>
   <body class="main-colors flex flex-col min-h-screen">
     {% include "nav.html" %}
@@ -27,6 +28,5 @@
       {% block content %}{% endblock %}
     </div>
     {% include "footer.html" %}
-    
   </body>
 </html>

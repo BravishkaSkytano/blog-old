@@ -20,6 +20,10 @@
     <!--Post-->
     {{ content | safe }}
 
+    <hr>
+    <p>
+      Join the conversation on <a href="https://www.reddit.com/r/AspiringWritersHaven/{{ comments.reddit }}">Reddit</a>.
+    </p>
     {% readerBar "4px", "#047857", "#34D399" %}
 
     
@@ -27,5 +31,22 @@
 </div>
 
 {% include 'author.html' %}
+
+<script> 
+var jv_comments_config = {
+	"website_id": "423",
+	"position": "left",
+	"is_open": "false"
+};
+
+(function () {
+	var d = document, s = d.createElement("script");
+	s.src = "https://widget.jointcomments.com/e/embed.prod.js";
+	if (/MSIE|Trident/.test(window.navigator.userAgent)) {
+			s.src = "https://widget.jointcomments.com/e/embed.prodIE.js";
+	}
+	(d.head || d.body).appendChild(s);
+})();
+</script>
 
 {% endblock %}
