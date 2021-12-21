@@ -8,9 +8,6 @@ const emojiReadTime = require("@11tyrocks/eleventy-plugin-emoji-readtime");
 const embedEverything = require("eleventy-plugin-embed-everything");
 const excerpt = require("./src/excerpt");
 const heroIcons = require('eleventy-plugin-heroicons');
-const getSimilarTags = function(tagsA, tagsB) {
-  return tagsA.filter(Set.prototype.has, new Set(tagsB)).length;
-}
 
 const fs = require("fs");
 const crypto = require("crypto");

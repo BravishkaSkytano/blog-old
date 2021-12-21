@@ -21,12 +21,12 @@ collections:
         name: "category"
         widget: "select"
         required: false
-        options: ["Devotional", "Poetry", "Tutorial", "Study Strategies", "Review"]
+        options: ["Devotional", "Poetry", "Tutorial", "Study Strategies", "Review", "Updates"]
       - label: "Tags"
         name: "tags"
         widget: "select"
         multiple: true
-        options: ["devotional", "poetry", "review", "tutorial", "studying", "study strategies", "theology", "holidays", "patience", "angels", "prayer", "weapons", "death", "sorrow", "loss", "depression", "comfort", "OT", "NT"]
+        options: ["devotional", "poetry", "review", "tutorial", "studying", "study strategies", "theology", "holidays", "patience", "angels", "prayer", "weapons", "death", "sorrow", "loss", "depression", "comfort", "OT", "NT", "updates"]
       - label: "Review Stats"
         name: "review"
         widget: "list"
