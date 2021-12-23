@@ -106,6 +106,7 @@ module.exports = config => {
   config.addPlugin(readerBar);
 
   config.addPlugin(emojiReadTime, {
+    emoji: "⏳",
     label: "min. to read",
     wpm: 300,
     bucketSize: 3,
