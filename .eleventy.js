@@ -155,6 +155,11 @@ module.exports = config => {
     return content.substr(0, content.lastIndexOf(" ", 350)) + "...";
   });
 
+  config.addFilter("strip_html", (item) => {
+    const content = item.replace(/(<([^>]+)>)/gi, "");
+    return content;
+  });
+
   config.addCollection("tagList", require("./src/getTagList"));
 
   config.addCollection("blog", function(collectionApi) {
