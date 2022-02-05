@@ -169,47 +169,26 @@ module.exports = config => {
     });
   });
 
-  config.addCollection('books', function(collectionApi) {
-    return collectionApi.getFilteredByGlob('./src/books/*.md').sort(function(a, b) {
-      return b.date - a.date;
-    });
-  });
-
   config.addCollection('characters', function(collectionApi) {
-    return collectionApi.getFilteredByGlob('./src/books/characters/*.md').sort(function(a, b) {
-      return a.inputPath.localeCompare(b.inputPath);
-    });
-  });
-
-  config.addCollection('KaA', function(collectionApi) {
-    return collectionApi.getFilteredByGlob('./src/books/kidnapped-and-afraid/*.md').sort(function(a, b) {
-      return a.inputPath.localeCompare(b.inputPath);
-    });
-  });
-
-  config.addCollection('TMF', function(collectionApi) {
-    return collectionApi.getFilteredByGlob('./src/books/test-my-fire/*.md').sort(function(a, b) {
-      return a.inputPath.localeCompare(b.inputPath);
-    })
-  });
-
-  config.addCollection('DD', function(collectionApi) {
-    return collectionApi.getFilteredByGlob('./src/books/dear-diary/*.md').sort(function(a, b) {
-      return a.inputPath.localeCompare(b.inputPath);
-    })
-  });
-
-  config.addCollection('PNPGFP', function(collectionApi) {
-    return collectionApi.getFilteredByGlob('./src/books/past-nightmares-present-ghosts-future-peace/*.md').sort(function(a, b) {
-      return a.inputPath.localeCompare(b.inputPath);
-    })
-  });
-
-  config.addCollection('CoSaR', function(collectionApi) {
-    return collectionApi.getFilteredByGlob('./src/books/court-of-shadows-and-ruin/*.md').sort((a, b) => {
-      return a.inputPath.localeCompare(b.inputPath);
-    })
-  });
+    return collectionApi
+      .getFilteredByGlob('src/books/characters/*.md')
+      // Sort content alphabetically by `title`
+      .sort((a, b) => {
+        const titleA = a.data.title.toUpperCase()
+        const titleB = b.data.title.toUpperCase()
+        if (titleA > titleB) return 1
+        if (titleA < titleB) return -1
+        return 0
+      })
+      // Sort content alphabetically by `category` (assuming `category` is a string like `Cat 1`)
+      .sort((a, b) => {
+        const categoryA = a.data.category.toUpperCase()
+        const categoryB = b.data.category.toUpperCase()
+        if (categoryA > categoryB) return 1
+        if (categoryA < categoryB) return -1
+        return 0
+      })
+  })
 
   config.addTransform('htmlmin', function (content, outputPath) {
     if (
