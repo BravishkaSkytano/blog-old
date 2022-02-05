@@ -1,0 +1,5 @@
+{
+  "permalink": "/{{ title | slugify }}/",
+  "date": "Last Modified",
+  "updated": true
+}

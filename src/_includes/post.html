@@ -1,11 +1,11 @@
-{% extends "base.html" %} {% block content %}
-{% include 'post-metadata.html' %}
-
-<div class="contrast-colors rounded mx-auto max-w-2xl py-8 px-2 sm:py-12 sm:px-6 lg:max-w-3xl lg:py-16 lg:px-8 xl:max-w-4xl">
+---
+layout: 'home.html'
+---
+<div class="contrast-colors rounded mb-10 mx-auto max-w-2xl py-8 px-2 sm:py-12 sm:px-6 lg:max-w-3xl lg:py-16 lg:px-8 xl:max-w-4xl">
   <div class="prose dark:prose-dark prose-sm lg:prose-lg xl:prose-xl px-4 mx-auto">
-    
+
     {% if review %}
-      {% include "review-stats.html" %}
+    {% include "review-stats.html" %}
     {% endif %}
 
     {% if toc == true %}
@@ -24,29 +24,25 @@
     </p>-->
     {% readerBar "4px", "#047857", "#34D399" %}
 
-    
+
   </div>
 </div>
 
-{% include 'author.html' %}
+<div class="border-t divide-y">
+  <div class="contrast-colors mt-10 max-w-2xl mx-auto py-8 px-2 sm:py-12 sm:px-6 lg:max-w-3xl lg:py-16 lg:px-8 xl:max-w-4xl rounded">
+    <div class="prose dark:prose-dark prose-sm lg:prose-lg xl:prose-xl px-4 mx-auto">
+      <h2>Comments</h2>
+      <script src="https://utteranc.es/client.js" repo="Aspiring-Writer/blog" issue-term="title" label="Comments"
+        theme="preferred-color-scheme" crossorigin="anonymous" async>
+        </script>
 
-<div class="contrast-colors rounded mx-auto max-w-2xl py-8 px-2 sm:py-12 sm:px-6 lg:max-w-3xl lg:py-16 lg:px-8 xl:max-w-4xl">
-  <div class="prose dark:prose-dark prose-sm lg:prose-lg xl:prose-xl px-4 mx-auto">
-    <script src="https://utteranc.es/client.js"
-      repo="Aspiring-Writer/blog"
-      issue-term="title"
-      label="Comments"
-      theme="preferred-color-scheme"
-      crossorigin="anonymous"
-      async>
-    </script>
-
-    <p>If you don't see any comments, it's because Utterances uses third-party cookies and you might be blocking them. This can also happen if you run a privacy-focused browser or browser extensions (which I fully recommend). You need to whitelist Utteranc.es servers by looking in your browser/extension settings.</p>
-    <ul>
-      <li>[*.]api.utteranc.es</li>
-      <li>https://[*.]utteranc.es:443</li>
-    </ul>
+      <p>If you don't see any comments, it's because Utterances uses third-party cookies and you might be blocking them.
+        This can also happen if you run a privacy-focused browser or browser extensions (which I fully recommend). You
+        need to whitelist Utteranc.es servers by looking in your browser/extension settings.</p>
+      <ul>
+        <li>[*.]api.utteranc.es</li>
+        <li>https://[*.]utteranc.es:443</li>
+      </ul>
+    </div>
   </div>
 </div>
-
-{% endblock %}

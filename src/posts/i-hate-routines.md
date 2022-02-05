@@ -10,7 +10,7 @@ tags:
 I hate routines,\
 I hate the never-ending routines that plague my life.\
 Everything is so boring,\
-The same every day.\
+The same every day.<!--excerpt-->\
 I can't escape it,\
 All I can do is wait.\
 Wait for a break,\

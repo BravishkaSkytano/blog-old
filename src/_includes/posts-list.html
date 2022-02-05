@@ -1,38 +1,28 @@
-<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-  <div class="mb-10 border-t border-b divide-y">
-    {% for item in pagination.items %}
-    <div class="grid py-8 sm:grid-cols-4">
-      <div class="contrast-colors p-3 rounded sm:col-start-2 sm:col-span-2 text-center">
-        <div class="pb-6 text-sm font-semibold tracking-wide">
-          <a href="/tags/{{ item.data.category | slugify }}" aria-label="Category">{{ item.data.category }}</a>
-          <p>
-            <time datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>
-          </p>
-        </div>
-        <div class="pb-3">
-          <a href="{{ item.url }}" aria-label="Article" class="inline-block">
-            <p class="text-3xl font-extrabold leading-none sm:text-4xl">
-              {{ item.data.title }}
-            </p>
-          </a>
-        </div>
-        {% excerpt item %}
-        <div class="pt-3">
-          <a href="{{ item.url }}" class="font-semibold tracking-wide sm:text-lg">Read More</a>
-        </div>
-        <p class="pt-6 text-sm font-semibold tracking-wide">
-          {% for tag in item.data.tags %}<a href="/tags/{{ tag | slugify }}" aria-label="Tag">#{{ tag }} </a>{% endfor %}
-        </p>
-      </div>
+<div class="flex items-center justify-between">
+  <h2 class="text-xl font-bold text-gray-700 md:text-2xl">Posts</h2>
+</div>
+{% for item in pagination.items %}
+<div class="mt-6">
+  <div class="max-w-4xl px-10 py-6 mx-auto contrast-colors rounded-lg shadow-md">
+    <div class="flex items-center justify-between">
+      <span class="font-light text-gray-600">
+        <time datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>
+      </span>
+      <a href="/tags/{{ item.data.category | slugify }}" class="px-2 py-1 font-bold rounded">{{ item.data.category }}</a>
     </div>
-    {% endfor %}
-  </div>
-  <div class="text-center">
-    <a href="/posts/" class="inline-flex items-center btn rounded">
-      <span>See all articles</span>
-      <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
-        <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
-      </svg>
-    </a>
+    <div class="mt-2">
+      <a href="{{ item.url }}" class="text-2xl font-bold text-gray-700 hover:underline">{{ item.data.title }}</a>
+      <p class="mt-2 text-gray-600">{% excerpt item %}</p>
+    </div>
+    <div class="flex items-center justify-between mt-4">
+      <a href="{{ item.url }}" class="text-blue-500 hover:underline">Read more</a>
+      <!--<div>
+        <a href="#" class="flex items-center">
+          <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=731&amp;q=80"
+            alt="avatar" class="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block">
+          <h1 class="font-bold text-gray-700 hover:underline">Alex John</h1>
+        </a></div>-->
+    </div>
   </div>
 </div>
+{% endfor %}

@@ -10,7 +10,7 @@ tags:
 
 You know that feeling you get when you've became one year older?\
 Or that feeling you get every new year?\
-That feeling of time passing quicker than you imagined.\
+That feeling of time passing quicker than you imagined.<!--excerpt-->\
 The feeling that another year has gone by\
 And there's still so much more you want to do.\
 Time passes so fast,\

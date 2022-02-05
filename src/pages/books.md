@@ -2,13 +2,12 @@
 eleventyExcludeFromCollections: true
 layout: "post.html"
 title: 'Books'
-date: Last Modified
 toc: true
 ---
 
 These are drafts that I work on in my free time, unless otherwise noted. You may read them, but do not expect them to be finished, or free of errors and plot holes. I write them using [Draft](https://draftin.com).
 
-You can find character profiles [here](characters).
+You can find character profiles [here](/characters).
 
 ## [Kidnapped and Afraid](http://kaa.withdraft.com)
 

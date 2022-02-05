@@ -7,6 +7,16 @@ media_folder: "_site/assets/images"
 public_folder: "/assets/images"
 
 collections:
+  - name: "pages"
+    label: "Pages"
+    folder: "src/pages"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "select", options: ["home.html", "psot.html", "character.html"]}
+      - {label: "TOC", name: 'toc', widget: 'boolean', required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "blog"
     label: "Posts"
     folder: "src/posts"
@@ -46,7 +56,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "characters"
     label: "Characters"
-    folder: "src/books/characters"
+    folder: "src/characters"
     create: true
     slug: "{{slug}}"
     preview_path: "books/characters/{{slug}}"

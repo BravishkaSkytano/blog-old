@@ -8,7 +8,7 @@ tags:
 
 Sometimes I wonder what's different 'bout today\
 It doesn't take long till I find something to say.\
-Every day is different in its own way.\
+Every day is different in its own way.<!--excerpt-->\
 Every day is special and as unique as today.\
 Everybody likes tomorrow and sure, it's swell,\
 But today is a day to be liked as well.\

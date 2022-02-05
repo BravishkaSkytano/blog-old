@@ -1,27 +1,84 @@
 {% extends "base.html" %} {% block content %}
-<div class="contrast-colors rounded px-4 py-16 mx-auto sm:px-6 sm:py-12 lg:max-w-5xl lg:py-20 lg:px-8 xl:max-w-6xl mb-6">
-  <div class="max-w-xl mb-10 md:mx-auto text-center lg:max-w-2xl md:mb-12">
-    <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-      <span class="relative inline-block">
-        <svg viewBox="0 0 52 24" fill="currentColor" class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-500 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
-          <defs>
-            <pattern id="db164e35-2a0e-4c0f-ab05-f14edc6d4d30" x="0" y="0" width=".135" height=".30">
-              <circle cx="1" cy="1" r=".7"></circle>
-            </pattern>
-          </defs>
-          <rect fill="url(#db164e35-2a0e-4c0f-ab05-f14edc6d4d30)" width="52" height="24"></rect>
-        </svg>
-        <span class="relative text-transition">{{ title }}</span>
-      </span>
-    </h2>
-    {% if excerpt %}
-    <p class="text-base md:text-lg">
-      {{ excerpt }}
-    </p>
-    {% endif %}
+{% include 'header.html' %}
+<div class="overflow-x-hidden main-colors">
+  <div class="px-6 py-8">
+    <div class="container flex justify-between mx-auto">
+      <div class="w-full lg:w-8/12">
+        {{ content | safe }}
+      </div>
+      <div class="hidden w-4/12 -mx-8 lg:block">
+        <!--Author-->
+        <div class="px-8">
+          <h2 class="mb-4 text-xl font-bold text-gray-700">Author</h2>
+          <div class="flex flex-col max-w-sm px-6 py-4 mx-auto contrast-colors rounded-lg shadow-md">
+            <div class="-mx-4">
+              <div class="flex items-center">
+                <img src="{{ author.avatar }}" alt="avatar" class="object-cover w-20 h-20 mx-4 rounded-full">
+                <p>
+                  <span class="mx-1 font-bold text-gray-700">{{ author.name }}</span><br>
+                  <span class="text-sm font-light text-gray-700">{{ author.location }}</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Tags-->
+        <div class="px-8 mt-10">
+          <h1 class="mb-4 text-xl font-bold text-gray-700">Tags</h1>
+          <div class="flex flex-col max-w-sm px-4 py-6 mx-auto contrast-colors rounded-lg shadow-md">
+            <ul>
+              {% for tag in collections.tagList %}{% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+              <li class="my-2">
+                <a href="{{ tagUrl | url }}"
+                  class="mx-1 font-bold text-gray-700 capitalize hover:text-gray-600 hover:underline">-
+                  {{ tag }} <span class="text-base">({{ collections[tag].length }})</span>
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        <!--Quote-->
+        <div class="px-8 mt-10">
+          <h1 class="mb-4 text-xl font-bold text-gray-700">BrainyQuote</h1>
+          <div class="max-w-sm px-8 py-6 mx-auto contrast-colors rounded-lg shadow-md">
+            <div class="mt-4">
+              <div class="text-lg font-medium text-gray-700 text-center">
+                <script type="text/javascript" src="https://www.brainyquote.com/link/quotebr.js"></script>
+                <small><i><a href="https://www.brainyquote.com/quote_of_the_day" target="_blank" rel="nofollow">more
+                      Quotes</a></i></small>
+              </div>
+            </div>
+            <div class="mt-4">
+              <div class="text-lg font-medium text-gray-700 text-center">
+                <script type="text/javascript" src="https://www.brainyquote.com/link/quotear.js"></script>
+                <small><i><a href="/feeds/art" target="_blank" rel="nofollow">more Art Quotes</a></i></small>
+              </div>
+            </div>
+            <div class="mt-4">
+              <div class="text-lg font-medium text-gray-700 text-center">
+                <script type="text/javascript" src="https://www.brainyquote.com/link/quotefu.js"></script>
+                <small><i><a href="/feeds/funny" target="_blank" rel="nofollow">more Funny Quotes</a></i></small>
+              </div>
+            </div>
+            <div class="mt-4">
+              <div class="text-lg font-medium text-gray-700 text-center">
+                <script type="text/javascript" src="https://www.brainyquote.com/link/quotelo.js"></script>
+                <small><i><a href="/feeds/love" target="_blank" rel="nofollow">more Love Quotes</a></i></small>
+              </div>
+            </div>
+            <div class="mt-4">
+              <div class="text-lg font-medium text-gray-700 text-center">
+                <script type="text/javascript" src="https://www.brainyquote.com/link/quotena.js"></script>
+                <small><i><a href="/feeds/nature" target="_blank" rel="nofollow">more Nature Quotes</a></i></small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-{{ content | safe }}
 
 {% endblock %}

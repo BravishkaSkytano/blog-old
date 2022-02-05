@@ -132,7 +132,7 @@ module.exports = config => {
 
   config.setFrontMatterParsingOptions({
     excerpt: true,
-    excerpt_separator: '<!-- excerpt -->'
+    excerpt_separator: '<!--excerpt-->'
   });
 
   config.addShortcode('excerpt', (post) => {
@@ -153,7 +153,7 @@ module.exports = config => {
 
   config.addFilter("excerpt", (post) => {
     const content = post.replace(/(<([^>]+)>)/gi, "");
-    return content.substr(0, content.lastIndexOf(" ", 350)) + "...";
+    return content.substr(0, content.lastIndexOf(" ", 250)) + "...";
   });
 
   config.addFilter("strip_html", (item) => {

@@ -11,7 +11,7 @@ I wince as another rock hit my skin.\
 I feel like it left a mark\
 So I check, but find none.\
 They didn't use to hurt so much,\
-They were smaller, too.\
+They were smaller, too.<!--excerpt-->\
 At first, they were pebbles\
 And I could easily shake 'em off\
 But now they've gotten bigger and faster\
