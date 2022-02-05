@@ -171,7 +171,7 @@ module.exports = config => {
 
   config.addCollection('characters', function(collectionApi) {
     return collectionApi
-      .getFilteredByGlob('src/books/characters/*.md')
+      .getFilteredByGlob('src/characters/*.md')
       // Sort content alphabetically by `title`
       .sort((a, b) => {
         const titleA = a.data.title.toUpperCase()
