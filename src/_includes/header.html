@@ -17,9 +17,14 @@
     </h2>
     <div class="flex flex-row flex-wrap leading-normal tracking-wide text-gray-700 font-semibold">
       {% if date %}<div class="flex-auto">
-        {% if updated == true %}Last Updated: {% endif %}<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+        {% if updated == true %}Updated: {% endif %}<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
       </div>{% endif %}
-      {% if layout == 'post.html' %}
+      {% if layout == 'character.html' %}
+      <div class="flex-auto">
+        From <a href="/books/#{{ category | slugify }}" class="italic">{{ category }}</a>
+      </div>
+      {% endif %}
+      {% if layout == 'post.html' or 'character.html' %}
       <div class="flex-auto">
         {{ content | emojiReadTime }}
       </div>
