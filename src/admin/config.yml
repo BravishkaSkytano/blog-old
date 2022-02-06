@@ -1,6 +1,7 @@
 backend:
-  name: git-gateway
-  branch: 11ty+tailwind 
+  name: github
+  repo: Aspiring-Writer/blog
+  branch: 11ty+tailwind
 
 publish_mode: editorial_workflow
 media_folder: "_site/assets/images"
