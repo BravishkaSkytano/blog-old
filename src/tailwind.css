@@ -59,9 +59,9 @@
     @apply text-center;
   }
   .prose p:first-of-type {
-    @apply first-line:uppercase first-line:tracking-widest
+    @apply first-letter:uppercase first-letter:tracking-widest
     first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
-    first-letter:mr-3 first-letter:float-left;
+    first-letter:mr-3 first-letter:float-left first-letter:font-serif;
   }
   a, .prose a {
     @apply text-transition;
