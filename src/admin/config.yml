@@ -26,7 +26,7 @@ collections:
     preview_path: "posts/{{category}}/{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
       - {label: "Date", name: "date", widget: "datetime", date_format: "MM DD, YYYY"}
       - {label: "Updated?", name: "updated", widget: "boolean", required: false}
       - {label: "TOC", name: "toc", widget: "boolean", required: false}
