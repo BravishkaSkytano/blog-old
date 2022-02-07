@@ -1,10 +1,14 @@
 ---
 title: We All Have Special Needs
+subtitle: A Review of "The Open Door"
 date: 2022-02-07T00:27:06.943Z
+category:
+  - Review
 tags:
   - review
+  - special-needs
 review:
-  - start: 2022-02-07T00:26:56.633Z
+  - start: ""
     director: Steven F. Zambo
     movie: true
     producer: Karen Erdmann (executive producer), Mark Erdmann (executive producer),
@@ -14,7 +18,8 @@ review:
       Laura Backlund (co-producer), Rachel Backlund	(co-producer), Joyce
       Beglinger (co-producer), William Beglinger (co-producer)
     title: The Open Door
-    end: 2022-02-07T00:26:56.696Z
+    end: ""
+    image: https://m.media-amazon.com/images/M/MV5BYWFkMzU0ODAtYTBlYy00OTYxLTg1YzItNzczZjNmNzFmMmRhXkEyXkFqcGdeQXVyNjk2Mjc2OTI@._V1_QL75_UX180_CR0,1,180,266_.jpg
     released: 2017-06-01T23:26:00.000Z
     rating: 5
     actors: David Ruprecht (Roy), Michael Jeske (Sam), Megan Ann Jacobs (Madison),
