@@ -1,7 +1,8 @@
 ---
 layout: 'home.html'
 ---
-<div class="contrast-colors rounded mb-10 mx-auto max-w-2xl py-8 px-2 sm:py-12 sm:px-6 lg:max-w-3xl lg:py-16 lg:px-8 xl:max-w-4xl">
+<div
+  class="contrast-colors rounded mb-10 mx-auto max-w-2xl py-8 px-2 sm:py-12 sm:px-6 lg:max-w-3xl lg:py-16 lg:px-8 xl:max-w-4xl">
   <div class="prose dark:prose-dark prose-sm lg:prose-lg xl:prose-xl px-4 mx-auto">
 
     {% if review %}
@@ -10,9 +11,7 @@ layout: 'home.html'
 
     {% if toc == true %}
     <!--TOC-->
-    <div class="max-w-lg mx-auto leading-relaxed font-semibold p-3">
-      {{ content | toc | safe }}
-    </div>
+    {% include 'toc.html' %}
     {% endif %}
 
     <!--Post-->
@@ -24,12 +23,12 @@ layout: 'home.html'
     </p>-->
     {% readerBar "4px", "#047857", "#34D399" %}
 
-
   </div>
 </div>
 
 <div class="border-t divide-y">
-  <div class="contrast-colors mt-10 max-w-2xl mx-auto py-8 px-2 sm:py-12 sm:px-6 lg:max-w-3xl lg:py-16 lg:px-8 xl:max-w-4xl rounded">
+  <div
+    class="contrast-colors mt-10 max-w-2xl mx-auto py-8 px-2 sm:py-12 sm:px-6 lg:max-w-3xl lg:py-16 lg:px-8 xl:max-w-4xl rounded">
     <div class="prose dark:prose-dark prose-sm lg:prose-lg xl:prose-xl px-4 mx-auto">
       <h2>Comments</h2>
       <script src="https://utteranc.es/client.js" repo="Aspiring-Writer/blog" issue-term="title" label="Comments"

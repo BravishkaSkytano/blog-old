@@ -11,6 +11,17 @@
     </title>
     <meta name="description" content="{{ content | truncate(360) | strip_html }}" />
     <link rel="stylesheet" href="/assets/tailwind.css" />
+    <!-- Alpine collapse Plugins -->
+    <script
+      defer
+      src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"
+    ></script>
+
+    <!-- Alpine CDN -->
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
   </head>
   <body class="main-colors flex flex-col min-h-screen">
     {% include "nav.html" %}

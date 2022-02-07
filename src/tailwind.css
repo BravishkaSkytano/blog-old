@@ -52,31 +52,21 @@
   .callout .meta .meta-author::before {
     content: "by "
   }
-  .card {
-    @apply contrast-colors p-4 font-semibold rounded-md shadow-md hover:shadow-lg transition;
-  }
-  .card-float-left {
-    @apply w-full pb-3 md:w-1/3 md:mr-5 md:float-left;
-  }
-  .card-float-right {
-    @apply w-full mb-5 md:w-3/5 md:mx-auto md:float-right md:ml-5;
-  }
-  .card-float-left p, .card-float-right p {
-    @apply text-center pt-4;
-  }
-  .cover {
-    @apply w-full rounded md:w-4/5 md:mx-auto;
-  }
 }
 
 @layer utilities {
   .prose h2 {
     @apply text-center;
   }
+  .prose p:first-of-type {
+    @apply first-line:uppercase first-line:tracking-widest
+    first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
+    first-letter:mr-3 first-letter:float-left;
+  }
   a, .prose a {
     @apply text-transition;
   }
   .text-transition {
-    @apply transition-colors duration-200 text-transparent bg-clip-text bg-gradient-to-b from-green-300 via-blue-500 to-purple-600 hover:text-gray-900;
+    @apply p-1 font-medium rounded-md transition-colors bg-green-300 text-purple-600 hover:bg-purple-600 hover:text-green-300;
   }
 }

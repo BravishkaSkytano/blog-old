@@ -9,7 +9,7 @@
       <div class="hidden w-4/12 -mx-8 lg:block">
         <!--Author-->
         <div class="px-8">
-          <h2 class="mb-4 text-xl font-bold text-gray-700">Author</h2>
+          <p class="mb-4 text-xl font-bold text-gray-700">Author</p>
           <div class="flex flex-col max-w-sm px-6 py-4 mx-auto contrast-colors rounded-lg shadow-md">
             <div class="-mx-4">
               <div class="flex items-center">
@@ -24,7 +24,7 @@
         </div>
         <!--Tags-->
         <div class="px-8 mt-10">
-          <h1 class="mb-4 text-xl font-bold text-gray-700">Tags</h1>
+          <p class="mb-4 text-xl font-bold text-gray-700">Tags</p>
           <div class="flex flex-col max-w-sm px-4 py-6 mx-auto contrast-colors rounded-lg shadow-md">
             <ul>
               {% for tag in collections.tagList %}{% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
@@ -40,7 +40,7 @@
         </div>
         <!--Quote-->
         <div class="px-8 mt-10">
-          <h1 class="mb-4 text-xl font-bold text-gray-700">BrainyQuote</h1>
+          <p class="mb-4 text-xl font-bold text-gray-700">BrainyQuote</p>
           <div class="max-w-sm px-8 py-6 mx-auto contrast-colors rounded-lg shadow-md">
             <div class="mt-4">
               <div class="text-lg font-medium text-gray-700 text-center">

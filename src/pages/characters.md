@@ -5,6 +5,8 @@ title: 'Characters'
 toc: true
 ---
 
+<div class="clear-both"></div>
+
 ## Kidnapped and Afraid
 
 {% for item in collections.characters %}

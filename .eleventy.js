@@ -81,8 +81,8 @@ module.exports = config => {
     ignoredElements: [],  // Elements to ignore when constructing the label for every header (useful for ignoring permalinks, must be selectors)
     wrapper: 'nav',       // Element to put around the root `ol`
     wrapperClass: '',  // Class for the element around the root `ol`
-    headingText: 'Table of Contents',      // Optional text to show in heading above the wrapper element
-    headingTag: 'p'      // Heading tag when showing heading above the wrapper element
+    //headingText: 'Table of Contents',      // Optional text to show in heading above the wrapper element
+    //headingTag: 'p'      // Heading tag when showing heading above the wrapper element
   });
 
   // Example Markdown configuration (to add IDs to the headers)
