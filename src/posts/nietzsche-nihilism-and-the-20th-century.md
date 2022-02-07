@@ -2,6 +2,8 @@
 title: Nietzsche, Nihilism, and the 20th Century
 subtitle: The Beginning of an Empty and Meaningless Life
 date: 2022-02-07T21:00:47.673Z
+category:
+  - History
 tags:
   - history
   - depression
