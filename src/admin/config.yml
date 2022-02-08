@@ -30,12 +30,7 @@ collections:
       - {label: "Date", name: "date", widget: "datetime", date_format: "MM DD, YYYY"}
       - {label: "Updated?", name: "updated", widget: "boolean", required: false}
       - {label: "TOC", name: "toc", widget: "boolean", required: false}
-      - label: "Category"
-        name: "category"
-        widget: "list"
-        required: false
-        alow_add: true
-        hint: "Devotional, Poetry, Tutorial, Study Strategies, Review, Updates"
+      - {label: "Category", name: "category", widget: "string", required: false, hint: "Devotional, Poetry, Tutorial, Study Strategies, Review, Updates"}
       - label: "Tags"
         name: "tags"
         widget: "list"
