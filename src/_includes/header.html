@@ -35,11 +35,11 @@
         {{ description }}
       </div>
       {% endif %}
-      {% if tags %}
-      <div class="flex-auto">
+    </div>
+    {% if tags %}<div class="flex flex-row flex-wrap leading-normal tracking-wide">
+      <div class="pt-2 flex-auto">
         {% for tag in tags %}<a href="/tags/{{ tag | slugify }}" aria-label="Tag">#{{ tag }} </a>{% endfor %}
       </div>
-      {% endif %}
-    </div>
+    </div>{% endif %}
   </div>
 </div>

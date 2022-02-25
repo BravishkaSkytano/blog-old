@@ -9,10 +9,10 @@ layout: 'home.html'
     {% include "review-stats.html" %}
     {% endif %}
 
+    <!--TOC
     {% if toc == true %}
-    <!--TOC-->
     {% include 'toc.html' %}
-    {% endif %}
+    {% endif %}-->
 
     <!--Post-->
     {{ content | safe }}
