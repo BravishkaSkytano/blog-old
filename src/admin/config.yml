@@ -42,15 +42,15 @@ collections:
         required: false
         fields:
           - {label: "Cover", name: "image", widget: "image"}
-          - {label: "Movie", name: "movie", widget: "boolean"}
+          - {label: "Movie", name: "movie", widget: "boolean", required: false}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Author", name: "author", widget: "string", required: false}
           - {label: "Director", name: "director", widget: "string", required: false}
           - {label: "Producer", name: "producer", widget: "string", required: false}
           - {label: "Actors", name: "actors", widget: "string", required: false}
-          - {label: "Release Date", name: "released", widget: "datetime", date_format: "MM DD, YYYY"}
-          - {label: "Start Date", name: "start", widget: "datetime", date_format: "MM DD, YYYY", required: false}
-          - {label: "End Date", name: "end", widget: "datetime", date_format: "MM DD, YYYY", required: false}
+          - {label: "Release Date", name: "released", widget: "string"}
+          - {label: "Start Date", name: "start", widget: "string", required: false}
+          - {label: "End Date", name: "end", widget: "string", required: false}
           - {label: "Rating", name: "rating", widget: "number", min: 1, max: 5}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "characters"
