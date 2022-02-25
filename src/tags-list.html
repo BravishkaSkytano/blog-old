@@ -1,21 +1,33 @@
 ---
-layout: home.html
+layout: base.html
 title: "Tags' List"
 pagination:
   data: collections.tagList
   size: 25
   alias: tags
-  filter: ['all', 'blog', 'tag-list']
+  filter: ["all", "blog", "tag-list", "characters"]
 permalink: /tags/
 ---
-<div class="flex flex-col max-w-md px-4 py-6 mx-auto contrast-colors rounded-lg shadow-md">
-  <ul>
-    {% for tag in tags %}{% set tagUrl %}{{ tag | slug }}/{% endset %}
-    <li class="my-2">
-      <a href="{{ tagUrl | url }}" class="mx-1 font-bold text-gray-700 capitalize hover:text-gray-600 hover:underline">-
-        {{ tag }} <span class="text-base">({{ collections[tag].length }})</span>
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
+
+<div class="overflow-x-hidden main-colors">
+  <div class="px-6 py-8">
+    <div class="container flex justify-between mx-auto">
+      <div
+        class="flex flex-col max-w-md px-4 py-6 mx-auto contrast-colors rounded-lg shadow-md"
+      >
+        <ul>
+          {% for tag in tags %}{% set tagUrl %}{{ tag | slug }}/{% endset %}
+          <li class="my-2">
+            <a
+              href="{{ tagUrl | url }}"
+              class="mx-1 font-bold text-gray-700 capitalize hover:text-gray-600 hover:underline"
+              >- {{ tag }}
+              <span class="text-base">({{ collections[tag].length }})</span>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>

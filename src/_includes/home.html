@@ -30,7 +30,7 @@
               {% for tag in collections.tagList %}{% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
               <li class="my-2">
                 <a href="{{ tagUrl | url }}"
-                  class="mx-1 font-bold text-gray-700 capitalize hover:text-gray-600 hover:underline">-
+                  class="mx-1 font-bold">-
                   {{ tag }} <span class="text-base">({{ collections[tag].length }})</span>
                 </a>
               </li>
