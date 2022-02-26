@@ -7,9 +7,10 @@
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
     <link href="/feed.xml" rel=”alternate” type=”application/rss+xml” />
     <title>
-      {{ title }} ~ {% if category %}{{ category }} ~ {% endif %}An Aspiring Writer's Haven
+      {{ title }} ~ {% if category %}{{ category }} ~ {% endif %}An Aspiring
+      Writer's Haven
     </title>
-    <meta name="description" content="{{ content | truncate(360) | strip_html }}" />
+    <meta name="description" content="{{ post.data.excerpt }}" />
     <link rel="stylesheet" href="/assets/tailwind.css" />
     <!-- Alpine collapse Plugins -->
     <script
@@ -26,7 +27,7 @@
   <body class="main-colors flex flex-col min-h-screen">
     {% include "nav.html" %}
     <div class="reader-bar-start flex-grow">
-      {% block content %}{% endblock %}
+      {{ content | safe }}
     </div>
     {% include "footer.html" %}
   </body>

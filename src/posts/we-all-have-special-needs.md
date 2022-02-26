@@ -4,7 +4,7 @@ subtitle: A Review of "The Open Door"
 date: 2022-02-07T00:27:06.943Z
 category: Review
 tags:
-  - review
+  - Review
   - special-needs
 review:
   director: Steven F. Zambo
@@ -26,7 +26,7 @@ review:
     (Mary Gray), Bethany Provan (Young Madison)
 ---
 I have a passion for people with special needs, I just love them. As a young teenager, God kept putting me around children who had special needs. At first, I saw them as different and a great struggle to handle. The little girl that I kept interacting with had autism and her parents were not doing anything to help control it. She was a big hassle and because of the way I was brought up, I couldn't idly stand by and watch her mother struggle with her child alone. It was an annoying situation, that grew into more frequent encounters, and yet surprisingly, I couldn't ignore the girl or her mother. A desire in me spawned to learn more about this forgotten community of gifted children.
-
+<!--excerpt-->
 A little while later, I became a member of my church and signed up to be part of their special needs' ministry called God's Own. The leader of this ministry was so surprised, and skeptical, to hear that a seventeen year-old wanted to work with these children that she thought that it was actually my mother who had signed up instead! After my mom spoke to her and reassured her that I was serious, the leader agreed to interview me for the job (all volunteers are interviewed, and a background check is performed before we are allowed the position. Cool, right?). When she met me, she saw something in me that encouraged her to let me join, despite the small technicality that I wasn't eighteen, yet. My passion only grew from there as I was put around children of all ages with different conditions that I usually couldn't remember the names for. God gave me a gift for them, and even the children could see it in me as well. Some of them, not even knowing my name, would just stare at me. One child even started calling out to others when he saw me, "She's here! She's here! Look, she's here!" Another liked to just get up from his chair, run behind me, and start smelling my hair. It was so much fun and I enjoyed being around them.
 
 Two years later, I watched a movie titled "The Open Door," about a young man with special needs who had to go live with his older sister after their mom's sudden death. The movie was a great view of the special needs' community and how they are treated like lesser people because of their shortcomings. One thing that Sam, the young man, said was that people didn't see him, they only saw his problems. They couldn't look him in the eye because then they would have to admit that he was human. That don't realize that everyone has special needs, but that some people wear their special needs on the outside for all to see, while others wear it on the inside, hidden from view. There is so much truth in those statements.

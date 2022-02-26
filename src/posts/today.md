@@ -3,7 +3,7 @@ title: "Today"
 date: 2020-05-02
 category: 'Poetry'
 tags:
-  - poetry
+  - Poetry
 ---
 
 Sometimes I wonder what's different 'bout today\

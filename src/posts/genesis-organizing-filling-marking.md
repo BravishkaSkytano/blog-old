@@ -3,9 +3,9 @@ title: 'Genesis: Organizing, Filling, Marking'
 date: 2020-11-15
 category: 'Devotional'
 tags:
-  - devotional
-  - Journey Through The Bible
-  - Genesis
+  - Devotional
+  - journey through the bible
+  - genesis
   - theology
 ---
 

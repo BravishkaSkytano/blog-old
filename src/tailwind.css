@@ -25,14 +25,13 @@
     @apply h-4 w-4 md:h-6 md:w-6;
   }
   .callout {
-    @apply flex flex-row my-5;
+    @apply flex flex-row my-5 bg-green-300 rounded;
   }
   .callout svg {
-    @apply w-24 h-24;
+    @apply w-full h-full;
   }
   .callout .cover-img {
-    @apply block flex-none relative;
-    min-height: 100px
+    @apply block flex-none relative min-h-full;
   }
   .callout .cover-img img {
     @apply absolute left-0 top-0 w-full h-full object-cover;
@@ -44,10 +43,10 @@
     @apply block overflow-hidden;
   }
   .callout .meta .meta-desc {
-    @apply italic overflow-hidden mt-2;
+    @apply italic overflow-hidden mt-2 text-base;
   }
   .callout .meta .meta-author, .callout .meta .meta-dom {
-    @apply block mt-2;
+    @apply block mt-2 text-sm;
   }
   .callout .meta .meta-author::before {
     content: "by "

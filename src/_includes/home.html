@@ -1,4 +1,6 @@
-{% extends "base.html" %} {% block content %}
+---
+layout: base.html
+---
 {% include 'header.html' %}
 <div class="overflow-x-hidden main-colors">
   <div class="px-6 py-8">
@@ -10,13 +12,24 @@
         <!--Author-->
         <div class="px-8">
           <p class="mb-4 text-xl font-bold text-gray-700">Author</p>
-          <div class="flex flex-col max-w-sm px-6 py-4 mx-auto contrast-colors rounded-lg shadow-md">
+          <div
+            class="flex flex-col max-w-sm px-6 py-4 mx-auto contrast-colors rounded-lg shadow-md"
+          >
             <div class="-mx-4">
               <div class="flex items-center">
-                <img src="{{ author.avatar }}" alt="avatar" class="object-cover w-20 h-20 mx-4 rounded-full">
+                <img
+                  src="{{ author.avatar }}"
+                  alt="avatar"
+                  class="object-cover w-20 h-20 mx-4 rounded-full"
+                />
                 <p>
-                  <span class="mx-1 font-bold text-gray-700">{{ author.name }}</span><br>
-                  <span class="text-sm font-light text-gray-700">{{ author.location }}</span>
+                  <span class="mx-1 font-bold text-gray-700">{{
+                    author.name
+                  }}</span
+                  ><br />
+                  <span class="text-sm font-light text-gray-700">{{
+                    author.location
+                  }}</span>
                 </p>
               </div>
             </div>
@@ -25,13 +38,17 @@
         <!--Tags-->
         <div class="px-8 mt-10">
           <p class="mb-4 text-xl font-bold text-gray-700">Tags</p>
-          <div class="flex flex-col max-w-sm px-4 py-6 mx-auto contrast-colors rounded-lg shadow-md">
+          <div
+            class="flex flex-col max-w-sm px-4 py-6 mx-auto contrast-colors rounded-lg shadow-md"
+          >
             <ul>
-              {% for tag in collections.tagList %}{% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+              {% for tag in collections.tagList %}{% set tagUrl %}/tags/{{
+                tag | slugify
+              }}/{% endset %}
               <li class="my-2">
-                <a href="{{ tagUrl | url }}"
-                  class="mx-1 font-bold">-
-                  {{ tag }} <span class="text-base">({{ collections[tag].length }})</span>
+                <a href="{{ tagUrl | url }}" class="mx-1 font-bold"
+                  >- {{ tag }}
+                  <span class="text-base">({{ collections[tag].length }})</span>
                 </a>
               </li>
               {% endfor %}
@@ -41,36 +58,85 @@
         <!--Quote-->
         <div class="px-8 mt-10">
           <p class="mb-4 text-xl font-bold text-gray-700">BrainyQuote</p>
-          <div class="max-w-sm px-8 py-6 mx-auto contrast-colors rounded-lg shadow-md">
+          <div
+            class="max-w-sm px-8 py-6 mx-auto contrast-colors rounded-lg shadow-md"
+          >
             <div class="mt-4">
               <div class="text-lg font-medium text-gray-700 text-center">
-                <script type="text/javascript" src="https://www.brainyquote.com/link/quotebr.js"></script>
-                <small><i><a href="https://www.brainyquote.com/quote_of_the_day" target="_blank" rel="nofollow">more
-                      Quotes</a></i></small>
+                <script
+                  type="text/javascript"
+                  src="https://www.brainyquote.com/link/quotebr.js"
+                ></script>
+                <small
+                  ><i
+                    ><a
+                      href="https://www.brainyquote.com/quote_of_the_day"
+                      target="_blank"
+                      rel="nofollow"
+                      >more Quotes</a
+                    ></i
+                  ></small
+                >
               </div>
             </div>
             <div class="mt-4">
               <div class="text-lg font-medium text-gray-700 text-center">
-                <script type="text/javascript" src="https://www.brainyquote.com/link/quotear.js"></script>
-                <small><i><a href="/feeds/art" target="_blank" rel="nofollow">more Art Quotes</a></i></small>
+                <script
+                  type="text/javascript"
+                  src="https://www.brainyquote.com/link/quotear.js"
+                ></script>
+                <small
+                  ><i
+                    ><a href="/feeds/art" target="_blank" rel="nofollow"
+                      >more Art Quotes</a
+                    ></i
+                  ></small
+                >
               </div>
             </div>
             <div class="mt-4">
               <div class="text-lg font-medium text-gray-700 text-center">
-                <script type="text/javascript" src="https://www.brainyquote.com/link/quotefu.js"></script>
-                <small><i><a href="/feeds/funny" target="_blank" rel="nofollow">more Funny Quotes</a></i></small>
+                <script
+                  type="text/javascript"
+                  src="https://www.brainyquote.com/link/quotefu.js"
+                ></script>
+                <small
+                  ><i
+                    ><a href="/feeds/funny" target="_blank" rel="nofollow"
+                      >more Funny Quotes</a
+                    ></i
+                  ></small
+                >
               </div>
             </div>
             <div class="mt-4">
               <div class="text-lg font-medium text-gray-700 text-center">
-                <script type="text/javascript" src="https://www.brainyquote.com/link/quotelo.js"></script>
-                <small><i><a href="/feeds/love" target="_blank" rel="nofollow">more Love Quotes</a></i></small>
+                <script
+                  type="text/javascript"
+                  src="https://www.brainyquote.com/link/quotelo.js"
+                ></script>
+                <small
+                  ><i
+                    ><a href="/feeds/love" target="_blank" rel="nofollow"
+                      >more Love Quotes</a
+                    ></i
+                  ></small
+                >
               </div>
             </div>
             <div class="mt-4">
               <div class="text-lg font-medium text-gray-700 text-center">
-                <script type="text/javascript" src="https://www.brainyquote.com/link/quotena.js"></script>
-                <small><i><a href="/feeds/nature" target="_blank" rel="nofollow">more Nature Quotes</a></i></small>
+                <script
+                  type="text/javascript"
+                  src="https://www.brainyquote.com/link/quotena.js"
+                ></script>
+                <small
+                  ><i
+                    ><a href="/feeds/nature" target="_blank" rel="nofollow"
+                      >more Nature Quotes</a
+                    ></i
+                  ></small
+                >
               </div>
             </div>
           </div>
@@ -79,6 +145,3 @@
     </div>
   </div>
 </div>
-
-
-{% endblock %}

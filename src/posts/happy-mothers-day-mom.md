@@ -3,9 +3,8 @@ title: "Happy Mother's Day, Mom"
 date: 2020-05-05
 category: 'Poetry'
 tags:
-  - poetry
+  - Poetry
   - holidays
-  - Mothers Day
 ---
 
 You know that feeling you get when you've became one year older?\

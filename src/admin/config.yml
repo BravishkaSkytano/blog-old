@@ -35,7 +35,6 @@ collections:
         name: "tags"
         widget: "list"
         allow_add: true
-        hint: "devotional, poetry, review, tutorial, studying, study strategies, theology, holidays, patience, angels, prayer, weapons, death, sorrow, loss, depression, comfort, OT, NT, updates"
       - label: "Review Stats"
         name: "review"
         widget: "list"

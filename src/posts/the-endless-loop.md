@@ -4,7 +4,7 @@ date: 2021-10-01T04:00:00.000Z
 series: Poetry
 category: Poetry
 tags:
-  - poetry
+  - Poetry
   - depression
 ---
 I wince as another rock hit my skin.\
