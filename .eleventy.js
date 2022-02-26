@@ -24,6 +24,7 @@ module.exports = (config) => {
   // Example Markdown configuration (to add IDs to the headers)
   const markdownIt = require("markdown-it");
   const markdownItAnchor = require("markdown-it-anchor");
+  const markdownItFootnote = require("markdown-it-footnote");
   config.setLibrary(
     "md",
     markdownIt({
@@ -31,9 +32,11 @@ module.exports = (config) => {
       breaks: false,
       linkify: true,
       typographer: true,
-    }).use(markdownItAnchor, {
-      slugify: (s) => slugify(s),
     })
+      .use(markdownItAnchor, {
+        slugify: (s) => slugify(s),
+      })
+      .use(markdownItFootnote)
   );
 
   config.addPassthroughCopy("src/admin");

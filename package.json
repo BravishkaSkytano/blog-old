@@ -40,5 +40,8 @@
     "moment": "^2.29.1",
     "postcss-cli": "^9.0.1",
     "tailwindcss": "^2.2.16"
+  },
+  "dependencies": {
+    "markdown-it-footnote": "^3.0.3"
   }
 }
