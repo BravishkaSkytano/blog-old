@@ -1,12 +1,9 @@
 ---
 title: Learning To Wait and Be Patient
-date: 2020-11-27
-category: 'Devotional'
-tags:
-  - Devotional
-  - patience
-  - angels
-  - prayer
+date: 2020-11-27T00:00:00-05:00
+category: Devotional
+tags: [Devotional, patience, angels, prayer]
+type: Journal
 ---
 
 Patience is a character trait that most people struggle to improve, especially in this country where we’re all spoiled and used to getting things instantly. We all want fast devices that do what we want within seconds. We need access to Google to answer all of our questions immediately. We don’t like long lines. We hate traffic. We just hate waiting for things. I remember there was one statistic that said most people would leave a website if it took over 5 seconds to load. Let’s face it, we’re spoiled rotten in this country.
