@@ -1,0 +1,31 @@
+favicon:
+  href: /favicon.png # Favicon of your site.
+  type: image/png # Icon type, possible values are(image/png, image/vnd.microsoft.icon, image/x-icon, image/gif)
+
+search: https://www.ecosia.org/search?q= # https://www.google.com/search?q==
+order_by: date # date,-date,title,url,...
+head: #'<!--<script src="" async></script>-->' # Add anything to <head></head>
+
+archives:
+  switch: false # true,false Switching this function.
+  categories: [] # Only the categories you set will be displayed on the archive page.
+
+menu:
+  Archives: archives
+  About: about
+
+footer_link:
+  #折影轻梦: https://nexmoe.com/
+
+github:
+  repo: Aspiring-Writer/books
+  edit: false # true,false
+  history: true # true,false
+
+comment: utteranc # 评论框，目前支持 gitalk,gitment,valine,disqus,disqusjs,changyan,livere,DiscussBot,utteranc,giscuss 使用 false 可以关闭
+
+utteranc: # https://utteranc.es/
+  repo: Aspiring-Writer/blog
+	issue_term: title
+	label: Comment
+	theme: github-light

@@ -1,5 +1,0 @@
-{
-  "layout": "post.html",
-  "read_time": true,
-  "permalink": "/posts/{{ category | slugify }}/{{ title | slugify }}/"
-}

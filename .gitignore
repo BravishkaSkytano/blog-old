@@ -1,15 +1,8 @@
-# Misc
-*.log
-npm-debug.*
-*.scssc
-*.swp
 .DS_Store
 Thumbs.db
-.sass-cache
-.env
-.cache
-
-# Node modules and output
-node_modules
-_site
-package-lock.json
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+_multiconfig.yml

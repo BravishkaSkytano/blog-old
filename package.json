@@ -1,47 +1,26 @@
 {
-  "name": "blog",
-  "version": "3.1.0",
-  "description": "Follow along as I write my heart out and explore the unknown depths of my imagination.",
-  "main": ".eleventy.js",
+  "name": "hexo-site",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "clean:win": "rmdir /Q /S _site",
-    "clean:linux": "rm -r _site",
-    "build": "ELEVENTY_PRODUCTION=true eleventy & NODE_ENV=production postcss src/tailwind.css --o _site/assets/tailwind.css --minify",
-    "start": "npm run tailwind && npx eleventy --serve",
-    "tailwind": "postcss src/tailwind.css -o _site/assets/tailwind.css",
-    "eleventy": "npx eleventy --serve"
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "hexo server"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Aspiring-Writer/blog.git"
-  },
-  "keywords": [],
-  "author": "Aspiring-Writer",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Aspiring-Writer/blog/issues"
-  },
-  "homepage": "https://github.com/Aspiring-Writer/blog#readme",
-  "devDependencies": {
-    "@11ty/eleventy": "^1.0.0",
-    "@11ty/eleventy-plugin-rss": "^1.1.2",
-    "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
-    "@sindresorhus/slugify": "^1.1.2",
-    "@tailwindcss/typography": "^0.4.1",
-    "autoprefixer": "^10.3.6",
-    "clean-css-cli": "^5.4.2",
-    "eleventy-plugin-embed-everything": "^1.13.3",
-    "eleventy-plugin-heroicons": "^0.2.0",
-    "eleventy-plugin-nesting-toc": "^1.3.0",
-    "eleventy-plugin-reader-bar": "^0.2.0",
-    "html-minifier": "^4.0.0",
-    "luxon": "^2.1.1",
-    "markdown-it-anchor": "^8.3.1",
-    "moment": "^2.29.1",
-    "postcss-cli": "^9.0.1",
-    "tailwindcss": "^2.2.16"
+  "hexo": {
+    "version": "6.1.0"
   },
   "dependencies": {
-    "markdown-it-footnote": "^3.0.3"
+    "hexo": "^6.0.0",
+    "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-category": "^1.0.0",
+    "hexo-generator-index": "^2.0.0",
+    "hexo-generator-tag": "^1.0.0",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-marked": "^5.0.0",
+    "hexo-renderer-stylus": "^2.0.0",
+    "hexo-server": "^3.0.0",
+    "hexo-theme-yet-the-books": "^1.3.4"
   }
 }
