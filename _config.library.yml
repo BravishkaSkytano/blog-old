@@ -1,5 +1,5 @@
 favicon:
-  href: /favicon.png # Favicon of your site.
+  href: /blog/favicon.png # Favicon of your site.
   type: image/png # Icon type, possible values are(image/png, image/vnd.microsoft.icon, image/x-icon, image/gif)
 
 search: https://www.ecosia.org/search?q= # https://www.google.com/search?q==

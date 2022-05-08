@@ -4,7 +4,7 @@
 
 # Site
 title: Aspiring Writer's Haven
-subtitle: ""
+subtitle: "A place to escape"
 description: ""
 keywords:
 author: Bravisha Skietano
@@ -13,7 +13,7 @@ timezone: ""
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: 'https://aspiring-writer.github.io/blog'
+url: "https://aspiring-writer.github.io/blog"
 permalink: :title/
 permalink_defaults:
 pretty_urls:
@@ -98,7 +98,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: yet-the-books
+theme: library #yet-the-books
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
