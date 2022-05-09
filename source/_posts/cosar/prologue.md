@@ -3,6 +3,7 @@ title: Prologue
 date: 2022-01-25
 categories: Court of Shadows and Ruin
 tags: [Fantasy, Romance]
+color: gray
 ---
 *They're dead.*
 

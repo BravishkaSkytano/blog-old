@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Kurale&display=swap');
 body {
 	margin: 0;
 	font-size: 1.35em;
@@ -158,7 +159,7 @@ a:hover {
 .content .library .books {
   display: grid;
   width: 1440px;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 15px;
 }
 
@@ -188,7 +189,7 @@ a:hover {
 }
 
 .content .library .books .book .cover.red {
-	background-image: url(../image/p0452_m.jpg);
+	background-image: url(../images/p0452_m.jpg);
 }
 
 .content .library .books .book .cover.red h1 {
@@ -197,7 +198,7 @@ a:hover {
 }
 
 .content .library .books .book .cover.purple {
-	background-image: url(../image/p0459_m.jpg);
+	background-image: url(../images/p0459_m.jpg);
 }
 
 .content .library .books .book .cover.purple h1 {
@@ -206,7 +207,7 @@ a:hover {
 }
 
 .content .library .books .book .cover.gray {
-	background-image: url(../image/p0402_m.jpg);
+	background-image: url(../images/p0402_m.jpg);
 }
 
 .content .library .books .book .cover.gray h1 {
@@ -215,7 +216,7 @@ a:hover {
 }
 
 .content .library .books .book .cover.blue {
-	background-image: url(../image/p0438_m.jpg);
+	background-image: url(../images/p0438_m.jpg);
 }
 
 .content .library .books .book .cover.blue h1 {
@@ -224,7 +225,7 @@ a:hover {
 }
 
 .content .library .books .book .cover.green {
-	background-image: url(../image/p0440_m.jpg);
+	background-image: url(../images/p0440_m.jpg);
 }
 
 .content .library .books .book .cover.green h1 {
@@ -251,7 +252,8 @@ a:hover {
 
 .content .post {
 	font-family: 'Kurale', serif;
-	padding: 3em 0;
+	width: 90%;
+  margin: auto;
 }
 
 .content .post .date {
@@ -260,15 +262,6 @@ a:hover {
 
 .content .post p {
   margin: 15px auto;
-}
-
-.content .post p:first-of-type::first-letter {
-	font-family: 'Cinzel Decorative', cursive;
-  color: #aa874b;
-  float: left;
-  font-size: 5em;
-  margin: 0 .2em 0 0;
-  line-height: 0.85;
 }
 
 .content .info {
@@ -420,6 +413,19 @@ article p {
 	line-height: 1.5em;
 }
 
+article p:first-of-type::first-letter {
+	font-family: 'Cinzel Decorative', cursive;
+  color: #aa874b;
+  float: left;
+  font-size: 5em;
+  margin: 0 0.2em 0 0;
+  line-height: 0.85;
+}
+
+article p + p {
+	text-indent: 2em;
+}
+
 article a {
 	color: #aa874b;
 	word-break: break-all;
@@ -500,7 +506,7 @@ article code {
 	color: #aa874b;
 	padding: 0 7px;
 	border-radius: 3px;
-	margin: auto .2em;
+	margin: auto 0.2em;
 }
 
 article pre,
@@ -531,4 +537,38 @@ article h1 {
 
 article .catalogue {
 	margin: auto!important;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  float: right;
+  width: 300px;
+  max-width: 45%;
+  margin: 2px 16px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  height: auto;
+}
+
+.card .card-content {
+  padding: 16px;
+}
+
+.card .card-content h4 {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #aa874b;
+  text-align: center;
+}
+
+.card .card-content div {
+  padding-bottom: 5px;
 }

@@ -2,7 +2,7 @@
 title: "Today"
 date: 2020-05-02
 category: Poetry
-cover: image/poetry.jpg
+cover: images/poetry.jpg
 ---
 
 Sometimes I wonder what's different 'bout today\

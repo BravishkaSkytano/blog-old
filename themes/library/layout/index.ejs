@@ -10,6 +10,21 @@
 			</div>
 		</div>
 	</div>
+	<div class="container">
+    <h2>
+      Recently Added
+    </h2>
+		<ul  class="catalogue">
+			<% page.posts.sort('date',-1).limit(5).each(post => { %>
+				<% post.categories.map(function(category){  %>
+					<li class="display"><a href="<%- url_for(post.path) %>" >
+						<span class="title"><%- category.name %>：<%- post.title %></span>
+						<span class="date"><span><%= date(post.date, 'MM-DD') %></span></span>
+					</a></li>
+				<% }) %>
+			<% }) %>
+			</ul>
+	</div>
 	<div class="library">
 		<div class="books">
 			<% site.categories.sort('length').map(function(category){  %>
