@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Kurale&display=swap');
 body {
 	margin: 0;
 	font-size: 1.35em;
@@ -250,12 +249,6 @@ a:hover {
 	text-align: center;
 }
 
-.content .post {
-	font-family: 'Kurale', serif;
-	width: 90%;
-  margin: auto;
-}
-
 .content .post .date {
 	text-align: right;
 }
@@ -271,8 +264,10 @@ a:hover {
 }
 
 .content .post-nav {
+	width: 100%;
 	display: flex;
-	justify-items: center;
+	justify-content: space-between;
+	flex-flow: row-reverse
 }
 
 .content .post-nav span {
@@ -280,8 +275,16 @@ a:hover {
 	color: #bfbfbf;
 }
 
-.content .post-nav .a {
+.content .post-nav a {
 	font-family: 'Cinzel Decorative', cursive;
+}
+
+.content .post-nav > * {
+	width: 50%;
+}
+
+.content .post-nav .new {
+	text-align: right;
 }
 
 .content .other {
@@ -403,6 +406,11 @@ a:hover {
 
 .footer-links a {
 	margin-left: .5em;
+}
+
+article {
+	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
 article p {
