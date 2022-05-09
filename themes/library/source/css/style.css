@@ -280,12 +280,8 @@ a:hover {
 	color: #bfbfbf;
 }
 
-.content .post-nav .old a, .content .post-nav .new a {
+.content .post-nav .a {
 	font-family: 'Cinzel Decorative', cursive;
-}
-
-.content .post-nav .new {
-	text-align: right;
 }
 
 .content .other {
