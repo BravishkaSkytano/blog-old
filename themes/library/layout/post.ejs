@@ -20,6 +20,7 @@
   </div>
   <div class="container">
     <article class="post">
+      <%- toc(page.content) %>
       <%- page.content %>
       <br />
       <%- list_tags(page.tags, { show_count: true, style: "unordered list",

@@ -10,7 +10,10 @@ __('category') + '：' + page.category; } else if (is_tag()){ title = __('tag') 
   name="viewport"
   content="width=device-width, initial-scale=1, maximum-scale=5"
 />
-<%- meta_generator() %> <%- css_auto_version('css/style') %>
+<%- meta_generator() %>
+<%- open_graph(title, url, author, date, updated, site_name, description) %>
+
+<%- css_auto_version('css/style') %>
 <link
   rel="shortcut icon"
   href="<%= theme.favicon.href %>"
