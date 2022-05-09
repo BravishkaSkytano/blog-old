@@ -2,7 +2,7 @@
 (is_month()){ title += '：' + page.year + '/' + page.month; } else if
 (is_year()){ title += '：' + page.year; } } else if (is_category()){ title =
 __('category') + '：' + page.category; } else if (is_tag()){ title = __('tag') +
-'：' + page.tag; } else if (is_post()){ title = __('category') +
+'：' + page.tag; } else if (is_post()){ title = page.category +
 '：' + page.title; } %>
 <title><% if (title){ %><%= title %> - <% } %><%= config.title %></title>
 <meta charset="utf-8" />
