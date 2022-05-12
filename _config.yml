@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Aspiring Writer's Haven
+title: "Aspiring Writer's Haven"
 subtitle: "A place to escape"
 description: ""
 keywords:
-author: Bravisha Skietano
+author: "Bravisha Skietano"
 language: en
 timezone: ""
 
@@ -17,8 +17,8 @@ url: "https://aspiring-writer.github.io/blog"
 permalink: :title/
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: false # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
@@ -66,7 +66,7 @@ index_generator:
   order_by: -date
 
 # Category & Tag
-default_category: uncategorized
+default_category: misc.
 category_map:
 tag_map:
 

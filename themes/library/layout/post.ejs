@@ -4,9 +4,9 @@
       <h1><%= page.title %></h1>
       <div class="info">
         <span class="date"><%- date(page.date, "YYYY - M - D") %></span> • <%=
-        config.author %> <% if (page.categories && page.categories.length){ %>
+        config.author %> <% if (page.categories && page.categories.length){ %> • 
         《<%- list_categories(page.categories, { show_count: false, class:
-        'nexmoefont icon-appstore-fill ', style: 'none', separator: '' }) %>》
+        'capitalize ', style: 'none', separator: '' }) %>》
         <% } %> <% if (theme.github.repo && theme.github.edit) { %>
         <a
           href="<%= 'https://github.com/' + theme.github.repo + '/tree/master/source/' + page.source %>"
@@ -20,7 +20,20 @@
   </div>
   <div class="container">
     <article class="post">
-      <%- toc(page.content) %>
+      <div class="card">
+        <% if (page.card) { %>
+        <img src="<%- page.card.poster %>" alt="poster" />
+        <div class="card-content">
+          <div><%- page.card.details %></div>
+          <div><strong>Released: </strong><%- page.card.released %></div>
+          <div><strong>My Rating: </strong><%- page.card.rating %></div>
+          <a href="<%- page.card.more %>">Read More</a>
+        </div>
+        <hr />
+        <% } %>
+        <%- toc(page.content) %>
+      </div>
+
       <%- page.content %>
       <br />
       <%- list_tags(page.tags, { show_count: true, style: "unordered list",

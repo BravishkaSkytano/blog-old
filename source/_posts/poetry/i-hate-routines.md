@@ -1,7 +1,7 @@
 ---
 date: 2021-12-04
 title: I Hate Routines
-category: Poetry
+category: poetry
 tags: [depression]
 ---
 I hate routines,\

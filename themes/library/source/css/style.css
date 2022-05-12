@@ -518,8 +518,8 @@ article pre code {
 	margin: 0;
 }
 
-article ul {
-	list-style: square;
+article ul, article ol {
+	list-style: circle;
 }
 
 article a:hover {
@@ -549,8 +549,14 @@ article .catalogue {
   border-radius: 5px;
   float: right;
   width: 300px;
-  max-width: 45%;
-  margin: 2px 16px;
+	margin: 2px 0 16px 20px;
+}
+
+@media screen and (max-width: 425px) {
+	.card {
+		width: 100%;
+		margin: 2px auto 16px;
+	}
 }
 
 .card:hover {
@@ -575,4 +581,8 @@ article .catalogue {
 
 .card .card-content div {
   padding-bottom: 5px;
+}
+
+.capitalize {
+	text-transform: capitalize;
 }

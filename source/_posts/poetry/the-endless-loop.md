@@ -1,7 +1,7 @@
 ---
 title: The Endless Loop
 date: 2021-10-01
-category: Poetry
+category: poetry
 tags: [depression]
 ---
 I wince as another rock hit my skin.\

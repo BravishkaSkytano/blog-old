@@ -2,7 +2,7 @@
 title: Nietzsche, Nihilism, and the 20th Century
 subtitle: The Beginning of an Empty and Meaningless Life
 date: 2022-02-07
-category: Re-Examining History
+category: re-examining history
 tags: [depression, suicide, nihilism, Social Darwinism]
 cover: images/re-examining-history.jpg
 ---

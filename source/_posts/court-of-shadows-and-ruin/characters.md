@@ -1,7 +1,7 @@
 ---
 title: Characters
 date: 2022-01-24
-categories: Court of Shadows and Ruin
+categories: court of shadows and ruin
 ---
 ## Azura
 

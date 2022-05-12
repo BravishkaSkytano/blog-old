@@ -1,28 +1,16 @@
 ---
-title: We All Have Special Needs
-subtitle: A Review of "The Open Door"
+title: We All Have Special Needs - A Review of "The Open Door"
 date: 2022-02-07
-category: TV/Movie Reviews
+category: tv/movie reviews
 tags: [special needs]
 cover: images/tv-movie-reviews.jpg
+card:
+  poster: "https://m.media-amazon.com/images/M/MV5BYWFkMzU0ODAtYTBlYy00OTYxLTg1YzItNzczZjNmNzFmMmRhXkEyXkFqcGdeQXVyNjk2Mjc2OTI@._V1_QL75_UX180_CR0,1,180,266_.jpg"
+  details: Sam and the life he shares changes the attitude of his family, friends and community toward those with special needs.
+  released: "January 6, 2017"
+  rating: 5
+  more: "https://www.imdb.com/title/tt6673964/"
 ---
-{% raw %}
-<div class="card">
-  <img src="https://m.media-amazon.com/images/M/MV5BYWFkMzU0ODAtYTBlYy00OTYxLTg1YzItNzczZjNmNzFmMmRhXkEyXkFqcGdeQXVyNjk2Mjc2OTI@._V1_QL75_UX180_CR0,1,180,266_.jpg" alt="poster">
-  <div class="card-content">
-    <div>
-    Sam and the life he shares changes the attitude of his family, friends and community toward those with special needs.
-    </div>
-    <div>
-      <strong>Released: </strong>January 6, 2017
-    </div>
-    <div>
-      <strong>My Rating: </strong>5
-    </div>
-    <a href="https://www.imdb.com/title/tt6673964/">Read More</a>
-  </div>
-</div>
-{% endraw %}
 I have a passion for people with special needs, I just love them. As a young teenager, God kept putting me around children who had special needs. At first, I saw them as different and a great struggle to handle. The little girl that I kept interacting with had autism and her parents were not doing anything to help control it. She was a big hassle and because of the way I was brought up, I couldn't idly stand by and watch her mother struggle with her child alone. It was an annoying situation, that grew into more frequent encounters, and yet surprisingly, I couldn't ignore the girl or her mother. A desire in me spawned to learn more about this forgotten community of gifted children.
 <!--excerpt-->
 A little while later, I became a member of my church and signed up to be part of their special needs' ministry called God's Own. The leader of this ministry was so surprised, and skeptical, to hear that a seventeen year-old wanted to work with these children that she thought that it was actually my mother who had signed up instead! After my mom spoke to her and reassured her that I was serious, the leader agreed to interview me for the job (all volunteers are interviewed, and a background check is performed before we are allowed the position. Cool, right?). When she met me, she saw something in me that encouraged her to let me join, despite the small technicality that I wasn't eighteen, yet. My passion only grew from there as I was put around children of all ages with different conditions that I usually couldn't remember the names for. God gave me a gift for them, and even the children could see it in me as well. Some of them, not even knowing my name, would just stare at me. One child even started calling out to others when he saw me, "She's here! She's here! Look, she's here!" Another liked to just get up from his chair, run behind me, and start smelling my hair. It was so much fun and I enjoyed being around them.

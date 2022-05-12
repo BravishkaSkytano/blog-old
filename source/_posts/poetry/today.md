@@ -1,7 +1,7 @@
 ---
 title: "Today"
 date: 2020-05-02
-category: Poetry
+category: poetry
 cover: images/poetry.jpg
 ---
 

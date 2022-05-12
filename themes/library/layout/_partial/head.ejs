@@ -11,19 +11,16 @@ __('category') + '：' + page.category; } else if (is_tag()){ title = __('tag') 
   content="width=device-width, initial-scale=1, maximum-scale=5"
 />
 <%- meta_generator() %>
-<%- open_graph(title, url, author, date, updated, site_name, description) %>
+
+<%- open_graph() %>
 
 <%- css_auto_version('css/style') %>
+
 <link
   rel="shortcut icon"
   href="<%= theme.favicon.href %>"
   type="<%= theme.favicon.type %>"
 />
-<!--<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap"
-  media="all"
-/>-->
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
