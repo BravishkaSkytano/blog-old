@@ -1,13 +1,6 @@
----
-title: A Little About Me...
-date: 2022-05-04 21:21:29
----
+# A Little About This Project
 
-![gravatar](https://www.gravatar.com/avatar/8305681be23372ec3c774233546f849f?s=300)
-
-I'm a twenty-year-old,  homeschooled, Christian student who is struggling to stay motivated and finish things. I love Jesus, pretty much any yarn crafts (crochet, knitting, macrame, been there done that), reading, writing, music, horses, developing websites (new at that), FOSS, and anything Linux (I'm not a complete tech geek but I definitely see myself getting there 😊). I'm very social, which isn't a very good thing since I trust people too easily 😉, but I'm getting better. I open my mouth a lot before thinking, but as I said, I'm getting better. I procrastinate way too much but prayerfully I will learn some self-control and apply it everywhere in my life (starting with my mouth😋).
-
-I love to read and write fiction stories in my spare time. Most of my inspiration is God-given, I'm not sure how else to explain it. I have been writing since I was in my mid-teens (not so long ago), however, I have just recently become more dedicated to writing and publishing my work. I am very social and very fond of feedback, so please do leave comments on any of my posts.
+I am a young, Christian writer who is still trying to complete college. I love to read and write fiction stories in my spare time. Some Christian aspects will show up in my writing so do not be surprised. Most of my inspiration is God-given, I'm not sure how else to explain it. I have been writing since I was in my mid-teens (not so long ago), however, I have just recently become more dedicated to writing and publishing my work. I am very social and very fond of feedback, so please do leave comments on any of my posts.
 
 I began writing when I was thirteen years old. It was nothing fancy, just little things here and there. Then I began to try and write fiction like the many books I fell in love with. I wasn’t a bad writer, but I wasn’t very good either. I remember when I wrote [my first poem](https://aspiring-writer.github.io/blog/poetry/today/), it was simple and cute. My cousin had shared with me some of her poetry and that’s when I discovered that not all poetry rhymed. She introduced me to free-form poetry and I decided to try it out the next day. In three days I had written two poems that I was very proud of and others praised me for. It was a great feeling and it gave me the confidence that I was creative and I could write when I was passionate about something. After that, I started trying to write fiction as well as poetry and it worked out quite nicely. There were hiccups and times where I felt like a total failure who couldn’t write one good book without abandoning the project out of frustration. I just hadn’t found my real passion yet and I was tired of trying to figure out how to portray characters' lives on paper when I couldn’t even figure out my own. My mother told me I should start writing a diary and I couldn’t even do that. It was frustrating.
 
