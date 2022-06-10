@@ -9,7 +9,7 @@ description: ""
 keywords:
 author: "Bravisha Skietano"
 language: en
-timezone: ""
+timezone: "America/New_York"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -29,6 +29,9 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+
+tag_generator:
+  enable_index_page: false
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -50,6 +53,8 @@ highlight:
   tab_replace: ""
   wrap: true
   hljs: false
+  exclude_languages:
+    - mermaid
 prismjs:
   enable: false
   preprocess: true
@@ -88,17 +93,68 @@ updated_option: "mtime"
 per_page: 10
 pagination_dir: page
 
+# Wordcount
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+  awl: 4
+  wpm: 275
+
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
 include:
   - "**/*.jpg"
 exclude:
+  - "tag-plugins.md"
 ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: library #yet-the-books
+theme: next
+
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: false
+  hub:
+  content: true
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: /images/favicons/favicon-16x16.png
+  autodiscovery: true
+  template:
+
+search:
+  path: search.xml
+  field: all
+  content: true
+  format: html
+
+# Likely Share
+# See: https://ilyabirman.net/projects/likely/, https://github.com/ilyabirman/Likely
+# Likely supports four looks, nine social networks, any button text.
+# You are free to modify the text value and order of any network.
+likely:
+  enable: true
+  cdn:
+    js: //cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.min.js
+    css: //cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.min.css
+  look: normal # available values: normal, light, small, big
+  networks:
+    twitter: Tweet
+    facebook: Share
+    #linkedin: Link
+    #gplus: Plus
+    #vkontakte: Share
+    #odnoklassniki: Class
+    telegram: Send
+    whatsapp: Send
+    pinterest: Pin
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

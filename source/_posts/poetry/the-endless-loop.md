@@ -1,14 +1,14 @@
 ---
 title: The Endless Loop
 date: 2021-10-01
-category: poetry
+category: Poetry
 tags: [depression]
 ---
-I wince as another rock hit my skin.\
+I winced as another rock hit my skin.\
 I feel like it left a mark\
 So I check, but find none.\
 They didn't use to hurt so much,\
-They were smaller, too.<!--excerpt-->\
+They were smaller, too.<!-- more -->\
 At first, they were pebbles\
 And I could easily shake 'em off\
 But now they've gotten bigger and faster\

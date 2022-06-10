@@ -1,12 +1,11 @@
 ---
 title: 'Genesis: Organizing, Filling, Marking'
 date: 2020-11-15
-category: devotionals
+category: Devotionals
 tags: [Journey Through the Bible, Genesis, theology]
-cover: images/devotionals.jpg
 ---
 
-This school year, I have the privilege of taking a special Bible course from my school. It’s the Journey Through the Bible curriculum and I shall be doing book 1. Two years ago, I read through the second book in the series and I loved it. That book took me through the “wisdom and prophetic” books of the Bible, i.e. Psalms – Malachi.<!--excerpt--> The Journey Through the Bible curriculum takes you through each book in the Bible and breaks down important chapters to show you things you probably didn’t know before. The curriculum is essentially a theology course for high school students.
+This school year, I have the privilege of taking a special Bible course from my school. It’s the Journey Through the Bible curriculum and I shall be doing book 1. Two years ago, I read through the second book in the series and I loved it. That book took me through the “wisdom and prophetic” books of the Bible, i.e. Psalms – Malachi.<!-- more --> The Journey Through the Bible curriculum takes you through each book in the Bible and breaks down important chapters to show you things you probably didn’t know before. The curriculum is essentially a theology course for high school students.
 
 This year, I am going back to the beginning and studying the “Pentateuch and Historical” books, i.e. Genesis – Esther. I am not excited about it at all. I have read Genesis a dozen times, suffered through Exodus, skipped Leviticus and Deuteronomy for obvious reasons, and the other books have been told to children over a hundred times through Bible stories. So, this seems like it will be pretty boring, right? Well, I stand corrected. After reading the very first lesson (which my sister practically made me do), I was reminded of how awesome this curriculum, and the Bible, is. The first lesson was in Genesis 1 and spoke of how God didn’t create but how He organized the universe. The Creation, or Organization of the Universe, is split into two parts: the separation and the filling. On days 1-3, God separates light from dark, water from water, and seas from land. On days 4-6, God fills in the light, skies, seas, and finally the dry land. If you noticed, God followed the same pattern in each part—light, water, land. I never noticed any of that, the Creation was the Creation and that was that. The only thing special about the Creation was that it was, well, the Creation of the whole universe. Again, I was reminded that everything God does has a purpose that you will not see without truly looking.
 

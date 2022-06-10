@@ -1,13 +1,13 @@
 ---
 date: 2021-12-04
 title: I Hate Routines
-category: poetry
+category: Poetry
 tags: [depression]
 ---
 I hate routines,\
 I hate the never-ending routines that plague my life.\
 Everything is so boring,\
-The same every day.<!--excerpt-->\
+The same every day.<!-- more -->\
 I can't escape it,\
 All I can do is wait.\
 Wait for a break,\

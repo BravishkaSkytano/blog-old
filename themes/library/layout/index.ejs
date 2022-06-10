@@ -18,7 +18,7 @@
 			<% page.posts.sort('date',-1).limit(5).each(post => { %>
 				<% post.categories.map(function(category){  %>
 					<li class="display"><a href="<%- url_for(post.path) %>" >
-						<span class="title"><%- category.name %>：<%- post.title %></span>
+						<span class="title"><%- category.name %>: <%- post.title %></span>
 						<span class="date"><span><%= date(post.date, 'MM-DD') %></span></span>
 					</a></li>
 				<% }) %>

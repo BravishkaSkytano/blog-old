@@ -1,13 +1,13 @@
 ---
 title: "Prayer is a weapon..."
 date: 2020-05-03
-category: poetry
+category: Poetry
 tags: [prayer, spiritual weapons]
 ---
 
 Prayer is a weapon.\
 You may not believe it but it's true.\
-Prayer is the most powerful weapon you could ever choose.<!--excerpt-->\
+Prayer is the most powerful weapon you could ever choose.<!-- more -->\
 It's not hard to operate.\
 You don't even need a permit.\
 No one can take it away from you.\

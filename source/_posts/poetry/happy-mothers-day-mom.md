@@ -1,13 +1,13 @@
 ---
 title: "Happy Mother's Day, Mom"
 date: 2020-05-05
-category: poetry
+category: Poetry
 tags: [holidays]
 ---
 
 You know that feeling you get when you've became one year older?\
 Or that feeling you get every new year?\
-That feeling of time passing quicker than you imagined.<!--excerpt-->\
+That feeling of time passing quicker than you imagined.<!-- more -->\
 The feeling that another year has gone by\
 And there's still so much more you want to do.\
 Time passes so fast,\

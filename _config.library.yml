@@ -2,8 +2,8 @@ favicon:
   href: /blog/favicon.png # Favicon of your site.
   type: image/png # Icon type, possible values are(image/png, image/vnd.microsoft.icon, image/x-icon, image/gif)
 
-search: https://www.ecosia.org/search?q= # https://www.google.com/search?q==
-order_by: date # date,-date,title,url,...
+search: https://search.brave.com/search?q= # https://www.google.com/search?q==
+order_by: url # date,-date,title,url,...
 head: #'<!--<script src="" async></script>-->' # Add anything to <head></head>
 
 archives:

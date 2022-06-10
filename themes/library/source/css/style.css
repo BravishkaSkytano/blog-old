@@ -315,6 +315,7 @@ a:hover {
 	z-index: 1;
 	margin-right: 5em;
 	padding-right: 1em;
+	text-transform: capitalize;
 }
 
 .content .catalogue .date {
